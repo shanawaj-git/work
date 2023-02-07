@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article.js index Provided title, it should print title  1`] = `
+<div>
+  <div
+    data-testid="article-component"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h2 css-11fk4v9-MuiTypography-root"
+      data-testid="article-component-title"
+    >
+      <span>
+         
+        How are you doing
+      </span>
+    </h2>
+    <div
+      color="#13171C"
+      typographytype="title1"
+    />
+  </div>
+</div>
+`;
+
+exports[`Article.js index Provided title, it should print title  2`] = `
+<div>
+  <div
+    data-testid="article-component"
+  >
+    <div
+      color="#13171C"
+      typographytype="title1"
+    />
+    <p
+      class="MuiTypography-root MuiTypography-body2 css-1038btm-MuiTypography-root"
+      data-testid="article-component-description"
+    >
+      <span>
+         
+        How are you doing
+      </span>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Article.js index Should import succesfully 1`] = `
+<div
+  data-testid="article-component"
+>
+  <div
+    color="#13171C"
+    typographyType="title1"
+  />
+  <div
+    color="#13171C"
+    typographyType="title1"
+  />
+</div>
+`;

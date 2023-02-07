@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem.js index Should display disabled input 1`] = `
+<ForwardRef(StyledListItem)
+  disabled={true}
+  leftText="Flat / Villa No."
+/>
+`;
+
+exports[`ListItem.js index Should display listItem with primary color style 1`] = `
+<ForwardRef(StyledListItem)
+  leftText="Flat / Villa No."
+/>
+`;

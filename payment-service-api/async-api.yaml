@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: payment-service-api
+  title: Albatha Patient service
+  description: Used for providing payment service
+  tags:
+    - asyncapi
+    - kafka
+    - openApi
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: asyncapi
+  owner: nexthealth
+  lifecycle: experimental
+  definition:
+    $text: ./docs/asyncAPI.json

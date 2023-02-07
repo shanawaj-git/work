@@ -1,0 +1,39 @@
+keycloak:
+  realm: ${KEYCLOAK_REALM}
+  auth-server-url: KEYCLOAK_SERVER_URL
+  resource: ${KEYCLOAK_RESOURCE}
+  bearer-only: true
+  principal-attribute: preferred_username
+
+server:
+   port : 8081
+graphql:
+  servlet:
+    maxQueryDepth: 100
+
+    cors-enabled: false
+
+spring:
+  kafka:
+    template:
+       default-topic: authentication
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+    properties:
+      security:
+        protocol: SASL_PLAINTEXT
+      sasl:
+         mechanism: PLAIN
+         jaas:
+            config: org.apache.kafka.common.security.plain.PlainLoginModule required username="${KAFKA_ADMIN_USER}" password="${KAFKA_ADMIN_PASSWORD}";
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      properties:
+        retries: 2
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+

@@ -1,0 +1,65 @@
+type Query {
+    dummyQuery: String,
+#    getPharmaciesAndDrugs( input: GetPharmaciesAndDrugsInput!): GetPharmaciesAndDrugsOutput!
+}
+#
+#input GetPharmaciesAndDrugsInput {
+#    location:LocationInput
+#    prescriptionNumber: String
+#    sort:Sort
+#}
+#
+#input Sort {
+#    field: String
+#    order:String
+#}
+#
+#input LocationInput {
+#    longitude: Float!
+#    latitude: Float!
+#}
+#
+#type GetPharmaciesAndDrugsOutput
+#    {
+#        success: Boolean!
+#        data: PharmaciesAndDrugs
+#        error: Error
+#    }
+#
+#type PharmaciesAndDrugs
+#    {
+#        pharmacies:[Pharmacy]
+#        drugs:[Drug]
+#    }
+#
+#type Drug{
+#    codes:[DrugCode]
+#    pricing:Pricing
+#}
+#
+#type Pricing{
+#    price:String
+#    currency:String
+#}
+#type DrugCode{
+#    system:String
+#    value:String
+#}
+#
+#type Pharmacy {
+#    name: String
+#    deliveryRadiusMeters: String
+#    deliverySLAMinutes: String
+#    location:Location
+#    brand:PharmacyBrand
+#}
+#
+#type PharmacyBrand{
+#    name:String
+#}
+#
+#type Location
+#    {
+#        x: Float!
+#        y: Float!
+#    }

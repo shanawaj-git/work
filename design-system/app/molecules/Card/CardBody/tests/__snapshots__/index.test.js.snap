@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index should render card body with data 1`] = `
+Array [
+  <div
+    className="textWithIcon undefined"
+  >
+    
+    <span
+      className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+    >
+      text
+    </span>
+    <span
+      className="MuiTypography-root MuiTypography-caption textWithIcon-sideText css-1393mlh-MuiTypography-root"
+    >
+      sideText
+    </span>
+  </div>,
+  <div
+    className="textWithIcon undefined"
+  >
+    
+    <span
+      className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+    >
+      text2
+    </span>
+    <span
+      className="MuiTypography-root MuiTypography-caption textWithIcon-sideText css-1393mlh-MuiTypography-root"
+    >
+      sideText2
+    </span>
+  </div>,
+]
+`;

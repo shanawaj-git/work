@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> should render dark spinner 1`] = `
+<img
+  alt=""
+  className="spinner-animation"
+  src="IMAGE_MOCK"
+/>
+`;
+
+exports[`<Spinner /> should render light spinner 1`] = `
+<img
+  alt=""
+  className="spinner-animation"
+  src="IMAGE_MOCK"
+/>
+`;

@@ -1,0 +1,9 @@
+{
+  "signin.welcome.title": "مرحبا بك في",
+  "signin.welcome.headline": "إنهم الاستثناءات التي يتوق إليها المكفوفون ، ولا يرونها ، هم من يتخلون عن مسؤولياتهم للخطأ الذي يهدئ مصاعب الروح",
+  "signin.option.mobilenumber": "تسجيل الدخول باستخدام رقم الهاتف المحمول",
+  "signin.option.uaepass": "تسجيل الدخول باستخدام UAE PASS",
+  "siginin.selection.or": "أو",
+  "phoneLogin.invalidPhoneNumber": "رقم الهاتف غير صحيح",
+  "phoneLogin.genericAPIError": "عذرا، هناك خطأ ما"
+}

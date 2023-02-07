@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "app_configs",
+  "info": {
+    "singularName": "app-config",
+    "pluralName": "app-configs",
+    "displayName": "App Config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "onboardingSmsTemplate": {
+      "type": "text",
+      "required": true,
+      "default": "Hi {{patientName}}, Welcome to {{pharmacyName}}. You will receive reminders to refill your prescription as well as order updates right here. For any contact support, you can reach out to us through the 24/7 helpline at {{supportContactNumber}}"
+    },
+    "reminderSMSTemplate": {
+      "type": "text",
+      "required": true,
+      "default": "Hello {{patientName}}! We’d like to remind you about your medicine refill on {{reminderDate}}. Please try to schedule an appointment with your doctor at the earliest."
+    },
+    "otpSmsTemplate": {
+      "type": "text",
+      "required": true,
+      "default": "Dear customer, use this One Time Password {{otp}} to authenticate. This OTP will be valid for the next {{otpValidityTime}} mins."
+    },
+    "newPrescriptionEmailTemplate": {
+      "type": "text",
+      "required": true,
+      "default": "New Prescription for <%= patient.firstName %>"
+    },
+    "emailList": {
+      "type": "text"
+    },
+    "newPrescriptionEmailSubject": {
+      "type": "text",
+      "required": true,
+      "default": " Hello,<br/> There is a new prescription for the patient <%= patient.firstName %> <%= patient.lastName %> with the mobile number  <%= patient.username %>.<br/> For more details, please visit <%= orderLink %>. <br/> <br/> Thanks,<br/> MPC Escribe Team."
+    },
+    "paymentSmsTemplate": {
+      "type": "text",
+      "default": "Dear {{patientName}}, Your prescription is approved by the insurance, and the co-payment amount is {{currency}} {{amount}}. Please click the link for proceeding with the payment. {{paymentLink}}"
+    },
+    "paymentReceivedEmailTemplate": {
+      "type": "text",
+      "required": true,
+      "default": "<!DOCTYPE html> <html> <style>     * {         box-sizing: border-box;     }     body {         font-size: 16px;     }     u {         color: cornflowerblue;     }       table {         width: 65%;         border: 1px solid;     }     .disclaimer {         color: #7f7f7f;         margin-top: 20px;     }       .labelDetails {         width: 210px;     }       .boldDetails {         font-style: normal;         font-weight: bold;     } </style> <head>     <link href=\"https://fonts.googleapis.com/css?family=Inter&display=swap\" rel=\"stylesheet\" /> </head> <body> <div>     <img src=\"https://mpc-escribe-bckoff-test.67a6dbca8f584b29a0fa.uaenorth.aksapp.io/admin/63584b8149903ec01c27.png\" height=\"90\" width=\"107\">     <h4>Transaction Details</h4>     <p>Payment confirmation details for patient <b><%= patient.firstName %></b> with Emirates ID of <u><%= patient.emiratesId %></u></p>     <table style=\"width:60%\">         <tr>             <td class=\"labelDetails\">Order #</td>             <td class=\"boldDetails\"><%= id %></td>         </tr>         <tr>             <td class=\"labelDetails\">Transaction Reference</td>             <td><%= payment.id %></td>         </tr>         <tr>             <td class=\"labelDetails\">Payment Status</td>             <td><%= status %></td>         </tr>         <tr>             <td class=\"labelDetails\">Payment Type</td>             <td><%= payment.paymentType %></td>         </tr>         <tr>             <td class=\"labelDetails\">Time</td>             <td><%= payment.updatedAt %></td>         </tr>         <tr>             <td class=\"labelDetails\">Total Amount (including VAT)</td>             <td class=\"boldDetails\">AED <%= amount %></td>         </tr>     </table>     <div class=\"disclaimer\">Please note: This e-mail was sent from a notification-only address that can't accept incoming e-mails. Please do not reply to this message.</div> </div> </body>"
+    },
+    "paymentReceivedEmailSubject": {
+      "type": "string",
+      "required": true,
+      "default": "[Order # <%= id%> ] Payment received from Patient <%= patient.firstName %>"
+    },
+    "cashOrCardOnDeliveryEmailSubject": {
+      "type": "string",
+      "default": "<%= paymentMethod %> opted by <%= patient.firstName %>"
+    },
+    "cashOrCardOnDeliveryEmailTemplate": {
+      "type": "text",
+      "default": "Hello,<br/>  The  patient <%= patient.firstName %> <%= patient.lastName %> with the mobile number  <%= patient.username %>.<br/> has opted for  <%= paymentMethod %> for his/her order .   For more details, please visit <%= orderLink %>.  <br/> <br/> Thanks,<br/> MPC Escribe Team."
+    },
+    "zeroCoPaymentSmsTemplate": {
+      "type": "text",
+      "default": "Dear {{patientName}}, Your prescription is approved by the insurance, and the co-payment amount is {{currency}} {{amount}}. Please look out for the delivery driver"
+    }
+  }
+}

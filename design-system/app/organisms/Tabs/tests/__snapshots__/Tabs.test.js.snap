@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index Should import succesfully 1`] = `
+<div
+  className="root MuiTabs-root styledComponents__StyledTabs-sc-16g4axo-1 gllqKx css-1ujnqem-MuiTabs-root"
+  id={123}
+>
+  <div
+    className="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+    onScroll={[Function]}
+    style={
+      Object {
+        "marginBottom": -0,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <div
+      aria-orientation={null}
+      className="flexContainer MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+      onKeyDown={[Function]}
+      role="tablist"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimePicker Should render successfully in closed mode 1`] = `
+<div>
+  <div
+    class="styledComponents__MainContainer-i3ilf2-0 gPVVFI"
+  >
+    <div
+      class="styledComponents__HeaderContainer-i3ilf2-3 ffkpyW"
+      data-testid="collapsible-header-container"
+    >
+      <div
+        class="styledComponents__IconContainer-i3ilf2-4 bsvKmv collapsible-header-icon"
+      >
+        <img
+          alt="Select Time"
+          class="styledComponents__IconImage-i3ilf2-5 CoppR"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-label css-1reifv3-MuiTypography-root"
+      >
+        Time
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-placeholder text-align-right css-1reifv3-MuiTypography-root"
+      >
+        Select Time
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`TimePicker Should render successfully in open mode 1`] = `
+<div>
+  <div
+    class="styledComponents__MainContainer-i3ilf2-0 gPVVFI"
+  >
+    <div
+      class="styledComponents__HeaderContainer-i3ilf2-3 ffkpyW"
+      data-testid="collapsible-header-container"
+    >
+      <div
+        class="styledComponents__IconContainer-i3ilf2-4 bsvKmv collapsible-header-icon"
+      >
+        <img
+          alt="Select Time"
+          class="styledComponents__IconImage-i3ilf2-5 CoppR"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-label css-1reifv3-MuiTypography-root"
+      >
+        Time
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-placeholder text-align-right css-1reifv3-MuiTypography-root"
+      >
+        Select Time
+      </p>
+    </div>
+    <div
+      class="styledComponents__ContentContainer-i3ilf2-2 hOuB"
+    >
+      <div
+        class="styledComponents__Divider-i3ilf2-1 kSSSdW"
+      />
+      <div
+        class="timepicker-container p3 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10"
+      >
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-07:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-07:00"
+          >
+            7:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-08:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-08:00"
+          >
+            8:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-09:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-09:00"
+          >
+            9:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-10:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-10:00"
+          >
+            10:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-11:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-11:00"
+          >
+            11:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-12:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-12:00"
+          >
+            12:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-13:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-13:00"
+          >
+            13:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-14:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-14:00"
+          >
+            14:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-15:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-15:00"
+          >
+            15:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-16:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-16:00"
+          >
+            16:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-17:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-17:00"
+          >
+            17:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-18:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-18:00"
+          >
+            18:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-19:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-19:00"
+          >
+            19:00
+          </p>
+        </div>
+        <div
+          class="styledComponents__TimeContainer-sc-85l0qm-0 biZaIB timepicker-time-cell"
+          data-testid="div-timepicker-cell-container-20:00"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 time-label css-1reifv3-MuiTypography-root"
+            data-testid="div-timepicker-cell-label-20:00"
+          >
+            20:00
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

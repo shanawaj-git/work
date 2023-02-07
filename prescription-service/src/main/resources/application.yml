@@ -1,0 +1,55 @@
+spring:
+  profile:
+    active: ${SPRING_PROFILES_ACTIVE}
+  kafka:
+    template:
+      default-topic: prescriptions
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+    properties:
+      security:
+        protocol: SASL_SSL
+      sasl:
+        mechanism: PLAIN
+        jaas:
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username=${KAFKA_ADMIN_USER}  password=${KAFKA_ADMIN_PASSWORD};
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: prescriptions-service
+      properties:
+        spring.json.value.default.type: com.albatha.nexthealth.prescription.dto.PrescriptionEventDTO
+        spring.json.trusted.packages: com.albatha.nexthealth.prescription.dto
+    admin:
+      properties:
+        bootstrap.servers: ${KAFKA_BOOTSTRAP_SERVER}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      hibernate.format_sql: true
+  datasource:
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+  jackson:
+    serialization.FAIL_ON_EMPTY_BEANS: false
+
+
+graphql:
+  servlet:
+    exception-handlers-enabled: true
+    cors-enabled: false
+
+graphiql:
+  enabled: false
+
+patient-service-uri: ${PATIENT_SERVICE_URI:http://patients}
+client-connect-timeout: ${CLIENT_CONNECT_TIMEOUT:1000ms}
+client-read-timeout: ${CLIENT_READ_TIMEOUT:1000ms}

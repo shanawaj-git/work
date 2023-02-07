@@ -1,0 +1,26 @@
+image: docker:latest
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+  SPRING_PROFILES_ACTIVE: gitlab-ci
+  MAVEN_CLI_OPTS: "--batch-mode"
+
+stages:
+  - build-mvn
+
+maven-build:
+  image: maven:latest
+  stage: build-mvn
+
+  script:
+      - "mvn package -B"
+  only:
+      - main
+      - merge_requests
+  artifacts:
+    paths:
+      - target/*.jar
+
+

@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "singularName": "payment",
+    "pluralName": "payments",
+    "displayName": "payment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "maskedCardNumber": {
+      "type": "string"
+    },
+    "paymentType": {
+      "type": "enumeration",
+      "enum": [
+        "Card",
+        "Wallet",
+        "Cash On Delivery",
+        "Card On Delivery"
+      ]
+    },
+    "currency": {
+      "type": "string"
+    },
+    "history": {
+      "type": "component",
+      "repeatable": true,
+      "component": "basic.payment-event"
+    },
+    "providerPaymentId": {
+      "type": "string"
+    },
+    "providerMetadata": {
+      "type": "json"
+    },
+    "correlationId": {
+      "type": "string"
+    },
+    "order": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order.order",
+      "inversedBy": "payment"
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "payments"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Created",
+        "Processing",
+        "Payment Method Required",
+        "Action Required",
+        "Canceled",
+        "Capture Required",
+        "Captured",
+        "Partially Captured",
+        "Succeeded",
+        "Failed",
+        "Unknown"
+      ]
+    },
+    "paymentSubType": {
+      "type": "enumeration",
+      "enum": [
+        "Mastercard",
+        "Visa",
+        "Google Pay",
+        "Apple Pay"
+      ]
+    }
+  }
+}

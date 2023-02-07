@@ -1,0 +1,30 @@
+input PatientInput
+{
+    patId: String!
+    emiratesId: String
+    mohId: String
+    firstName: String
+    middleName: String
+    lastName: String
+    email: String
+    mobileNumber: String
+    dob: DateTime
+    insurances : [InsuranceInput]
+}
+input InsuranceInput
+{
+    insId: String
+    policyNumber: String!
+    expiryDate: DateTime
+    network: String
+    provider: InsuranceProviderInput
+}
+
+input InsuranceProviderInput
+{
+    name: String
+    code: String
+    eClaimLinkId: String
+}
+
+scalar DateTime

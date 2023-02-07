@@ -1,0 +1,73 @@
+Hibernate: 
+nexthealth-application_1  |     
+nexthealth-application_1  |     create table address (
+nexthealth-application_1  |        address_id uuid not null,
+nexthealth-application_1  |         address_line1 varchar(255),
+nexthealth-application_1  |         address_line2 varchar(255),
+nexthealth-application_1  |         area varchar(255),
+nexthealth-application_1  |         city varchar(255),
+nexthealth-application_1  |         country varchar(255),
+nexthealth-application_1  |         created_date timestamp,
+nexthealth-application_1  |         postal_code varchar(255),
+nexthealth-application_1  |         state varchar(255),
+nexthealth-application_1  |         type varchar(255),
+nexthealth-application_1  |         patient_id uuid,
+nexthealth-application_1  |         primary key (address_id)
+nexthealth-application_1  |     )
+nexthealth-application_1  | Hibernate: 
+nexthealth-application_1  |     
+nexthealth-application_1  |     create table insurance (
+nexthealth-application_1  |        insurance_id uuid not null,
+nexthealth-application_1  |         created_date timestamp,
+nexthealth-application_1  |         expiry_date timestamp,
+nexthealth-application_1  |         ins_id varchar(255),
+nexthealth-application_1  |         network varchar(255),
+nexthealth-application_1  |         policy_number varchar(255),
+nexthealth-application_1  |         insuranceprovider_id uuid,
+nexthealth-application_1  |         patient_id uuid,
+nexthealth-application_1  |         primary key (insurance_id)
+nexthealth-application_1  |     )
+nexthealth-application_1  | Hibernate: 
+nexthealth-application_1  |     
+nexthealth-application_1  |     create table insurance_provider (
+nexthealth-application_1  |        insuranceprovider_id uuid not null,
+nexthealth-application_1  |         code varchar(255),
+nexthealth-application_1  |         created_date timestamp,
+nexthealth-application_1  |         e_claim_link_id varchar(255),
+nexthealth-application_1  |         name varchar(255),
+nexthealth-application_1  |         primary key (insuranceprovider_id)
+nexthealth-application_1  |     )
+nexthealth-application_1  | Hibernate: 
+nexthealth-application_1  |     
+nexthealth-application_1  |     create table patient (
+nexthealth-application_1  |        patient_id uuid not null,
+nexthealth-application_1  |         created_date timestamp,
+nexthealth-application_1  |         dob timestamp,
+nexthealth-application_1  |         email varchar(255),
+nexthealth-application_1  |         emirates_id varchar(255),
+nexthealth-application_1  |         first_name varchar(255),
+nexthealth-application_1  |         last_name varchar(255),
+nexthealth-application_1  |         middle_name varchar(255),
+nexthealth-application_1  |         mobile_number varchar(255),
+nexthealth-application_1  |         moh_id varchar(255),
+nexthealth-application_1  |         pat_id varchar(255),
+nexthealth-application_1  |         primary key (patient_id)
+nexthealth-application_1  |     )
+nexthealth-application_1  | Hibernate: 
+nexthealth-application_1  |     
+nexthealth-application_1  |     alter table address 
+nexthealth-application_1  |        add constraint FKm6svejh11etrox7dkwuqw05cr 
+nexthealth-application_1  |        foreign key (patient_id) 
+nexthealth-application_1  |        references patient
+nexthealth-application_1  | Hibernate: 
+nexthealth-application_1  |     
+nexthealth-application_1  |     alter table insurance 
+nexthealth-application_1  |        add constraint FKb5ivf9tfcq3xy8739j9cg4yko 
+nexthealth-application_1  |        foreign key (insuranceprovider_id) 
+nexthealth-application_1  |        references insurance_provider
+nexthealth-application_1  | Hibernate: 
+nexthealth-application_1  |     
+nexthealth-application_1  |     alter table insurance 
+nexthealth-application_1  |        add constraint FK68un5r1lv3f9y6m5ujm4plww5 
+nexthealth-application_1  |        foreign key (patient_id) 
+nexthealth-application_1  |        references patient

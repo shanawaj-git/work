@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioListItem.js index Should display RadioListItem with primary color style as list with white background card 1`] = `
+<ForwardRef(StyledRadioList)
+  disabled={false}
+  groupName="radio-button-group"
+  onChange={[Function]}
+  values={
+    Object {
+      "Female": Object {
+        "subTitle": "Collect from a location near you",
+        "title": "Near My Current Location",
+      },
+      "Male": Object {
+        "subTitle": "Collect from a location near you",
+        "title": "Near My Current Location",
+      },
+    }
+  }
+/>
+`;
+
+exports[`RadioListItem.js index Should display disabled radio button 1`] = `
+<ForwardRef(StyledRadioList)
+  disabled={true}
+  groupName="radio-button-group"
+  onChange={[Function]}
+  values={
+    Object {
+      "Female": Object {
+        "subTitle": "Collect from a location near you",
+        "title": "Near My Current Location",
+      },
+      "Male": Object {
+        "subTitle": "Collect from a location near you",
+        "title": "Near My Current Location",
+      },
+    }
+  }
+/>
+`;

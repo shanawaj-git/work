@@ -1,0 +1,99 @@
+[
+  {
+    "id": "6481ae1f-50f5-4917-b4e0-cabeb99600b3",
+    "name": "Health First Pharmacy",
+    "deliveryRadiusMeters": 500,
+    "deliverySLAMinutes": 22,
+    "brand": {
+      "id": "dcbb4464-6195-4423-a97c-7e8d301c439c",
+      "name": "Health First"
+    },
+    "address": {
+      "addressLine1": "Jumeirah Tower, 95 - 336 Sheikh Zayed Rd - Za'abeel - Trade Centre 2 - Dubai",
+      "addressLine2": "Jumeirah Tower, 95 - 336 شارع الشيخ زايد - زعبيل - المركز التجاري الثانية - دبي",
+      "street": "Sheikh Zayed Rd",
+      "area": "Za'abeel",
+      "city": "Dubai",
+      "state": "Dubai",
+      "country": "UAE"
+    },
+    "location": {"type": "Point", "coordinates": [10.0, 20.0]
+    },
+    "contactDetails": {
+      "mobileNumbers": [
+        "213123123",
+        "64546456"
+      ],
+      "landLineNumbers": [
+        "4444444",
+        "5555555"
+      ],
+      "faxNumbers": [
+        "5555555",
+        "777777777"
+      ],
+      "emails": [
+        "contact@healthfirst.com"
+      ],
+      "website": "www.healthfirst.com"
+    },
+    "openingHours": [
+      {
+        "day": "MONDAY",
+        "from": [
+          8,
+          0
+        ],
+        "to": [
+          21,
+          0
+        ]
+      },
+      {
+        "day": "TUESDAY",
+        "from": [
+          8,
+          0
+        ],
+        "to": [
+          21,
+          0
+        ]
+      },
+      {
+        "day": "WEDNESDAY",
+        "from": [
+          8,
+          0
+        ],
+        "to": [
+          21,
+          0
+        ]
+      },
+      {
+        "day": "THURSDAY",
+        "from": [
+          8,
+          0
+        ],
+        "to": [
+          21,
+          0
+        ]
+      },
+      {
+        "day": "FRIDAY",
+        "from": [
+          8,
+          0
+        ],
+        "to": [
+          21,
+          0
+        ]
+      }
+    ],
+    "deliveryEnabled": true
+  }
+]

@@ -1,0 +1,107 @@
+# This file is a template, and might need editing before it works on your project.
+# To contribute improvements to CI/CD templates, please follow the Development guide at:
+# https://docs.gitlab.com/ee/development/cicd/templates.html
+# This specific template is located at:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Terraform.gitlab-ci.yml
+
+include:
+  - template: Terraform/Base.latest.gitlab-ci.yml
+variables:
+  TF_VAR_DATABASE_HOST: $DATABASE_HOST
+  TF_VAR_DATABASE_PORT: $DATABASE_PORT
+  TF_VAR_DATABASE_USER: $DATABASE_USER
+  TF_VAR_DATABASE_PASSWORD: $DATABASE_PASSWORD
+  TF_VAR_DATABASE_NAME: $DATABASE_NAME
+  TF_VAR_APP_KEYS: $APP_KEYS
+  TF_VAR_DATABASE_SSL: $DATABASE_SSL
+
+  TF_VAR_DOCKER_REGISTRY_SERVER_URL: $DOCKER_REGISTRY_SERVER_URL
+  TF_VAR_DOCKER_REGISTRY_SERVER_USERNAME: $DOCKER_REGISTRY_SERVER_USERNAME
+  TF_VAR_DOCKER_REGISTRY_SERVER_PASSWORD: $DOCKER_REGISTRY_SERVER_PASSWORD
+
+  TF_VAR_SUBSCRIPTION_ID: $SUBSCRIPTION_ID
+  TF_VAR_TENANT_ID: $TENANT_ID
+  TF_VAR_CLIENT_ID: $CLIENT_ID
+  TF_VAR_CLIENT_SECRET: $CLIENT_SECRET
+
+  TF_VAR_WORKSPACE_ID: $WORKSPACE_ID
+  TF_VAR_WORKSPACE_KEY: $WORKSPACE_KEY
+
+  TF_VAR_DB_CONNECTION_STRING: $DB_CONNECTION_STRING
+
+  # kafka
+  TF_VAR_KAFKA_BROKERS: $KAFKA_BROKERS
+  TF_VAR_KAFKA_SASL_USERNAME: $KAFKA_SASL_USERNAME
+  TF_VAR_KAFKA_SASL_PASSWORD: $KAFKA_SASL_PASSWORD
+
+  # Unifonic
+  TF_VAR_APP_SID: $APP_SID
+  TF_VAR_SENDER_ID: $SENDER_ID
+
+  # Keycloak
+  TF_VAR_KC_DB_URL: $KC_DB_URL
+  TF_VAR_KC_DB_USERNAME: $KC_DB_USERNAME
+  TF_VAR_KC_DB_PASSWORD: $KC_DB_PASSWORD
+  TF_VAR_KEYCLOAK_ADMIN: $KEYCLOAK_ADMIN
+  TF_VAR_KEYCLOAK_ADMIN_PASSWORD: $KEYCLOAK_ADMIN_PASSWORD
+
+  # Keycloak spring
+  TF_VAR_KEYCLOAK_GENERATE_OTP_URL: $KEYCLOAK_GENERATE_OTP_URL
+  TF_VAR_KEYCLOAK_VALIDATE_OTP_URL: $KEYCLOAK_VALIDATE_OTP_URL
+  TF_VAR_KAFKA_GENERATE_OTP_TOPIC: $KAFKA_GENERATE_OTP_TOPIC
+  TF_VAR_KAFKA_ON: $KAFKA_ON
+  TF_VAR_KEYCLOAK_SERVER_URL: $KEYCLOAK_SERVER_URL
+  TF_VAR_KEYCLOAK_REALM: $KEYCLOAK_REALM
+  TF_VAR_KEYCLOAK_RESOURCE: $KEYCLOAK_RESOURCE
+  TF_VAR_KEYCLOAK_GRANT_TYPE: $KEYCLOAK_GRANT_TYPE
+  TF_VAR_KEYCLOAK_CLIENT_ID: $KEYCLOAK_CLIENT_ID
+  TF_VAR_KEYCLOAK_CLIENT_SECRET: $KEYCLOAK_CLIENT_SECRET
+  TF_VAR_SPRING_PROFILES_ACTIVE: $SPRING_PROFILES_ACTIVE
+  TF_VAR_CORS_ALLOWED_HOSTS: $CORS_ALLOWED_HOSTS
+
+  # Unleash Proxy
+  TF_VAR_UNLEASH_URL: $UNLEASH_URL
+  TF_VAR_UNLEASH_PROXY_SECRETS: $UNLEASH_PROXY_SECRETS
+  TF_VAR_UNLEASH_INSTANCE_ID: $UNLEASH_INSTANCE_ID
+  TF_VAR_UNLEASH_API_TOKEN: $UNLEASH_API_TOKEN
+  TF_VAR_UNLEASH_PROXY_CLIENT_KEYS: $UNLEASH_PROXY_CLIENT_KEYS
+  TF_VAR_UNLEASH_APP_NAME: $UNLEASH_APP_NAME
+
+  # Keycloak openid
+  TF_VAR_KEYCLOAK_OPENID_CLIENT_ID: $KEYCLOAK_OPENID_CLIENT_ID
+  TF_VAR_KEYCLOAK_OPENID_CLIENT_SECRET: $KEYCLOAK_OPENID_CLIENT_SECRET
+
+before_script:
+  - apk --no-cache add jq
+  - alias convert_report="jq -r '([.resource_changes[]?.change.actions?]|flatten)|{\"create\":(map(select(.==\"create\"))|length),\"update\":(map(select(.==\"update\"))|length),\"delete\":(map(select(.==\"delete\"))|length)}'"
+
+stages:
+  - init
+  - validate
+  - build
+  - deploy
+
+init:
+  stage: init
+  script:
+    - gitlab-terraform init
+
+validate:
+  extends: .terraform:validate
+
+build:
+  extends: .terraform:build
+  script:
+    - gitlab-terraform plan
+    - gitlab-terraform plan-json
+  artifacts:
+    name: plan
+    paths:
+      - ${TF_ROOT}/plan.cache
+    reports:
+      terraform: ${TF_ROOT}/plan.json
+
+deploy:
+  extends: .terraform:deploy
+  dependencies:
+    - build

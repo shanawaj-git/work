@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Summary/> should render and match the snapshot 1`] = `
+<div
+  class="sc-bdVaJa iNQdlQ"
+>
+  <div
+    class="sc-htpNat clYgmQ"
+  >
+    <img
+      alt="header-img"
+      class="sc-bxivhb cCoFGA"
+      src="IMAGE_MOCK"
+    />
+  </div>
+  <div
+    class="sc-ifAKCX gbuHPh"
+  >
+    <div
+      class="sc-bwzfXH hiyxzn"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h2 css-1jfg05l-MuiTypography-root"
+      >
+        Prescription Sent
+      </h2>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 suffix-title css-qu1isr-MuiTypography-root"
+      >
+        for Approval
+      </h1>
+    </div>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1reifv3-MuiTypography-root"
+    >
+      Your prescription has been sent to Allianz for approval
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 bold-text css-1reifv3-MuiTypography-root"
+    >
+      We notify you via text message on the status of your insurance. Post
+            which you can place your order for delivery.
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomSheet Should Render BottomSheet 1`] = `
+<div
+  aria-modal="true"
+  data-rsbs-overlay="true"
+  role="dialog"
+  tabindex="-1"
+>
+  <div
+    data-rsbs-header="true"
+  />
+  <div
+    data-rsbs-scroll="true"
+  >
+    <div
+      data-rsbs-content="true"
+    >
+      <span
+        data-testid="test"
+      >
+        Testing
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`BottomSheet Should Render Footer 1`] = `
+<div
+  aria-modal="true"
+  data-rsbs-overlay="true"
+  role="dialog"
+  tabindex="-1"
+>
+  <div
+    data-rsbs-header="true"
+  />
+  <div
+    data-rsbs-scroll="true"
+  >
+    <div
+      data-rsbs-content="true"
+    >
+      <span
+        data-testid="test"
+      >
+        Testing
+      </span>
+    </div>
+  </div>
+  <div
+    data-rsbs-footer="true"
+  >
+    <span
+      data-testid="footer"
+    >
+      Footer
+    </span>
+  </div>
+</div>
+`;
+
+exports[`BottomSheet Should Render Header 1`] = `
+<div
+  aria-modal="true"
+  data-rsbs-overlay="true"
+  role="dialog"
+  tabindex="-1"
+>
+  <div
+    data-rsbs-header="true"
+  />
+  <div
+    data-rsbs-scroll="true"
+  >
+    <div
+      data-rsbs-content="true"
+    >
+      <span
+        data-testid="test"
+      >
+        Testing
+      </span>
+    </div>
+  </div>
+  <div
+    data-rsbs-footer="true"
+  >
+    <span
+      data-testid="header"
+    >
+      Header
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EducationalScreen/> should render and match the snapshot 1`] = `
+<div
+  class="sc-EHOje liupJE"
+>
+  <div
+    style="overflow-x: hidden; flex: 1; flex-direction: flex; height: 100%;"
+  >
+    <div
+      class="react-swipeable-view-container"
+      style="flex-direction: row; transition: all 0s ease 0s; direction: ltr; display: flex; will-change: transform;"
+    >
+      <div
+        aria-hidden="false"
+        data-swipeable="true"
+        style="width: 100%; flex-shrink: 0; overflow: auto;"
+      >
+        <div
+          class="sc-bdVaJa kgLnZe"
+        >
+          <img
+            alt="header_img"
+            src="IMAGE_MOCK"
+          />
+        </div>
+        <div
+          class="sc-bwzfXH kPCRcv"
+        >
+          <p>
+            Living with 
+            <strong>
+              Diabetes
+            </strong>
+          </p>
+        </div>
+        <div
+          class="sc-htpNat eYTBro"
+        >
+          <p>
+            <span
+              style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"
+            >
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiMobileStepper-root MuiMobileStepper-positionRight css-rh92k-MuiPaper-root-MuiMobileStepper-root"
+  >
+    <button
+      class="root StyledButton-sc-1apep4b-0 bXswYh MuiButton-root text MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root Mui-disabled  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      data-testid="back-btn"
+      disabled=""
+      tabindex="-1"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        <button
+          class="sc-ifAKCX SZkMy"
+        >
+          Skip
+        </button>
+      </div>
+    </button>
+    <div
+      class="MuiMobileStepper-dots css-1384nzf-MuiMobileStepper-dots"
+    >
+      <div
+        class="MuiMobileStepper-dot MuiMobileStepper-dotActive css-26w9jf-MuiMobileStepper-dot"
+      />
+      <div
+        class="MuiMobileStepper-dot css-114p2tk-MuiMobileStepper-dot"
+      />
+      <div
+        class="MuiMobileStepper-dot css-114p2tk-MuiMobileStepper-dot"
+      />
+      <div
+        class="MuiMobileStepper-dot css-114p2tk-MuiMobileStepper-dot"
+      />
+    </div>
+    <button
+      class="root StyledButton-sc-1apep4b-0 bXswYh MuiButton-root text MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      data-testid="next-btn"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        <button
+          class="sc-bxivhb eZnAXq"
+        >
+          Next
+        </button>
+      </div>
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: mock-server-open-api
+  title: Escribe Mock Server
+  description: Mock server used for mocking data (prescriptions) to kafka instance.
+  tags:
+    - asyncapi
+    - kafka
+    - restapi
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://docs.nestjs.com/microservices/kafka
+      title: NestJS kafka integration
+      icon: code
+spec:
+  type: openapi
+  owner: nexthealth
+  lifecycle: experimental
+  definition:
+    $text: ./docs/openAPI.json

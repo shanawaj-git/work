@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterListItem.js index Should display CartListItem in a row with product image and 2 buttons for increment and decrement  1`] = `
+<ForwardRef(StyledCounterListItem)
+  count={1}
+  image={
+    Object {
+      "cartImage": "IMAGE_MOCK",
+    }
+  }
+  onDecrement={[Function]}
+  onIncrement={[Function]}
+  subTitle="AED 13.50"
+  title="Panadol"
+/>
+`;
+
+exports[`CounterListItem.js index Should display CartListItem in a row with product image and 2 buttons for increment and decrement  along with default value for the count 1`] = `
+<ForwardRef(StyledCounterListItem)
+  count={1}
+  image={
+    Object {
+      "cartImage": "IMAGE_MOCK",
+    }
+  }
+  onDecrement={[Function]}
+  onIncrement={[Function]}
+  subTitle="AED 13.50"
+  title="Panadol"
+/>
+`;

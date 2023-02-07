@@ -1,0 +1,62 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.0'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = "com.albatha.paymentservice"
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+def springBootVersion = '2.7.1'
+def kafkaVersion = '2.8.6'
+def mongockVersion = "5.1.0"
+def stripeVersion = '20.135.0'
+def modelMapperVersion ='3.1.0'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+	implementation.exclude module: 'spring-boot-starter-tomcat'
+	implementation.exclude group: 'org.apache.tomcat'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation "org.springframework.boot:spring-boot-starter-webflux:${springBootVersion}"
+	implementation "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+	implementation "org.springframework.boot:spring-boot-starter-data-mongodb-reactive"
+
+	implementation "io.mongock:mongock-springboot:${mongockVersion}"
+	implementation "io.mongock:mongodb-reactive-driver:${mongockVersion}"
+	implementation "org.modelmapper:modelmapper:${modelMapperVersion}"
+
+	implementation "org.springframework.kafka:spring-kafka:${kafkaVersion}"
+	implementation "com.stripe:stripe-java:${stripeVersion}"
+
+	implementation "org.hibernate.validator:hibernate-validator"
+
+	compileOnly "org.projectlombok:lombok"
+	annotationProcessor "org.projectlombok:lombok"
+
+	developmentOnly "org.springframework.boot:spring-boot-devtools"
+
+	implementation 'io.github.springwolf:springwolf-kafka:0.6.1'
+	runtimeOnly 'io.github.springwolf:springwolf-ui:0.4.0'
+	implementation 'org.springdoc:springdoc-openapi-webflux-core:1.6.9'
+	implementation 'org.springdoc:springdoc-openapi-webflux-ui:1.6.9'
+
+	testImplementation "org.springframework.boot:spring-boot-starter-test"
+	testImplementation 'io.projectreactor:reactor-test'
+	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo.spring:1.1.0-spring27x'
+	testImplementation "org.springframework.kafka:spring-kafka-test:${kafkaVersion}"
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton.js index Should display RadioButton with primary color style 1`] = `
+<ForwardRef(Styled(Component))
+  disabled={false}
+  groupLabel="Gender"
+  row={true}
+  values={
+    Object {
+      "Female": "girl",
+      "Male": "boy",
+    }
+  }
+/>
+`;
+
+exports[`RadioButton.js index Should display disabled RadioButton 1`] = `
+<ForwardRef(Styled(Component))
+  disabled={true}
+  groupLabel="Gender"
+  row={true}
+  values={
+    Object {
+      "Female": "girl",
+      "Male": "boy",
+    }
+  }
+/>
+`;

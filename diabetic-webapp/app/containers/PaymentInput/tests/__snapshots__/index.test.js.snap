@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PaymentInput /> should render and match the snapshot 1`] = `
+<div
+  class="sc-htpNat gHbikN"
+>
+  <img
+    class="sc-ifAKCX PtYSZ"
+    src="IMAGE_MOCK"
+  />
+  <div
+    class="sc-EHOje SMKFC"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-bZQynM gWMWXB css-1reifv3-MuiTypography-root"
+    >
+      Payment
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-gzVnrw gIrCGn css-1reifv3-MuiTypography-root"
+    >
+      details
+    </p>
+  </div>
+  <div
+    class="sc-htoDjs jqrcbN"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-dnqmqq ewloC css-1reifv3-MuiTypography-root"
+    >
+      Total to pay
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-iwsKbI guEjle css-1reifv3-MuiTypography-root"
+    >
+      AED 123.33
+    </p>
+  </div>
+  <form
+    class="sc-bdVaJa hskcns"
+    id="payment-form"
+  >
+    <div />
+    <div
+      class="sc-bwzfXH dwOEUG"
+    >
+      <button
+        class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+        data-testid="continueButton"
+        id="submit"
+        tabindex="0"
+        type="submit"
+      >
+        <div
+          style="visibility: visible;"
+        >
+          Continue
+        </div>
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`<PaymentInput /> should render the loader while api calls are in progress 1`] = `
+<div
+  class="sc-htpNat gHbikN"
+>
+  <img
+    class="sc-ifAKCX PtYSZ"
+    src="IMAGE_MOCK"
+  />
+  <div
+    class="sc-bxivhb ihiqzF"
+  >
+    <div
+      class="MuiBox-root css-15t75f3"
+    >
+      <span
+        aria-valuenow="100"
+        class="MuiCircularProgress-root MuiCircularProgress-determinate MuiCircularProgress-colorPrimary css-1e5kc5y-MuiCircularProgress-root"
+        role="progressbar"
+        style="width: 90px; height: 90px; transform: rotate(-90deg);"
+      >
+        <svg
+          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleDeterminate css-oxts8u-MuiCircularProgress-circle"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="21"
+            stroke-width="2"
+            style="stroke-dasharray: 131.947; stroke-dashoffset: 0.000px;"
+          />
+        </svg>
+      </span>
+      <svg
+        style="position: absolute;"
+      >
+        <defs>
+          <lineargradient
+            id="my_gradient"
+          >
+            <stop
+              offset="0%"
+              stop-color="#00664f"
+            />
+            <stop
+              offset="100%"
+              stop-color="#c5c5c5"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <span
+        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1utiupp-MuiCircularProgress-root"
+        role="progressbar"
+        style="width: 90px; height: 90px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate MuiCircularProgress-circleDisableShrink css-79nvmn-MuiCircularProgress-circle"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="21"
+            stroke-width="2"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,47 @@
+{
+  "name": "pharmacy-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "config:dump": "strapi configuration:dump --file ./config/dump/config-dump.json",
+    "config:restore": "strapi configuration:restore --file ./config/dump/config-dump.json --strategy replace",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "format": "prettier --write .",
+    "test": "jest --forceExit --runInBand --detectOpenHandles",
+    "test-ci": "jest --detectOpenHandles --forceExit --watchAll=false --ci --reporters=default --reporters=jest-junit"
+  },
+  "devDependencies": {
+    "jest": "28.1.0",
+    "jest-junit": "13.2.0",
+    "prettier": "2.5.1",
+    "sqlite3": "5.0.11",
+    "supertest": "6.2.4"
+  },
+  "dependencies": {
+    "@albathanext/anext-sms-sender": "0.1.1",
+    "@strapi/plugin-i18n": "4.3.4",
+    "@strapi/plugin-users-permissions": "4.3.4",
+    "@strapi/provider-email-nodemailer": "4.4.3",
+    "@strapi/strapi": "4.3.4",
+    "deepmerge": "4.2.2",
+    "handlebars": "4.7.7",
+    "http-errors": "2.0.0",
+    "pg": "8.7.3",
+    "stripe": "10.15.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "97889c10-858a-4fab-b30c-0fc21378f0be"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

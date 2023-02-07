@@ -1,0 +1,8 @@
+mutation {
+  createPatient(input: {patId: "232222222", emiratesId: "EMIRATESID",
+  firstName: "First Name" ,
+  insurances: [{policyNumber: "POLICY NUMBER",
+  provider: {name: "ProviderName", code: "Provider Code", eClaimLinkId: "Provide eclaims "}}]}) {
+    success
+  }
+}

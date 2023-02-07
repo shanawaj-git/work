@@ -1,0 +1,38 @@
+stages:
+  - buildapp
+  - buildimage
+
+services:
+  - docker:dind
+
+variables:
+  tag: ':latest'
+
+build-code:
+  image: node:16-bullseye
+  stage: buildapp
+  script:
+    - apt-get update && apt-get install -y libsqlite3-dev python3 cmake g++ && rm -rf /var/lib/apt/lists/* && yarn config set python /usr/bin/python3
+    - yarn install --frozen-lockfile
+    - yarn build
+  artifacts:
+    paths:
+      - packages/backend/dist
+  only:
+    - main
+    - merge_requests
+build-image:
+  image: docker:latest
+  stage: buildimage
+  dependencies:
+    - build-code
+  before_script:
+    - docker -v
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build  --pull -t "$CI_REGISTRY_IMAGE$tag" . -f packages/backend/Dockerfile
+    - docker push "$CI_REGISTRY_IMAGE$tag"
+    - echo "Build complete."
+  only:
+    - main
+    - merge_requests

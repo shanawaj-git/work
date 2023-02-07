@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarSelection /> it should match snapshot 1`] = `
+<div>
+  <div
+    class="min-h-screen flex flex-col h-screen"
+    data-testid="CarSelection"
+  >
+    <div
+      class="min-h-screen p-6 "
+      data-testid="PageHeader"
+      style="min-height: fit-content;"
+    >
+      <div>
+        <button
+          class="root StyledButton-sc-1apep4b-0 bXswYh mb-5 min-w-[40px] min-h-[40px] w-[40px] h-[40px] MuiButton-root text MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+          data-testid="car-selection-back-button"
+          style="border-color: rgba(220, 220, 220, 0.2);"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            style="visibility: visible;"
+          >
+            <img
+              alt="BackArrow"
+              src="arrow-back-icon.svg"
+            />
+          </div>
+        </button>
+        <div
+          data-testid="article-component"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 text-xl whitespace-pre-line !mt-4 css-1uw3dvl-MuiTypography-root"
+            data-testid="article-component-title"
+          >
+            <span>
+               
+              What kind of car do you drive?
+            </span>
+          </p>
+          <div
+            class="text-xl whitespace-pre-line !mt-4"
+            color="#FCF7F7"
+          />
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root sc-8e8f860-0 jGlalA css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+        >
+          <div
+            class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedStart css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <div
+              class="MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-ittuaa-MuiInputAdornment-root"
+            >
+              <span
+                class="notranslate"
+              >
+                ​
+              </span>
+              <img
+                alt="SearchIcon"
+                src="search-icon.svg"
+              />
+            </div>
+            <input
+              aria-invalid="false"
+              class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedStart css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input"
+              data-testid="carSelection-search"
+              id=":ra:"
+              placeholder="Search by brand or model of your car"
+              type="text"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-nnbavb"
+              >
+                <span
+                  class="notranslate"
+                >
+                  ​
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="flex p-2 mt-3 align-middle"
+          style="background-color: rgba(227, 246, 7, 0.102); border-radius: 4px;"
+        >
+          <img
+            alt="time-icon.svg"
+            src="time-icon.svg"
+          />
+          <a
+            class="pl-2 font-[500] text-[14px] leading-6 text-left tracking-[.03px]"
+            style="color: rgb(226, 95, 109);"
+          >
+            Save time by inputting VIN code
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex-1 h-full p-6 pt-0 overflow-scroll overflow-y-scroll"
+      data-testid="CarMakers"
+    >
+      <div
+        class="pt-6 "
+        data-testid="CarMaker-1"
+      >
+        <div
+          class="flex items-center justify-between"
+        >
+          <p
+            class="not-italic font-[500] leading-5.5 text-[17px]"
+            style="border-color: #e25f6d;"
+          >
+            Audi
+          </p>
+          <div>
+            <img
+              alt="Audi"
+              class="h-5.25 w-9 left-1.25 top-4.5 rounded-none"
+              src="https://autofixdev.blob.core.windows.net/demo/audi-logo.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex p-5 mt-3 items-center justify-between rounded border cursor-pointer border-solid border-[#00000014]"
+          data-testid="itemCardWithAction-1"
+          style="gap: 10px; background-color: rgb(255, 255, 255);"
+        >
+          <p
+            class="font-normal font-[500] text-base leading-6"
+          >
+            A1
+          </p>
+          <div>
+            <img
+              alt="forward action icon"
+              class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+              src="arrow-forward-icon.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex p-5 mt-3 items-center justify-between rounded border cursor-pointer border-solid border-[#00000014]"
+          data-testid="itemCardWithAction-2"
+          style="gap: 10px; background-color: rgb(255, 255, 255);"
+        >
+          <p
+            class="font-normal font-[500] text-base leading-6"
+          >
+            A2
+          </p>
+          <div>
+            <img
+              alt="forward action icon"
+              class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+              src="arrow-forward-icon.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex p-5 mt-3 items-center justify-between rounded border cursor-pointer border-solid border-[#00000014]"
+          data-testid="itemCardWithAction-3"
+          style="gap: 10px; background-color: rgb(255, 255, 255);"
+        >
+          <p
+            class="font-normal font-[500] text-base leading-6"
+          >
+            A3
+          </p>
+          <div>
+            <img
+              alt="forward action icon"
+              class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+              src="arrow-forward-icon.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex p-5 mt-3 items-center justify-between rounded border cursor-pointer border-solid border-[#00000014]"
+          data-testid="itemCardWithAction-9"
+          style="gap: 10px; background-color: rgb(255, 255, 255);"
+        >
+          <p
+            class="font-normal font-[500] text-base leading-6"
+          >
+            A4
+          </p>
+          <div>
+            <img
+              alt="forward action icon"
+              class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+              src="arrow-forward-icon.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="pt-6 "
+        data-testid="CarMaker-2"
+      >
+        <div
+          class="flex items-center justify-between"
+        >
+          <p
+            class="not-italic font-[500] leading-5.5 text-[17px]"
+            style="border-color: #e25f6d;"
+          >
+            Toyota
+          </p>
+          <div>
+            <img
+              alt="Toyota"
+              class="h-5.25 w-9 left-1.25 top-4.5 rounded-none"
+              src="https://autofixdev.blob.core.windows.net/demo/toyota-logo.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex p-5 mt-3 items-center justify-between rounded border cursor-pointer border-solid border-[#00000014]"
+          data-testid="itemCardWithAction-4"
+          style="gap: 10px; background-color: rgb(255, 255, 255);"
+        >
+          <p
+            class="font-normal font-[500] text-base leading-6"
+          >
+            Corolla
+          </p>
+          <div>
+            <img
+              alt="forward action icon"
+              class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+              src="arrow-forward-icon.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex p-5 mt-3 items-center justify-between rounded border cursor-pointer border-solid border-[#00000014]"
+          data-testid="itemCardWithAction-5"
+          style="gap: 10px; background-color: rgb(255, 255, 255);"
+        >
+          <p
+            class="font-normal font-[500] text-base leading-6"
+          >
+            Land Cruiser
+          </p>
+          <div>
+            <img
+              alt="forward action icon"
+              class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+              src="arrow-forward-icon.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex p-5 mt-3 items-center justify-between rounded border cursor-pointer border-solid border-[#00000014]"
+          data-testid="itemCardWithAction-6"
+          style="gap: 10px; background-color: rgb(255, 255, 255);"
+        >
+          <p
+            class="font-normal font-[500] text-base leading-6"
+          >
+            Yaris
+          </p>
+          <div>
+            <img
+              alt="forward action icon"
+              class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+              src="arrow-forward-icon.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="flex p-5 mt-3 items-center justify-between rounded border cursor-pointer border-solid border-[#00000014]"
+          data-testid="itemCardWithAction-7"
+          style="gap: 10px; background-color: rgb(255, 255, 255);"
+        >
+          <p
+            class="font-normal font-[500] text-base leading-6"
+          >
+            Camry
+          </p>
+          <div>
+            <img
+              alt="forward action icon"
+              class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+              src="arrow-forward-icon.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

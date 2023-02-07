@@ -1,0 +1,12 @@
+type CreatePatientOutput
+{
+    success: Boolean!
+    data: Patient
+    error: Error
+}
+
+type Patient{
+    patId: String
+    emiratesId: String
+    mohId: String
+}

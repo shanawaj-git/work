@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginSelection /> should render and match the snapshot when UAE pass option disabled 1`] = `
+<div
+  class="sc-bdVaJa iJWrLj"
+>
+  <div
+    class="sc-bwzfXH dYjQEO"
+  >
+    <div
+      class="StyledHeroSection__HeroSectionWrapper-sc-5kauh3-0 bGqmiO"
+    >
+      <img
+        alt="Welcome to"
+        class="title-img"
+        src="/cms/static/assets/hero-section-image-min.png?locale=en"
+      />
+      <div
+        class="title-container"
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+        >
+          Welcome to
+        </h1>
+        <img
+          alt="temp"
+          class="title-logo"
+          src="/cms/static/assets/next-health-logo-primary.svg?locale=en"
+        />
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 headline css-1reifv3-MuiTypography-root"
+      >
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <div
+    class="signin-options-container"
+  >
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD mobile-option-button MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        Sign in using mobile number
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<LoginSelection /> should render and match the snapshot when UAE pass option enabled 1`] = `
+<div
+  class="sc-bdVaJa iJWrLj"
+>
+  <div
+    class="sc-bwzfXH dYjQEO"
+  >
+    <div
+      class="StyledHeroSection__HeroSectionWrapper-sc-5kauh3-0 bGqmiO"
+    >
+      <img
+        alt="Welcome to"
+        class="title-img"
+        src="/cms/static/assets/hero-section-image-min.png?locale=en"
+      />
+      <div
+        class="title-container"
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+        >
+          Welcome to
+        </h1>
+        <img
+          alt="temp"
+          class="title-logo"
+          src="/cms/static/assets/next-health-logo-primary.svg?locale=en"
+        />
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 headline css-1reifv3-MuiTypography-root"
+      >
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <div
+    class="signin-options-container"
+  >
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD mobile-option-button MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        Sign in using mobile number
+      </div>
+    </button>
+    <p
+      class="MuiTypography-root MuiTypography-body1 orLabel css-1reifv3-MuiTypography-root"
+    >
+      OR
+    </p>
+    <button
+      class="root StyledButton-sc-1apep4b-0 fnVTNv uaepass-option-button MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root  css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        <img
+          alt="uae_pass_logo"
+          class="uaepass-logo"
+          src="/cms/static/assets/uaepass-logo.svg?locale=en"
+        />
+        Sign in with UAE PASS
+      </div>
+    </button>
+  </div>
+</div>
+`;

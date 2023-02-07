@@ -1,0 +1,7 @@
+mutation CreatePatient(input: PatientInput!) {
+  createPatient(input: $input) {
+    success
+    data
+    error
+  }
+}

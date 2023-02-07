@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildMessageBody should generate message body in case template and params exist 1`] = `
+"Hi test, your prescription is ready! Click the link below to verify your identity and view your prescription. localHost.com
+"
+`;

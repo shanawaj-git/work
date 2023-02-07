@@ -1,0 +1,477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Address Search Component.js index Check If provided Search Results, its rendering the list 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div />
+    <div>
+      <div
+        class="px-6 pt-7"
+        data-testid="rendering-search"
+      >
+        <h3
+          class="MuiTypography-root MuiTypography-h3 css-1ewfuka-MuiTypography-root"
+        >
+          <p
+            class="font-light"
+            data-testid="rendering-title"
+          >
+            title
+          </p>
+          <p
+            class="font-bold"
+          >
+            title2
+          </p>
+        </h3>
+        <div
+          class="root MuiFormControl-root styledComponents__FormControl-lwe1h6-0 jHalSF css-1nrlq1o-MuiFormControl-root"
+        >
+          <div
+            class="MuiFormControl-root MuiTextField-root css-1vly5ry-MuiFormControl-root-MuiTextField-root"
+          >
+            <div
+              class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
+            >
+              <input
+                aria-invalid="false"
+                autocomplete="on"
+                class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+                data-testid="search-input"
+                id="my-input-multisearch"
+                name="search"
+                placeholder="Search for..."
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          
+        </div>
+        <div
+          class="h-3"
+        />
+        <div
+          aria-hidden="true"
+          data-testid="rendering-searchList"
+        >
+          <div>
+            <div
+              class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+            >
+              <img
+                alt="One Central H2B Hotel - Dubai World Trade Centre (DWTC)"
+                class="image-card-icon"
+                src="IMAGE_MOCK"
+              />
+              <div
+                class="image-card-content"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+                >
+                  One Central H2B Hotel - Dubai World Trade Centre (DWTC)
+                </h5>
+                <span
+                  class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+                >
+                  Dubai
+                </span>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+        <div
+          aria-hidden="true"
+          data-testid="rendering-searchList"
+        >
+          <div>
+            <div
+              class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+            >
+              <img
+                alt="25hours Hotel One Central"
+                class="image-card-icon"
+                src="IMAGE_MOCK"
+              />
+              <div
+                class="image-card-content"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+                >
+                  25hours Hotel One Central
+                </h5>
+                <span
+                  class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+                >
+                  Trade Center St
+                </span>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+        <div
+          aria-hidden="true"
+          data-testid="rendering-searchList"
+        >
+          <div>
+            <div
+              class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+            >
+              <img
+                alt="ibis One Central"
+                class="image-card-icon"
+                src="IMAGE_MOCK"
+              />
+              <div
+                class="image-card-content"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+                >
+                  ibis One Central
+                </h5>
+                <span
+                  class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+                >
+                  Dubai
+                </span>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+        <div
+          aria-hidden="true"
+          data-testid="rendering-searchList"
+        >
+          <div>
+            <div
+              class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+            >
+              <img
+                alt="The Offices 3, One Central"
+                class="image-card-icon"
+                src="IMAGE_MOCK"
+              />
+              <div
+                class="image-card-content"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+                >
+                  The Offices 3, One Central
+                </h5>
+                <span
+                  class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+                >
+                  Dubai
+                </span>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+        <div
+          aria-hidden="true"
+          data-testid="rendering-searchList"
+        >
+          <div>
+            <div
+              class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+            >
+              <img
+                alt="The Offices 4, One Central"
+                class="image-card-icon"
+                src="IMAGE_MOCK"
+              />
+              <div
+                class="image-card-content"
+              >
+                <h5
+                  class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+                >
+                  The Offices 4, One Central
+                </h5>
+                <span
+                  class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+                >
+                  Dubai
+                </span>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="px-6 pt-7"
+      data-testid="rendering-search"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-h3 css-1ewfuka-MuiTypography-root"
+      >
+        <p
+          class="font-light"
+          data-testid="rendering-title"
+        >
+          title
+        </p>
+        <p
+          class="font-bold"
+        >
+          title2
+        </p>
+      </h3>
+      <div
+        class="root MuiFormControl-root styledComponents__FormControl-lwe1h6-0 jHalSF css-1nrlq1o-MuiFormControl-root"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1vly5ry-MuiFormControl-root-MuiTextField-root"
+        >
+          <div
+            class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
+          >
+            <input
+              aria-invalid="false"
+              autocomplete="on"
+              class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+              data-testid="search-input"
+              id="my-input-multisearch"
+              name="search"
+              placeholder="Search for..."
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        
+      </div>
+      <div
+        class="h-3"
+      />
+      <div
+        aria-hidden="true"
+        data-testid="rendering-searchList"
+      >
+        <div>
+          <div
+            class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+          >
+            <img
+              alt="One Central H2B Hotel - Dubai World Trade Centre (DWTC)"
+              class="image-card-icon"
+              src="IMAGE_MOCK"
+            />
+            <div
+              class="image-card-content"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+              >
+                One Central H2B Hotel - Dubai World Trade Centre (DWTC)
+              </h5>
+              <span
+                class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+              >
+                Dubai
+              </span>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+      <div
+        aria-hidden="true"
+        data-testid="rendering-searchList"
+      >
+        <div>
+          <div
+            class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+          >
+            <img
+              alt="25hours Hotel One Central"
+              class="image-card-icon"
+              src="IMAGE_MOCK"
+            />
+            <div
+              class="image-card-content"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+              >
+                25hours Hotel One Central
+              </h5>
+              <span
+                class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+              >
+                Trade Center St
+              </span>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+      <div
+        aria-hidden="true"
+        data-testid="rendering-searchList"
+      >
+        <div>
+          <div
+            class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+          >
+            <img
+              alt="ibis One Central"
+              class="image-card-icon"
+              src="IMAGE_MOCK"
+            />
+            <div
+              class="image-card-content"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+              >
+                ibis One Central
+              </h5>
+              <span
+                class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+              >
+                Dubai
+              </span>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+      <div
+        aria-hidden="true"
+        data-testid="rendering-searchList"
+      >
+        <div>
+          <div
+            class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+          >
+            <img
+              alt="The Offices 3, One Central"
+              class="image-card-icon"
+              src="IMAGE_MOCK"
+            />
+            <div
+              class="image-card-content"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+              >
+                The Offices 3, One Central
+              </h5>
+              <span
+                class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+              >
+                Dubai
+              </span>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+      <div
+        aria-hidden="true"
+        data-testid="rendering-searchList"
+      >
+        <div>
+          <div
+            class="StyledImageCardWithCta__ImageCardWithCtaWrapper-sc-1ntrkoy-0 jcDmhc"
+          >
+            <img
+              alt="The Offices 4, One Central"
+              class="image-card-icon"
+              src="IMAGE_MOCK"
+            />
+            <div
+              class="image-card-content"
+            >
+              <h5
+                class="MuiTypography-root MuiTypography-h5 image-card-title css-11estw0-MuiTypography-root"
+              >
+                The Offices 4, One Central
+              </h5>
+              <span
+                class="MuiTypography-root MuiTypography-caption image-card-subTitle css-1393mlh-MuiTypography-root"
+              >
+                Dubai
+              </span>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllBySelectText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getBySelectText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllBySelectText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryBySelectText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

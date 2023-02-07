@@ -1,0 +1,3366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Marker.js index Pass map ref prop with _ref prop 1`] = `
+ReactTestInstance {
+  "_fiber": FiberNode {
+    "_debugHookTypes": Array [
+      "useRef",
+      "useEffect",
+      "useEffect",
+    ],
+    "_debugID": 34,
+    "_debugIsCurrentlyTiming": false,
+    "_debugOwner": null,
+    "_debugSource": null,
+    "alternate": null,
+    "child": null,
+    "childExpirationTime": 0,
+    "contextDependencies": null,
+    "effectTag": 517,
+    "elementType": [Function],
+    "expirationTime": 0,
+    "firstEffect": null,
+    "index": 0,
+    "key": null,
+    "lastEffect": null,
+    "memoizedProps": Object {
+      "Map": Object {
+        "mapRef": Object {},
+      },
+      "_ref": true,
+      "initalCordinates": Array [
+        25.194365,
+        55.241362,
+      ],
+    },
+    "memoizedState": Object {
+      "baseState": null,
+      "baseUpdate": null,
+      "memoizedState": Object {
+        "current": undefined,
+      },
+      "next": Object {
+        "baseState": null,
+        "baseUpdate": null,
+        "memoizedState": Object {
+          "create": [Function],
+          "deps": Array [
+            undefined,
+          ],
+          "destroy": undefined,
+          "next": Object {
+            "create": [Function],
+            "deps": Array [
+              undefined,
+            ],
+            "destroy": undefined,
+            "next": [Circular],
+            "tag": 192,
+          },
+          "tag": 192,
+        },
+        "next": Object {
+          "baseState": null,
+          "baseUpdate": null,
+          "memoizedState": Object {
+            "create": [Function],
+            "deps": Array [
+              undefined,
+            ],
+            "destroy": undefined,
+            "next": Object {
+              "create": [Function],
+              "deps": Array [
+                undefined,
+              ],
+              "destroy": undefined,
+              "next": [Circular],
+              "tag": 192,
+            },
+            "tag": 192,
+          },
+          "next": null,
+          "queue": null,
+        },
+        "queue": null,
+      },
+      "queue": null,
+    },
+    "mode": 0,
+    "nextEffect": null,
+    "pendingProps": Object {
+      "Map": Object {
+        "mapRef": Object {},
+      },
+      "_ref": true,
+      "initalCordinates": Array [
+        25.194365,
+        55.241362,
+      ],
+    },
+    "ref": null,
+    "return": FiberNode {
+      "_debugHookTypes": null,
+      "_debugID": 32,
+      "_debugIsCurrentlyTiming": false,
+      "_debugOwner": null,
+      "_debugSource": null,
+      "alternate": FiberNode {
+        "_debugHookTypes": null,
+        "_debugID": 32,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": null,
+        "_debugSource": null,
+        "alternate": [Circular],
+        "child": null,
+        "childExpirationTime": 0,
+        "contextDependencies": null,
+        "effectTag": 0,
+        "elementType": null,
+        "expirationTime": 1073741823,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": null,
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": null,
+        "sibling": null,
+        "stateNode": Object {
+          "containerInfo": Object {
+            "children": Array [],
+            "createNodeMock": [Function],
+            "tag": "CONTAINER",
+          },
+          "context": Object {},
+          "current": [Circular],
+          "didError": false,
+          "earliestPendingTime": 0,
+          "earliestSuspendedTime": 0,
+          "expirationTime": 0,
+          "finishedWork": null,
+          "firstBatch": null,
+          "hydrate": false,
+          "latestPendingTime": 0,
+          "latestPingedTime": 0,
+          "latestSuspendedTime": 0,
+          "nextExpirationTimeToWorkOn": 0,
+          "nextScheduledRoot": null,
+          "pendingChildren": null,
+          "pendingCommitExpirationTime": 0,
+          "pendingContext": null,
+          "pingCache": null,
+          "timeoutHandle": -1,
+        },
+        "tag": 3,
+        "type": null,
+        "updateQueue": Object {
+          "baseState": null,
+          "firstCapturedEffect": null,
+          "firstCapturedUpdate": null,
+          "firstEffect": null,
+          "firstUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Marker
+                Map={
+                  Object {
+                    "mapRef": Object {},
+                  }
+                }
+                _ref={true}
+                initalCordinates={
+                  Array [
+                    25.194365,
+                    55.241362,
+                  ]
+                }
+              />,
+            },
+            "tag": 0,
+          },
+          "lastCapturedEffect": null,
+          "lastCapturedUpdate": null,
+          "lastEffect": null,
+          "lastUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Marker
+                Map={
+                  Object {
+                    "mapRef": Object {},
+                  }
+                }
+                _ref={true}
+                initalCordinates={
+                  Array [
+                    25.194365,
+                    55.241362,
+                  ]
+                }
+              />,
+            },
+            "tag": 0,
+          },
+        },
+      },
+      "child": [Circular],
+      "childExpirationTime": 0,
+      "contextDependencies": null,
+      "effectTag": 0,
+      "elementType": null,
+      "expirationTime": 0,
+      "firstEffect": [Circular],
+      "index": 0,
+      "key": null,
+      "lastEffect": [Circular],
+      "memoizedProps": null,
+      "memoizedState": Object {
+        "element": <Marker
+          Map={
+            Object {
+              "mapRef": Object {},
+            }
+          }
+          _ref={true}
+          initalCordinates={
+            Array [
+              25.194365,
+              55.241362,
+            ]
+          }
+        />,
+      },
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": null,
+      "ref": null,
+      "return": null,
+      "sibling": null,
+      "stateNode": Object {
+        "containerInfo": Object {
+          "children": Array [],
+          "createNodeMock": [Function],
+          "tag": "CONTAINER",
+        },
+        "context": Object {},
+        "current": [Circular],
+        "didError": false,
+        "earliestPendingTime": 0,
+        "earliestSuspendedTime": 0,
+        "expirationTime": 0,
+        "finishedWork": null,
+        "firstBatch": null,
+        "hydrate": false,
+        "latestPendingTime": 0,
+        "latestPingedTime": 0,
+        "latestSuspendedTime": 0,
+        "nextExpirationTimeToWorkOn": 0,
+        "nextScheduledRoot": null,
+        "pendingChildren": null,
+        "pendingCommitExpirationTime": 0,
+        "pendingContext": null,
+        "pingCache": null,
+        "timeoutHandle": -1,
+      },
+      "tag": 3,
+      "type": null,
+      "updateQueue": Object {
+        "baseState": Object {
+          "element": <Marker
+            Map={
+              Object {
+                "mapRef": Object {},
+              }
+            }
+            _ref={true}
+            initalCordinates={
+              Array [
+                25.194365,
+                55.241362,
+              ]
+            }
+          />,
+        },
+        "firstCapturedEffect": null,
+        "firstCapturedUpdate": null,
+        "firstEffect": null,
+        "firstUpdate": null,
+        "lastCapturedEffect": null,
+        "lastCapturedUpdate": null,
+        "lastEffect": null,
+        "lastUpdate": null,
+      },
+    },
+    "sibling": null,
+    "stateNode": null,
+    "tag": 0,
+    "type": [Function],
+    "updateQueue": Object {
+      "lastEffect": Object {
+        "create": [Function],
+        "deps": Array [
+          undefined,
+        ],
+        "destroy": undefined,
+        "next": Object {
+          "create": [Function],
+          "deps": Array [
+            undefined,
+          ],
+          "destroy": undefined,
+          "next": [Circular],
+          "tag": 192,
+        },
+        "tag": 192,
+      },
+    },
+  },
+}
+`;
+
+exports[`Marker.js index Should render the marker 1`] = `<React.Fragment />`;
+
+exports[`Marker.js index test marker full lifecycle 1`] = `
+ReactTestInstance {
+  "_fiber": FiberNode {
+    "_debugHookTypes": Array [
+      "useRef",
+      "useEffect",
+      "useEffect",
+    ],
+    "_debugID": 7,
+    "_debugIsCurrentlyTiming": false,
+    "_debugOwner": null,
+    "_debugSource": null,
+    "alternate": null,
+    "child": null,
+    "childExpirationTime": 0,
+    "contextDependencies": null,
+    "effectTag": 517,
+    "elementType": [Function],
+    "expirationTime": 0,
+    "firstEffect": null,
+    "index": 0,
+    "key": null,
+    "lastEffect": null,
+    "memoizedProps": Object {
+      "initalCordinates": Array [
+        25.194365,
+        55.241362,
+      ],
+      "mapInstance": Object {
+        "id": 10,
+        "map": Object {
+          "addListener": [MockFunction],
+          "getCenter": [MockFunction],
+        },
+        "mapRef": Object {
+          "LatLng": [MockFunction],
+          "Point": [MockFunction],
+        },
+      },
+    },
+    "memoizedState": Object {
+      "baseState": null,
+      "baseUpdate": null,
+      "memoizedState": Object {
+        "current": undefined,
+      },
+      "next": Object {
+        "baseState": null,
+        "baseUpdate": null,
+        "memoizedState": Object {
+          "create": [Function],
+          "deps": Array [
+            Object {
+              "id": 10,
+              "map": Object {
+                "addListener": [MockFunction],
+                "getCenter": [MockFunction],
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction],
+                "Point": [MockFunction],
+              },
+            },
+          ],
+          "destroy": undefined,
+          "next": Object {
+            "create": [Function],
+            "deps": Array [
+              undefined,
+            ],
+            "destroy": undefined,
+            "next": [Circular],
+            "tag": 192,
+          },
+          "tag": 192,
+        },
+        "next": Object {
+          "baseState": null,
+          "baseUpdate": null,
+          "memoizedState": Object {
+            "create": [Function],
+            "deps": Array [
+              undefined,
+            ],
+            "destroy": undefined,
+            "next": Object {
+              "create": [Function],
+              "deps": Array [
+                Object {
+                  "id": 10,
+                  "map": Object {
+                    "addListener": [MockFunction],
+                    "getCenter": [MockFunction],
+                  },
+                  "mapRef": Object {
+                    "LatLng": [MockFunction],
+                    "Point": [MockFunction],
+                  },
+                },
+              ],
+              "destroy": undefined,
+              "next": [Circular],
+              "tag": 192,
+            },
+            "tag": 192,
+          },
+          "next": null,
+          "queue": null,
+        },
+        "queue": null,
+      },
+      "queue": null,
+    },
+    "mode": 0,
+    "nextEffect": null,
+    "pendingProps": Object {
+      "initalCordinates": Array [
+        25.194365,
+        55.241362,
+      ],
+      "mapInstance": Object {
+        "id": 10,
+        "map": Object {
+          "addListener": [MockFunction],
+          "getCenter": [MockFunction],
+        },
+        "mapRef": Object {
+          "LatLng": [MockFunction],
+          "Point": [MockFunction],
+        },
+      },
+    },
+    "ref": null,
+    "return": FiberNode {
+      "_debugHookTypes": null,
+      "_debugID": 5,
+      "_debugIsCurrentlyTiming": false,
+      "_debugOwner": null,
+      "_debugSource": null,
+      "alternate": FiberNode {
+        "_debugHookTypes": null,
+        "_debugID": 5,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": null,
+        "_debugSource": null,
+        "alternate": [Circular],
+        "child": null,
+        "childExpirationTime": 0,
+        "contextDependencies": null,
+        "effectTag": 0,
+        "elementType": null,
+        "expirationTime": 1073741823,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": null,
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": null,
+        "sibling": null,
+        "stateNode": Object {
+          "containerInfo": Object {
+            "children": Array [],
+            "createNodeMock": [Function],
+            "tag": "CONTAINER",
+          },
+          "context": Object {},
+          "current": [Circular],
+          "didError": false,
+          "earliestPendingTime": 0,
+          "earliestSuspendedTime": 0,
+          "expirationTime": 0,
+          "finishedWork": null,
+          "firstBatch": null,
+          "hydrate": false,
+          "latestPendingTime": 0,
+          "latestPingedTime": 0,
+          "latestSuspendedTime": 0,
+          "nextExpirationTimeToWorkOn": 0,
+          "nextScheduledRoot": null,
+          "pendingChildren": null,
+          "pendingCommitExpirationTime": 0,
+          "pendingContext": null,
+          "pingCache": null,
+          "timeoutHandle": -1,
+        },
+        "tag": 3,
+        "type": null,
+        "updateQueue": Object {
+          "baseState": null,
+          "firstCapturedEffect": null,
+          "firstCapturedUpdate": null,
+          "firstEffect": null,
+          "firstUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Marker
+                initalCordinates={
+                  Array [
+                    25.194365,
+                    55.241362,
+                  ]
+                }
+                mapInstance={
+                  Object {
+                    "id": 10,
+                    "map": Object {
+                      "addListener": [MockFunction],
+                      "getCenter": [MockFunction],
+                    },
+                    "mapRef": Object {
+                      "LatLng": [MockFunction],
+                      "Point": [MockFunction],
+                    },
+                  }
+                }
+              />,
+            },
+            "tag": 0,
+          },
+          "lastCapturedEffect": null,
+          "lastCapturedUpdate": null,
+          "lastEffect": null,
+          "lastUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Marker
+                initalCordinates={
+                  Array [
+                    25.194365,
+                    55.241362,
+                  ]
+                }
+                mapInstance={
+                  Object {
+                    "id": 10,
+                    "map": Object {
+                      "addListener": [MockFunction],
+                      "getCenter": [MockFunction],
+                    },
+                    "mapRef": Object {
+                      "LatLng": [MockFunction],
+                      "Point": [MockFunction],
+                    },
+                  }
+                }
+              />,
+            },
+            "tag": 0,
+          },
+        },
+      },
+      "child": [Circular],
+      "childExpirationTime": 0,
+      "contextDependencies": null,
+      "effectTag": 0,
+      "elementType": null,
+      "expirationTime": 0,
+      "firstEffect": [Circular],
+      "index": 0,
+      "key": null,
+      "lastEffect": [Circular],
+      "memoizedProps": null,
+      "memoizedState": Object {
+        "element": <Marker
+          initalCordinates={
+            Array [
+              25.194365,
+              55.241362,
+            ]
+          }
+          mapInstance={
+            Object {
+              "id": 10,
+              "map": Object {
+                "addListener": [MockFunction],
+                "getCenter": [MockFunction],
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction],
+                "Point": [MockFunction],
+              },
+            }
+          }
+        />,
+      },
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": null,
+      "ref": null,
+      "return": null,
+      "sibling": null,
+      "stateNode": Object {
+        "containerInfo": Object {
+          "children": Array [],
+          "createNodeMock": [Function],
+          "tag": "CONTAINER",
+        },
+        "context": Object {},
+        "current": [Circular],
+        "didError": false,
+        "earliestPendingTime": 0,
+        "earliestSuspendedTime": 0,
+        "expirationTime": 0,
+        "finishedWork": null,
+        "firstBatch": null,
+        "hydrate": false,
+        "latestPendingTime": 0,
+        "latestPingedTime": 0,
+        "latestSuspendedTime": 0,
+        "nextExpirationTimeToWorkOn": 0,
+        "nextScheduledRoot": null,
+        "pendingChildren": null,
+        "pendingCommitExpirationTime": 0,
+        "pendingContext": null,
+        "pingCache": null,
+        "timeoutHandle": -1,
+      },
+      "tag": 3,
+      "type": null,
+      "updateQueue": Object {
+        "baseState": Object {
+          "element": <Marker
+            initalCordinates={
+              Array [
+                25.194365,
+                55.241362,
+              ]
+            }
+            mapInstance={
+              Object {
+                "id": 10,
+                "map": Object {
+                  "addListener": [MockFunction],
+                  "getCenter": [MockFunction],
+                },
+                "mapRef": Object {
+                  "LatLng": [MockFunction],
+                  "Point": [MockFunction],
+                },
+              }
+            }
+          />,
+        },
+        "firstCapturedEffect": null,
+        "firstCapturedUpdate": null,
+        "firstEffect": null,
+        "firstUpdate": null,
+        "lastCapturedEffect": null,
+        "lastCapturedUpdate": null,
+        "lastEffect": null,
+        "lastUpdate": null,
+      },
+    },
+    "sibling": null,
+    "stateNode": null,
+    "tag": 0,
+    "type": [Function],
+    "updateQueue": Object {
+      "lastEffect": Object {
+        "create": [Function],
+        "deps": Array [
+          undefined,
+        ],
+        "destroy": undefined,
+        "next": Object {
+          "create": [Function],
+          "deps": Array [
+            Object {
+              "id": 10,
+              "map": Object {
+                "addListener": [MockFunction],
+                "getCenter": [MockFunction],
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction],
+                "Point": [MockFunction],
+              },
+            },
+          ],
+          "destroy": undefined,
+          "next": [Circular],
+          "tag": 192,
+        },
+        "tag": 192,
+      },
+    },
+  },
+}
+`;
+
+exports[`Marker.js index test marker full lifecycle 2`] = `
+ReactTestInstance {
+  "_fiber": FiberNode {
+    "_debugHookTypes": Array [
+      "useRef",
+      "useEffect",
+      "useEffect",
+    ],
+    "_debugID": 10,
+    "_debugIsCurrentlyTiming": false,
+    "_debugOwner": null,
+    "_debugSource": null,
+    "alternate": null,
+    "child": null,
+    "childExpirationTime": 0,
+    "contextDependencies": null,
+    "effectTag": 517,
+    "elementType": [Function],
+    "expirationTime": 0,
+    "firstEffect": null,
+    "index": 0,
+    "key": null,
+    "lastEffect": null,
+    "memoizedProps": Object {
+      "center": true,
+      "initalCordinates": Array [
+        25.194365,
+        55.241362,
+      ],
+      "mapInstance": Object {
+        "id": 10,
+        "map": Object {
+          "addListener": [MockFunction],
+          "getCenter": [MockFunction],
+        },
+        "mapRef": Object {
+          "LatLng": [MockFunction] {
+            "calls": Array [
+              Array [
+                25.194365,
+                55.241362,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "Point": [MockFunction] {
+            "calls": Array [
+              Array [
+                25.194365,
+                55.241362,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        },
+      },
+    },
+    "memoizedState": Object {
+      "baseState": null,
+      "baseUpdate": null,
+      "memoizedState": Object {
+        "current": undefined,
+      },
+      "next": Object {
+        "baseState": null,
+        "baseUpdate": null,
+        "memoizedState": Object {
+          "create": [Function],
+          "deps": Array [
+            Object {
+              "id": 10,
+              "map": Object {
+                "addListener": [MockFunction],
+                "getCenter": [MockFunction],
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "Point": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+            },
+          ],
+          "destroy": undefined,
+          "next": Object {
+            "create": [Function],
+            "deps": Array [
+              true,
+            ],
+            "destroy": undefined,
+            "next": [Circular],
+            "tag": 192,
+          },
+          "tag": 192,
+        },
+        "next": Object {
+          "baseState": null,
+          "baseUpdate": null,
+          "memoizedState": Object {
+            "create": [Function],
+            "deps": Array [
+              true,
+            ],
+            "destroy": undefined,
+            "next": Object {
+              "create": [Function],
+              "deps": Array [
+                Object {
+                  "id": 10,
+                  "map": Object {
+                    "addListener": [MockFunction],
+                    "getCenter": [MockFunction],
+                  },
+                  "mapRef": Object {
+                    "LatLng": [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          25.194365,
+                          55.241362,
+                        ],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                    "Point": [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          25.194365,
+                          55.241362,
+                        ],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+              "destroy": undefined,
+              "next": [Circular],
+              "tag": 192,
+            },
+            "tag": 192,
+          },
+          "next": null,
+          "queue": null,
+        },
+        "queue": null,
+      },
+      "queue": null,
+    },
+    "mode": 0,
+    "nextEffect": null,
+    "pendingProps": Object {
+      "center": true,
+      "initalCordinates": Array [
+        25.194365,
+        55.241362,
+      ],
+      "mapInstance": Object {
+        "id": 10,
+        "map": Object {
+          "addListener": [MockFunction],
+          "getCenter": [MockFunction],
+        },
+        "mapRef": Object {
+          "LatLng": [MockFunction] {
+            "calls": Array [
+              Array [
+                25.194365,
+                55.241362,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "Point": [MockFunction] {
+            "calls": Array [
+              Array [
+                25.194365,
+                55.241362,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        },
+      },
+    },
+    "ref": [MockFunction],
+    "return": FiberNode {
+      "_debugHookTypes": null,
+      "_debugID": 8,
+      "_debugIsCurrentlyTiming": false,
+      "_debugOwner": null,
+      "_debugSource": null,
+      "alternate": FiberNode {
+        "_debugHookTypes": null,
+        "_debugID": 8,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": null,
+        "_debugSource": null,
+        "alternate": [Circular],
+        "child": null,
+        "childExpirationTime": 0,
+        "contextDependencies": null,
+        "effectTag": 0,
+        "elementType": null,
+        "expirationTime": 1073741823,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": null,
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": null,
+        "sibling": null,
+        "stateNode": Object {
+          "containerInfo": Object {
+            "children": Array [],
+            "createNodeMock": [Function],
+            "tag": "CONTAINER",
+          },
+          "context": Object {},
+          "current": [Circular],
+          "didError": false,
+          "earliestPendingTime": 0,
+          "earliestSuspendedTime": 0,
+          "expirationTime": 0,
+          "finishedWork": null,
+          "firstBatch": null,
+          "hydrate": false,
+          "latestPendingTime": 0,
+          "latestPingedTime": 0,
+          "latestSuspendedTime": 0,
+          "nextExpirationTimeToWorkOn": 0,
+          "nextScheduledRoot": null,
+          "pendingChildren": null,
+          "pendingCommitExpirationTime": 0,
+          "pendingContext": null,
+          "pingCache": null,
+          "timeoutHandle": -1,
+        },
+        "tag": 3,
+        "type": null,
+        "updateQueue": Object {
+          "baseState": null,
+          "firstCapturedEffect": null,
+          "firstCapturedUpdate": null,
+          "firstEffect": null,
+          "firstUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Marker
+                center={true}
+                initalCordinates={
+                  Array [
+                    25.194365,
+                    55.241362,
+                  ]
+                }
+                mapInstance={
+                  Object {
+                    "id": 10,
+                    "map": Object {
+                      "addListener": [MockFunction],
+                      "getCenter": [MockFunction],
+                    },
+                    "mapRef": Object {
+                      "LatLng": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "Point": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  }
+                }
+              />,
+            },
+            "tag": 0,
+          },
+          "lastCapturedEffect": null,
+          "lastCapturedUpdate": null,
+          "lastEffect": null,
+          "lastUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Marker
+                center={true}
+                initalCordinates={
+                  Array [
+                    25.194365,
+                    55.241362,
+                  ]
+                }
+                mapInstance={
+                  Object {
+                    "id": 10,
+                    "map": Object {
+                      "addListener": [MockFunction],
+                      "getCenter": [MockFunction],
+                    },
+                    "mapRef": Object {
+                      "LatLng": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "Point": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  }
+                }
+              />,
+            },
+            "tag": 0,
+          },
+        },
+      },
+      "child": [Circular],
+      "childExpirationTime": 0,
+      "contextDependencies": null,
+      "effectTag": 0,
+      "elementType": null,
+      "expirationTime": 0,
+      "firstEffect": [Circular],
+      "index": 0,
+      "key": null,
+      "lastEffect": [Circular],
+      "memoizedProps": null,
+      "memoizedState": Object {
+        "element": <Marker
+          center={true}
+          initalCordinates={
+            Array [
+              25.194365,
+              55.241362,
+            ]
+          }
+          mapInstance={
+            Object {
+              "id": 10,
+              "map": Object {
+                "addListener": [MockFunction],
+                "getCenter": [MockFunction],
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "Point": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+            }
+          }
+        />,
+      },
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": null,
+      "ref": null,
+      "return": null,
+      "sibling": null,
+      "stateNode": Object {
+        "containerInfo": Object {
+          "children": Array [],
+          "createNodeMock": [Function],
+          "tag": "CONTAINER",
+        },
+        "context": Object {},
+        "current": [Circular],
+        "didError": false,
+        "earliestPendingTime": 0,
+        "earliestSuspendedTime": 0,
+        "expirationTime": 0,
+        "finishedWork": null,
+        "firstBatch": null,
+        "hydrate": false,
+        "latestPendingTime": 0,
+        "latestPingedTime": 0,
+        "latestSuspendedTime": 0,
+        "nextExpirationTimeToWorkOn": 0,
+        "nextScheduledRoot": null,
+        "pendingChildren": null,
+        "pendingCommitExpirationTime": 0,
+        "pendingContext": null,
+        "pingCache": null,
+        "timeoutHandle": -1,
+      },
+      "tag": 3,
+      "type": null,
+      "updateQueue": Object {
+        "baseState": Object {
+          "element": <Marker
+            center={true}
+            initalCordinates={
+              Array [
+                25.194365,
+                55.241362,
+              ]
+            }
+            mapInstance={
+              Object {
+                "id": 10,
+                "map": Object {
+                  "addListener": [MockFunction],
+                  "getCenter": [MockFunction],
+                },
+                "mapRef": Object {
+                  "LatLng": [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        25.194365,
+                        55.241362,
+                      ],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                  "Point": [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        25.194365,
+                        55.241362,
+                      ],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              }
+            }
+          />,
+        },
+        "firstCapturedEffect": null,
+        "firstCapturedUpdate": null,
+        "firstEffect": null,
+        "firstUpdate": null,
+        "lastCapturedEffect": null,
+        "lastCapturedUpdate": null,
+        "lastEffect": null,
+        "lastUpdate": null,
+      },
+    },
+    "sibling": null,
+    "stateNode": null,
+    "tag": 0,
+    "type": [Function],
+    "updateQueue": Object {
+      "lastEffect": Object {
+        "create": [Function],
+        "deps": Array [
+          true,
+        ],
+        "destroy": undefined,
+        "next": Object {
+          "create": [Function],
+          "deps": Array [
+            Object {
+              "id": 10,
+              "map": Object {
+                "addListener": [MockFunction],
+                "getCenter": [MockFunction],
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "Point": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+            },
+          ],
+          "destroy": undefined,
+          "next": [Circular],
+          "tag": 192,
+        },
+        "tag": 192,
+      },
+    },
+  },
+}
+`;
+
+exports[`Marker.js index test marker full lifecycle 3`] = `
+ReactTestInstance {
+  "_fiber": FiberNode {
+    "_debugHookTypes": Array [
+      "useRef",
+      "useEffect",
+      "useEffect",
+    ],
+    "_debugID": 13,
+    "_debugIsCurrentlyTiming": false,
+    "_debugOwner": null,
+    "_debugSource": null,
+    "alternate": null,
+    "child": null,
+    "childExpirationTime": 0,
+    "contextDependencies": null,
+    "effectTag": 517,
+    "elementType": [Function],
+    "expirationTime": 0,
+    "firstEffect": null,
+    "index": 0,
+    "key": null,
+    "lastEffect": null,
+    "memoizedProps": Object {
+      "_ref": [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "getCenter": [Function],
+              "getMap": [MockFunction],
+              "id": "testId",
+              "isDraggingLabel": false,
+              "isMouseDownOnLabel": false,
+              "isTouchScreen": false,
+              "label": Object {
+                "anchor": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "clickable": true,
+                "draggable": true,
+                "eventDiv": Object {},
+                "hoverCursor": "pointer",
+                "labelDiv": Object {},
+                "position": Object {
+                  "lat": 0,
+                  "lng": 0,
+                },
+                "zIndex": 0,
+                "zIndexOffset": 1,
+              },
+              "propertyListeners": Array [],
+              "setMap": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    Object {
+                      "addListener": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            "center_changed",
+                            [Function],
+                          ],
+                          Array [
+                            "center_changed",
+                            [Function],
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "getCenter": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                ],
+              },
+              "setPosition": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    undefined,
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                ],
+              },
+              "shouldIgnoreClick": false,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      },
+      "center": true,
+      "initalCordinates": Array [
+        25.194365,
+        55.241362,
+      ],
+      "mapInstance": Object {
+        "id": 20,
+        "map": Object {
+          "addListener": [MockFunction] {
+            "calls": Array [
+              Array [
+                "center_changed",
+                [Function],
+              ],
+              Array [
+                "center_changed",
+                [Function],
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "getCenter": [MockFunction] {
+            "calls": Array [
+              Array [],
+              Array [],
+              Array [],
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        },
+        "mapRef": Object {
+          "LatLng": [MockFunction] {
+            "calls": Array [
+              Array [
+                25.194365,
+                55.241362,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "Point": [MockFunction] {
+            "calls": Array [
+              Array [
+                25.194365,
+                55.241362,
+              ],
+              Array [
+                25.194365,
+                55.241362,
+              ],
+              Array [
+                25.194365,
+                55.241362,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        },
+      },
+    },
+    "memoizedState": Object {
+      "baseState": null,
+      "baseUpdate": null,
+      "memoizedState": Object {
+        "current": Object {
+          "getCenter": [Function],
+          "getMap": [MockFunction],
+          "id": "testId",
+          "isDraggingLabel": false,
+          "isMouseDownOnLabel": false,
+          "isTouchScreen": false,
+          "label": Object {
+            "anchor": Object {
+              "x": 0,
+              "y": 0,
+            },
+            "clickable": true,
+            "draggable": true,
+            "eventDiv": Object {},
+            "hoverCursor": "pointer",
+            "labelDiv": Object {},
+            "position": Object {
+              "lat": 0,
+              "lng": 0,
+            },
+            "zIndex": 0,
+            "zIndexOffset": 1,
+          },
+          "propertyListeners": Array [],
+          "setMap": [MockFunction] {
+            "calls": Array [
+              Array [
+                Object {
+                  "addListener": [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        "center_changed",
+                        [Function],
+                      ],
+                      Array [
+                        "center_changed",
+                        [Function],
+                      ],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                  "getCenter": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "setPosition": [MockFunction] {
+            "calls": Array [
+              Array [
+                undefined,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "shouldIgnoreClick": false,
+        },
+      },
+      "next": Object {
+        "baseState": null,
+        "baseUpdate": null,
+        "memoizedState": Object {
+          "create": [Function],
+          "deps": Array [
+            Object {
+              "id": 20,
+              "map": Object {
+                "addListener": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      "center_changed",
+                      [Function],
+                    ],
+                    Array [
+                      "center_changed",
+                      [Function],
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "getCenter": [MockFunction] {
+                  "calls": Array [
+                    Array [],
+                    Array [],
+                    Array [],
+                    Array [],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "Point": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+            },
+          ],
+          "destroy": [Function],
+          "next": Object {
+            "create": [Function],
+            "deps": Array [
+              true,
+            ],
+            "destroy": undefined,
+            "next": [Circular],
+            "tag": 192,
+          },
+          "tag": 192,
+        },
+        "next": Object {
+          "baseState": null,
+          "baseUpdate": null,
+          "memoizedState": Object {
+            "create": [Function],
+            "deps": Array [
+              true,
+            ],
+            "destroy": undefined,
+            "next": Object {
+              "create": [Function],
+              "deps": Array [
+                Object {
+                  "id": 20,
+                  "map": Object {
+                    "addListener": [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          "center_changed",
+                          [Function],
+                        ],
+                        Array [
+                          "center_changed",
+                          [Function],
+                        ],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                    "getCenter": [MockFunction] {
+                      "calls": Array [
+                        Array [],
+                        Array [],
+                        Array [],
+                        Array [],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                  "mapRef": Object {
+                    "LatLng": [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          25.194365,
+                          55.241362,
+                        ],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                    "Point": [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          25.194365,
+                          55.241362,
+                        ],
+                        Array [
+                          25.194365,
+                          55.241362,
+                        ],
+                        Array [
+                          25.194365,
+                          55.241362,
+                        ],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                  },
+                },
+              ],
+              "destroy": [Function],
+              "next": [Circular],
+              "tag": 192,
+            },
+            "tag": 192,
+          },
+          "next": null,
+          "queue": null,
+        },
+        "queue": null,
+      },
+      "queue": null,
+    },
+    "mode": 0,
+    "nextEffect": null,
+    "pendingProps": Object {
+      "_ref": [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "getCenter": [Function],
+              "getMap": [MockFunction],
+              "id": "testId",
+              "isDraggingLabel": false,
+              "isMouseDownOnLabel": false,
+              "isTouchScreen": false,
+              "label": Object {
+                "anchor": Object {
+                  "x": 0,
+                  "y": 0,
+                },
+                "clickable": true,
+                "draggable": true,
+                "eventDiv": Object {},
+                "hoverCursor": "pointer",
+                "labelDiv": Object {},
+                "position": Object {
+                  "lat": 0,
+                  "lng": 0,
+                },
+                "zIndex": 0,
+                "zIndexOffset": 1,
+              },
+              "propertyListeners": Array [],
+              "setMap": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    Object {
+                      "addListener": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            "center_changed",
+                            [Function],
+                          ],
+                          Array [
+                            "center_changed",
+                            [Function],
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "getCenter": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                ],
+              },
+              "setPosition": [MockFunction] {
+                "calls": Array [
+                  Array [
+                    undefined,
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                ],
+              },
+              "shouldIgnoreClick": false,
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      },
+      "center": true,
+      "initalCordinates": Array [
+        25.194365,
+        55.241362,
+      ],
+      "mapInstance": Object {
+        "id": 20,
+        "map": Object {
+          "addListener": [MockFunction] {
+            "calls": Array [
+              Array [
+                "center_changed",
+                [Function],
+              ],
+              Array [
+                "center_changed",
+                [Function],
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "getCenter": [MockFunction] {
+            "calls": Array [
+              Array [],
+              Array [],
+              Array [],
+              Array [],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        },
+        "mapRef": Object {
+          "LatLng": [MockFunction] {
+            "calls": Array [
+              Array [
+                25.194365,
+                55.241362,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+          "Point": [MockFunction] {
+            "calls": Array [
+              Array [
+                25.194365,
+                55.241362,
+              ],
+              Array [
+                25.194365,
+                55.241362,
+              ],
+              Array [
+                25.194365,
+                55.241362,
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        },
+      },
+    },
+    "ref": null,
+    "return": FiberNode {
+      "_debugHookTypes": null,
+      "_debugID": 11,
+      "_debugIsCurrentlyTiming": false,
+      "_debugOwner": null,
+      "_debugSource": null,
+      "alternate": FiberNode {
+        "_debugHookTypes": null,
+        "_debugID": 11,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": null,
+        "_debugSource": null,
+        "alternate": [Circular],
+        "child": null,
+        "childExpirationTime": 0,
+        "contextDependencies": null,
+        "effectTag": 0,
+        "elementType": null,
+        "expirationTime": 1073741823,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": null,
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": null,
+        "sibling": null,
+        "stateNode": Object {
+          "containerInfo": Object {
+            "children": Array [],
+            "createNodeMock": [Function],
+            "tag": "CONTAINER",
+          },
+          "context": Object {},
+          "current": [Circular],
+          "didError": false,
+          "earliestPendingTime": 0,
+          "earliestSuspendedTime": 0,
+          "expirationTime": 0,
+          "finishedWork": null,
+          "firstBatch": null,
+          "hydrate": false,
+          "latestPendingTime": 0,
+          "latestPingedTime": 0,
+          "latestSuspendedTime": 0,
+          "nextExpirationTimeToWorkOn": 0,
+          "nextScheduledRoot": null,
+          "pendingChildren": null,
+          "pendingCommitExpirationTime": 0,
+          "pendingContext": null,
+          "pingCache": null,
+          "timeoutHandle": -1,
+        },
+        "tag": 3,
+        "type": null,
+        "updateQueue": Object {
+          "baseState": null,
+          "firstCapturedEffect": null,
+          "firstCapturedUpdate": null,
+          "firstEffect": null,
+          "firstUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Marker
+                _ref={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        Object {
+                          "getCenter": [Function],
+                          "getMap": [MockFunction],
+                          "id": "testId",
+                          "isDraggingLabel": false,
+                          "isMouseDownOnLabel": false,
+                          "isTouchScreen": false,
+                          "label": Object {
+                            "anchor": Object {
+                              "x": 0,
+                              "y": 0,
+                            },
+                            "clickable": true,
+                            "draggable": true,
+                            "eventDiv": Object {},
+                            "hoverCursor": "pointer",
+                            "labelDiv": Object {},
+                            "position": Object {
+                              "lat": 0,
+                              "lng": 0,
+                            },
+                            "zIndex": 0,
+                            "zIndexOffset": 1,
+                          },
+                          "propertyListeners": Array [],
+                          "setMap": [MockFunction] {
+                            "calls": Array [
+                              Array [
+                                Object {
+                                  "addListener": [MockFunction] {
+                                    "calls": Array [
+                                      Array [
+                                        "center_changed",
+                                        [Function],
+                                      ],
+                                      Array [
+                                        "center_changed",
+                                        [Function],
+                                      ],
+                                    ],
+                                    "results": Array [
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                    ],
+                                  },
+                                  "getCenter": [MockFunction] {
+                                    "calls": Array [
+                                      Array [],
+                                      Array [],
+                                      Array [],
+                                      Array [],
+                                    ],
+                                    "results": Array [
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                    ],
+                                  },
+                                },
+                              ],
+                            ],
+                            "results": Array [
+                              Object {
+                                "type": "return",
+                                "value": undefined,
+                              },
+                            ],
+                          },
+                          "setPosition": [MockFunction] {
+                            "calls": Array [
+                              Array [
+                                undefined,
+                              ],
+                            ],
+                            "results": Array [
+                              Object {
+                                "type": "return",
+                                "value": undefined,
+                              },
+                            ],
+                          },
+                          "shouldIgnoreClick": false,
+                        },
+                      ],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  }
+                }
+                center={true}
+                initalCordinates={
+                  Array [
+                    25.194365,
+                    55.241362,
+                  ]
+                }
+                mapInstance={
+                  Object {
+                    "id": 20,
+                    "map": Object {
+                      "addListener": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            "center_changed",
+                            [Function],
+                          ],
+                          Array [
+                            "center_changed",
+                            [Function],
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "getCenter": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                    "mapRef": Object {
+                      "LatLng": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "Point": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  }
+                }
+              />,
+            },
+            "tag": 0,
+          },
+          "lastCapturedEffect": null,
+          "lastCapturedUpdate": null,
+          "lastEffect": null,
+          "lastUpdate": Object {
+            "callback": null,
+            "expirationTime": 1073741823,
+            "next": null,
+            "nextEffect": null,
+            "payload": Object {
+              "element": <Marker
+                _ref={
+                  [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        Object {
+                          "getCenter": [Function],
+                          "getMap": [MockFunction],
+                          "id": "testId",
+                          "isDraggingLabel": false,
+                          "isMouseDownOnLabel": false,
+                          "isTouchScreen": false,
+                          "label": Object {
+                            "anchor": Object {
+                              "x": 0,
+                              "y": 0,
+                            },
+                            "clickable": true,
+                            "draggable": true,
+                            "eventDiv": Object {},
+                            "hoverCursor": "pointer",
+                            "labelDiv": Object {},
+                            "position": Object {
+                              "lat": 0,
+                              "lng": 0,
+                            },
+                            "zIndex": 0,
+                            "zIndexOffset": 1,
+                          },
+                          "propertyListeners": Array [],
+                          "setMap": [MockFunction] {
+                            "calls": Array [
+                              Array [
+                                Object {
+                                  "addListener": [MockFunction] {
+                                    "calls": Array [
+                                      Array [
+                                        "center_changed",
+                                        [Function],
+                                      ],
+                                      Array [
+                                        "center_changed",
+                                        [Function],
+                                      ],
+                                    ],
+                                    "results": Array [
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                    ],
+                                  },
+                                  "getCenter": [MockFunction] {
+                                    "calls": Array [
+                                      Array [],
+                                      Array [],
+                                      Array [],
+                                      Array [],
+                                    ],
+                                    "results": Array [
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                      Object {
+                                        "type": "return",
+                                        "value": undefined,
+                                      },
+                                    ],
+                                  },
+                                },
+                              ],
+                            ],
+                            "results": Array [
+                              Object {
+                                "type": "return",
+                                "value": undefined,
+                              },
+                            ],
+                          },
+                          "setPosition": [MockFunction] {
+                            "calls": Array [
+                              Array [
+                                undefined,
+                              ],
+                            ],
+                            "results": Array [
+                              Object {
+                                "type": "return",
+                                "value": undefined,
+                              },
+                            ],
+                          },
+                          "shouldIgnoreClick": false,
+                        },
+                      ],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  }
+                }
+                center={true}
+                initalCordinates={
+                  Array [
+                    25.194365,
+                    55.241362,
+                  ]
+                }
+                mapInstance={
+                  Object {
+                    "id": 20,
+                    "map": Object {
+                      "addListener": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            "center_changed",
+                            [Function],
+                          ],
+                          Array [
+                            "center_changed",
+                            [Function],
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "getCenter": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                    "mapRef": Object {
+                      "LatLng": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "Point": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                          Array [
+                            25.194365,
+                            55.241362,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                    },
+                  }
+                }
+              />,
+            },
+            "tag": 0,
+          },
+        },
+      },
+      "child": [Circular],
+      "childExpirationTime": 0,
+      "contextDependencies": null,
+      "effectTag": 0,
+      "elementType": null,
+      "expirationTime": 0,
+      "firstEffect": [Circular],
+      "index": 0,
+      "key": null,
+      "lastEffect": [Circular],
+      "memoizedProps": null,
+      "memoizedState": Object {
+        "element": <Marker
+          _ref={
+            [MockFunction] {
+              "calls": Array [
+                Array [
+                  Object {
+                    "getCenter": [Function],
+                    "getMap": [MockFunction],
+                    "id": "testId",
+                    "isDraggingLabel": false,
+                    "isMouseDownOnLabel": false,
+                    "isTouchScreen": false,
+                    "label": Object {
+                      "anchor": Object {
+                        "x": 0,
+                        "y": 0,
+                      },
+                      "clickable": true,
+                      "draggable": true,
+                      "eventDiv": Object {},
+                      "hoverCursor": "pointer",
+                      "labelDiv": Object {},
+                      "position": Object {
+                        "lat": 0,
+                        "lng": 0,
+                      },
+                      "zIndex": 0,
+                      "zIndexOffset": 1,
+                    },
+                    "propertyListeners": Array [],
+                    "setMap": [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          Object {
+                            "addListener": [MockFunction] {
+                              "calls": Array [
+                                Array [
+                                  "center_changed",
+                                  [Function],
+                                ],
+                                Array [
+                                  "center_changed",
+                                  [Function],
+                                ],
+                              ],
+                              "results": Array [
+                                Object {
+                                  "type": "return",
+                                  "value": undefined,
+                                },
+                                Object {
+                                  "type": "return",
+                                  "value": undefined,
+                                },
+                              ],
+                            },
+                            "getCenter": [MockFunction] {
+                              "calls": Array [
+                                Array [],
+                                Array [],
+                                Array [],
+                                Array [],
+                              ],
+                              "results": Array [
+                                Object {
+                                  "type": "return",
+                                  "value": undefined,
+                                },
+                                Object {
+                                  "type": "return",
+                                  "value": undefined,
+                                },
+                                Object {
+                                  "type": "return",
+                                  "value": undefined,
+                                },
+                                Object {
+                                  "type": "return",
+                                  "value": undefined,
+                                },
+                              ],
+                            },
+                          },
+                        ],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                    "setPosition": [MockFunction] {
+                      "calls": Array [
+                        Array [
+                          undefined,
+                        ],
+                      ],
+                      "results": Array [
+                        Object {
+                          "type": "return",
+                          "value": undefined,
+                        },
+                      ],
+                    },
+                    "shouldIgnoreClick": false,
+                  },
+                ],
+              ],
+              "results": Array [
+                Object {
+                  "type": "return",
+                  "value": undefined,
+                },
+              ],
+            }
+          }
+          center={true}
+          initalCordinates={
+            Array [
+              25.194365,
+              55.241362,
+            ]
+          }
+          mapInstance={
+            Object {
+              "id": 20,
+              "map": Object {
+                "addListener": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      "center_changed",
+                      [Function],
+                    ],
+                    Array [
+                      "center_changed",
+                      [Function],
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "getCenter": [MockFunction] {
+                  "calls": Array [
+                    Array [],
+                    Array [],
+                    Array [],
+                    Array [],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "Point": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+            }
+          }
+        />,
+      },
+      "mode": 0,
+      "nextEffect": null,
+      "pendingProps": null,
+      "ref": null,
+      "return": null,
+      "sibling": null,
+      "stateNode": Object {
+        "containerInfo": Object {
+          "children": Array [],
+          "createNodeMock": [Function],
+          "tag": "CONTAINER",
+        },
+        "context": Object {},
+        "current": [Circular],
+        "didError": false,
+        "earliestPendingTime": 0,
+        "earliestSuspendedTime": 0,
+        "expirationTime": 0,
+        "finishedWork": null,
+        "firstBatch": null,
+        "hydrate": false,
+        "latestPendingTime": 0,
+        "latestPingedTime": 0,
+        "latestSuspendedTime": 0,
+        "nextExpirationTimeToWorkOn": 0,
+        "nextScheduledRoot": null,
+        "pendingChildren": null,
+        "pendingCommitExpirationTime": 0,
+        "pendingContext": null,
+        "pingCache": null,
+        "timeoutHandle": -1,
+      },
+      "tag": 3,
+      "type": null,
+      "updateQueue": Object {
+        "baseState": Object {
+          "element": <Marker
+            _ref={
+              [MockFunction] {
+                "calls": Array [
+                  Array [
+                    Object {
+                      "getCenter": [Function],
+                      "getMap": [MockFunction],
+                      "id": "testId",
+                      "isDraggingLabel": false,
+                      "isMouseDownOnLabel": false,
+                      "isTouchScreen": false,
+                      "label": Object {
+                        "anchor": Object {
+                          "x": 0,
+                          "y": 0,
+                        },
+                        "clickable": true,
+                        "draggable": true,
+                        "eventDiv": Object {},
+                        "hoverCursor": "pointer",
+                        "labelDiv": Object {},
+                        "position": Object {
+                          "lat": 0,
+                          "lng": 0,
+                        },
+                        "zIndex": 0,
+                        "zIndexOffset": 1,
+                      },
+                      "propertyListeners": Array [],
+                      "setMap": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            Object {
+                              "addListener": [MockFunction] {
+                                "calls": Array [
+                                  Array [
+                                    "center_changed",
+                                    [Function],
+                                  ],
+                                  Array [
+                                    "center_changed",
+                                    [Function],
+                                  ],
+                                ],
+                                "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                ],
+                              },
+                              "getCenter": [MockFunction] {
+                                "calls": Array [
+                                  Array [],
+                                  Array [],
+                                  Array [],
+                                  Array [],
+                                ],
+                                "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                ],
+                              },
+                            },
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "setPosition": [MockFunction] {
+                        "calls": Array [
+                          Array [
+                            undefined,
+                          ],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": undefined,
+                          },
+                        ],
+                      },
+                      "shouldIgnoreClick": false,
+                    },
+                  ],
+                ],
+                "results": Array [
+                  Object {
+                    "type": "return",
+                    "value": undefined,
+                  },
+                ],
+              }
+            }
+            center={true}
+            initalCordinates={
+              Array [
+                25.194365,
+                55.241362,
+              ]
+            }
+            mapInstance={
+              Object {
+                "id": 20,
+                "map": Object {
+                  "addListener": [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        "center_changed",
+                        [Function],
+                      ],
+                      Array [
+                        "center_changed",
+                        [Function],
+                      ],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                  "getCenter": [MockFunction] {
+                    "calls": Array [
+                      Array [],
+                      Array [],
+                      Array [],
+                      Array [],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+                "mapRef": Object {
+                  "LatLng": [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        25.194365,
+                        55.241362,
+                      ],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                  "Point": [MockFunction] {
+                    "calls": Array [
+                      Array [
+                        25.194365,
+                        55.241362,
+                      ],
+                      Array [
+                        25.194365,
+                        55.241362,
+                      ],
+                      Array [
+                        25.194365,
+                        55.241362,
+                      ],
+                    ],
+                    "results": Array [
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                      Object {
+                        "type": "return",
+                        "value": undefined,
+                      },
+                    ],
+                  },
+                },
+              }
+            }
+          />,
+        },
+        "firstCapturedEffect": null,
+        "firstCapturedUpdate": null,
+        "firstEffect": null,
+        "firstUpdate": null,
+        "lastCapturedEffect": null,
+        "lastCapturedUpdate": null,
+        "lastEffect": null,
+        "lastUpdate": null,
+      },
+    },
+    "sibling": null,
+    "stateNode": null,
+    "tag": 0,
+    "type": [Function],
+    "updateQueue": Object {
+      "lastEffect": Object {
+        "create": [Function],
+        "deps": Array [
+          true,
+        ],
+        "destroy": undefined,
+        "next": Object {
+          "create": [Function],
+          "deps": Array [
+            Object {
+              "id": 20,
+              "map": Object {
+                "addListener": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      "center_changed",
+                      [Function],
+                    ],
+                    Array [
+                      "center_changed",
+                      [Function],
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "getCenter": [MockFunction] {
+                  "calls": Array [
+                    Array [],
+                    Array [],
+                    Array [],
+                    Array [],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+              "mapRef": Object {
+                "LatLng": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+                "Point": [MockFunction] {
+                  "calls": Array [
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                    Array [
+                      25.194365,
+                      55.241362,
+                    ],
+                  ],
+                  "results": Array [
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                    Object {
+                      "type": "return",
+                      "value": undefined,
+                    },
+                  ],
+                },
+              },
+            },
+          ],
+          "destroy": [Function],
+          "next": [Circular],
+          "tag": 192,
+        },
+        "tag": 192,
+      },
+    },
+  },
+}
+`;

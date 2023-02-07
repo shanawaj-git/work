@@ -1,0 +1,4 @@
+{
+    "new_prescription": "Hi {patientName}, your prescription is ready! Click the link below to verify your identity and view your prescription. {prescriptionUrl}\n",
+    "opt_generated": "Your one time passcode is {otp}\nUse this to verify your phone number in MedMe.\n"
+}

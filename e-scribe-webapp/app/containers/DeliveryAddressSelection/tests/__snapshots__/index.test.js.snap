@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DeliveryAddressSelection /> should render and match the snapshot 1`] = `
+<div
+  class="sc-htpNat eIfBKM"
+>
+  <div
+    class="sc-bxivhb dyCLuD"
+  >
+    <div
+      class="sc-bdVaJa doFTJW"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h2 sc-bwzfXH hoMxZI css-1jfg05l-MuiTypography-root"
+      >
+        Select Pharmacy
+      </h2>
+      <div
+        class="root MuiTabs-root styledComponents__StyledTabs-sc-16g4axo-1 gllqKx tabs css-1ujnqem-MuiTabs-root"
+        id="pharmacy-selection-tabs"
+      >
+        <div
+          class="MuiTabs-scroller MuiTabs-fixed css-jpln7h-MuiTabs-scroller"
+          style="overflow: hidden; margin-bottom: 0px;"
+        >
+          <div
+            class="flexContainer MuiTabs-flexContainer css-heg063-MuiTabs-flexContainer"
+            role="tablist"
+          >
+            <button
+              aria-selected="true"
+              class="MuiButtonBase-root root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth Mui-selected styledComponents__StyledTab-sc-16g4axo-0 iqlSvE css-1ujykiq-MuiButtonBase-root-MuiTab-root"
+              data-testid="delivery"
+              id="pharmacy-selection-tabs-tab-0"
+              role="tab"
+              tabindex="0"
+              type="button"
+            >
+              Delivery
+              <span
+                class="indicator MuiTabs-indicator css-1aquho2-MuiTabs-indicator"
+              />
+            </button>
+            <button
+              aria-selected="false"
+              class="MuiButtonBase-root root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth styledComponents__StyledTab-sc-16g4axo-0 gcizIM css-1ujykiq-MuiButtonBase-root-MuiTab-root"
+              data-testid="clickncollect"
+              id="pharmacy-selection-tabs-tab-1"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Click & Collect
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-ifAKCX eRfXQC"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-h3 sc-EHOje hJAwOz css-1ewfuka-MuiTypography-root"
+      >
+        Where would you like your
+meds delivered to?
+      </h3>
+      <p
+        class="MuiTypography-root MuiTypography-body2 sc-bZQynM ivBfrH css-ry76j1-MuiTypography-root"
+      >
+        You don’t have any saved addresses.
+Add an address to get started.
+      </p>
+      <button
+        class="root StyledButton-sc-1apep4b-0 jVvup btnAddNew MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        <div
+          style="visibility: visible;"
+        >
+          Add new address
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+`;

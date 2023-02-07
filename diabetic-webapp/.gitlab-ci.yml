@@ -1,0 +1,79 @@
+image: node:16.13.1
+
+stages:
+  - configuration
+  - build
+  - test
+  - publish-docker-image
+
+services:
+  - docker:dind
+
+variables:
+  tag: ':latest'
+  API_BASE_URL: $API_BASE_URL
+  WOOS_MAP_KEY: $WOOS_MAP_KEY
+  GOOGLE_PLACES_KEY: $GOOGLE_PLACES_KEY
+  GOOGLE_MAP_KEY: $GOOGLE_MAP_KEY
+
+installation:
+  stage: configuration
+  variables:
+    NPM_TOKEN: $NPM_TOKEN
+  script:
+    - echo '@albathanext:registry=https://gitlab.com/api/v4/packages/npm/'>>.npmrc
+    - echo '//gitlab.com/api/v4/packages/npm/:_authToken=${NPM_TOKEN}'>>.npmrc
+    - echo '//gitlab.com/api/v4/projects/32140238/packages/npm/:_authToken=${NPM_TOKEN}'>>.npmrc
+    - cat .npmrc
+    - yarn install
+  artifacts:
+    paths:
+      - node_modules
+  cache:
+    - key:
+        files:
+          - yarn.lock
+      paths:
+        - node_modules
+  only:
+    - main
+    - merge_requests
+
+build-code:
+  stage: build
+  variables:
+    UNLEASH_PROXY_URL: $UNLEASH_PROXY_URL
+  script:
+    - yarn run build
+  only:
+    - main
+    - merge_requests
+
+jest-test:
+  stage: test
+  script:
+    - yarn run test
+  only:
+    - main
+    - merge_requests
+
+lint-test:
+  stage: test
+  script:
+    - yarn run lint
+  only:
+    - main
+    - merge_requests
+
+build-image:
+  image: docker:stable
+  stage: publish-docker-image
+  before_script:
+    - docker -v
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - docker build --build-arg GIT_TOKEN=${CI_JOB_TOKEN} --build-arg API_BASE_URL=${API_BASE_URL} --build-arg WOOS_MAP_KEY=${WOOS_MAP_KEY} --build-arg GOOGLE_PLACES_KEY=${GOOGLE_PLACES_KEY} --build-arg GOOGLE_MAP_KEY=${GOOGLE_MAP_KEY} --pull -t "$CI_REGISTRY_IMAGE$tag" .
+    - docker push "$CI_REGISTRY_IMAGE$tag"
+    - echo "Build complete."
+  only:
+    - main

@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_basic_payment_events",
+  "info": {
+    "displayName": "paymentEvent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Created",
+        "Processing",
+        "Payment Method Required",
+        "Action Required",
+        "Canceled",
+        "Capture Required",
+        "Captured",
+        "Partially Captured",
+        "Succeeded",
+        "Failed"
+      ]
+    },
+    "timeStamp": {
+      "type": "datetime"
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "eventSource": {
+      "type": "enumeration",
+      "enum": [
+        "Application",
+        "Provider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`featureFlag should get unleash configs for dev env 1`] = `
+Object {
+  "appName": "dev",
+  "clientKey": "proxy-secret",
+  "refreshInterval": 15,
+  "url": "https://escribe-apim.azure-api.net/unleash/proxy/",
+}
+`;
+
+exports[`featureFlag should get unleash configs for production env 1`] = `
+Object {
+  "appName": "dev",
+  "clientKey": "proxy-secret",
+  "refreshInterval": 15,
+  "url": "https://escribe-apim.azure-api.net/unleash/proxy/",
+}
+`;
+
+exports[`featureFlag should get unleash configs for staging env 1`] = `Object {}`;

@@ -1,0 +1,12 @@
+services:
+  unleash-proxy:
+    image: unleashorg/unleash-proxy
+    environment:
+      UNLEASH_PROXY_SECRETS: ${UNLEASH_PROXY_SECRETS}
+      UNLEASH_URL: ${UNLEASH_URL}
+      UNLEASH_INSTANCE_ID: ${UNLEASH_INSTANCE_ID}
+      UNLEASH_API_TOKEN: ${UNLEASH_API_TOKEN}
+      UNLEASH_PROXY_CLIENT_KEYS: ${UNLEASH_PROXY_CLIENT_KEYS}
+      UNLEASH_APP_NAME: ${UNLEASH_APP_NAME}
+    ports:
+      - '3001:3000'

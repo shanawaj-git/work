@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form.js index Should render inputs based on the form prop 1`] = `
+Array [
+  <input
+    InputComponent={[Function]}
+    form={
+      Object {
+        "city": Object {
+          "name": "city",
+          "value": "Alexandria",
+        },
+        "firstName": Object {
+          "name": "firstName",
+          "value": "Ahmed",
+        },
+      }
+    }
+    formState={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {},
+          ],
+          Array [
+            Object {
+              "city": "Alexandria",
+              "firstName": "Ahmed",
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+  <input
+    InputComponent={[Function]}
+    form={
+      Object {
+        "city": Object {
+          "name": "city",
+          "value": "Alexandria",
+        },
+        "firstName": Object {
+          "name": "firstName",
+          "value": "Ahmed",
+        },
+      }
+    }
+    formState={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {},
+          ],
+          Array [
+            Object {
+              "city": "Alexandria",
+              "firstName": "Ahmed",
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+]
+`;

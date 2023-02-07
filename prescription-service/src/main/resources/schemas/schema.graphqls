@@ -1,0 +1,120 @@
+schema {
+    query: Query
+}
+
+type Query {
+    prescription(input: GetPrescriptionInput!): PrescriptionQueryOutput!
+}
+
+input GetPrescriptionInput {
+	prescriptionNumber: String!
+}
+
+type PrescriptionQueryOutput {
+    success: Boolean!,
+    data: Prescription
+    error: Error,
+}
+
+type Error {
+    code: String!
+    message : String
+}
+
+type Prescription {
+	prescriptionNumber: String!
+    recordNumber: String
+    visitDate: DateTime
+    diagnosis: String
+    pin: String
+	patient: Patient!
+	doctor: Doctor
+	sendingFacility: Facility
+	drugs: [Drug]!
+	insurance: Insurance
+	createdDate: DateTime
+}
+
+
+type Address {
+	addressId: String
+	addressLine1: String
+    addressLine2: String
+    area: String
+    city: String
+    state: String
+    postalCode: String
+    type: String
+    country: String
+	createdDate: DateTime
+}
+
+type Doctor {
+	doctorId: String!
+    name: Name
+    email: String
+    mobileNumber: String
+	createdDate: DateTime
+}
+
+type Dosage {
+	frequency: String
+    unit: String
+    period: String
+    route: String
+    quantity: String
+    timeUnit: String
+    doctorNotes: String
+}
+
+type Drug {
+	code: String!
+	name: String
+	dosage: Dosage
+}
+
+
+type Facility {
+	facilityId: String!
+    name: String
+    address: String
+	createdDate: DateTime
+}
+
+
+type Insurance {
+	insuranceId: String
+    policyNumber: String!
+    provider: InsuranceProvider!
+	createdDate: DateTime
+	expiryDate: DateTime
+	network: String
+}
+
+type InsuranceProvider {
+	name: String
+	code: String
+	eClaimLinkId: String
+	createdDate: DateTime
+}
+
+type Name {
+	first: String
+	middle: String
+	last: String
+}
+
+type Patient {
+	patientId: String
+    emiratesId: String!
+    mohId: String
+    name: Name
+    email: String
+    mobileNumber: String
+    dob: DateTime
+	addresses: [Address]
+	insurances: [Insurance]
+	createdDate: DateTime
+}
+
+scalar DateTime

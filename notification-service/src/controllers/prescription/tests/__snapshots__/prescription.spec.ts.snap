@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mapPrescriptionDataToSmsInput should map prescription data to sms input 1`] = `
+Object {
+  "params": Object {
+    "patientName": "name user",
+    "prescriptionUrl": "http://localhost:3000/?redirect=%2Fprescriptions%2F123dasd123",
+  },
+  "recipient": "971xxxxxxxxx",
+  "referenceNumberInTopic": "123dasd123",
+  "templateCode": "new_prescription",
+  "topic": "prescriptions",
+}
+`;

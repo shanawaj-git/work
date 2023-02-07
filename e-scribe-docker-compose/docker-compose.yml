@@ -1,0 +1,44 @@
+version: "2"
+services:
+  zookeeper:
+    image: zookeeper:3.7.0
+    container_name: zookeeper
+    ports:
+      - 2181:2181
+    env_file:
+      - zookeeper.env
+    volumes:
+      - ./zookeeper/data:/data
+      - ./zookeeper/datalog:/datalog
+    profiles: ["zookeeper"]
+  kafka:
+    image: confluentinc/cp-kafka:5.1.0
+    container_name: kafka
+    healthcheck:
+      test: ["CMD", "nc", "-vz", "localhost", "9093"]
+      interval: 15s
+      timeout: 5s
+      retries: 8
+    ports:
+      - "9093:9093"
+    env_file:
+      - kafka.env
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./kafka.jaas.conf:/etc/kafka/kafka_server_jaas.conf
+      - ./data:/var/lib/kafka/data
+    links:
+      - zookeeper
+    profiles: ["kafka"]
+  kafka-ui:
+    container_name: kafka-ui
+    image: provectuslabs/kafka-ui:0.3.3
+    env_file:
+      - kafka-ui.env
+    ports:
+      - ${KAFKA_UI_PORT}:8080
+    profiles: ["kafka-ui"]
+networks:
+  default:
+    external:
+      name: dev

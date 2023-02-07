@@ -1,0 +1,34 @@
+query {
+  prescription(input: { prescriptionNumber: "existing-prescription-number" }) {
+    success
+    data {
+      patient {
+        emiratesId
+        email
+        mobileNumber
+        name {
+          first
+          middle
+          last
+        }
+      }
+      drugs {
+        code
+        name
+        dosage {
+          frequency
+          unit
+          quantity
+          route
+          period
+          timeUnit
+          doctorNotes
+        }
+      }
+    }
+    error {
+      code
+      message
+    }
+  }
+}

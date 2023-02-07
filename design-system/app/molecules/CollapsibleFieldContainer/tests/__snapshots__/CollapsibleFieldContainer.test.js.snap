@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CollapsibleFieldContainer Should render in closed mode 1`] = `
+<div>
+  <div
+    class="styledComponents__MainContainer-i3ilf2-0 gPVVFI"
+  >
+    <div
+      class="styledComponents__HeaderContainer-i3ilf2-3 ffkpyW"
+      data-testid="collapsible-header-container"
+    >
+      <div
+        class="styledComponents__IconContainer-i3ilf2-4 bsvKmv collapsible-header-icon"
+      >
+        <img
+          alt="Select Time"
+          class="styledComponents__IconImage-i3ilf2-5 CoppR"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-label css-1reifv3-MuiTypography-root"
+      >
+        Time
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-value text-align-right css-1reifv3-MuiTypography-root"
+      >
+        10.00
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CollapsibleFieldContainer Should render in open mode 1`] = `
+<div>
+  <div
+    class="styledComponents__MainContainer-i3ilf2-0 gPVVFI"
+  >
+    <div
+      class="styledComponents__HeaderContainer-i3ilf2-3 ffkpyW"
+      data-testid="collapsible-header-container"
+    >
+      <div
+        class="styledComponents__IconContainer-i3ilf2-4 bsvKmv collapsible-header-icon"
+      >
+        <img
+          alt="Select Time"
+          class="styledComponents__IconImage-i3ilf2-5 CoppR"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-label css-1reifv3-MuiTypography-root"
+      >
+        Time
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-value text-align-right css-1reifv3-MuiTypography-root"
+      >
+        10.00
+      </p>
+    </div>
+    <div
+      class="styledComponents__ContentContainer-i3ilf2-2 hOuB"
+    >
+      <div
+        class="styledComponents__Divider-i3ilf2-1 kSSSdW"
+      />
+      <div
+        data-testid="test-content"
+      >
+        Test content
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CollapsibleFieldContainer should take place holder if value is not present 1`] = `
+<div>
+  <div
+    class="styledComponents__MainContainer-i3ilf2-0 gPVVFI"
+  >
+    <div
+      class="styledComponents__HeaderContainer-i3ilf2-3 ffkpyW"
+      data-testid="collapsible-header-container"
+    >
+      <div
+        class="styledComponents__IconContainer-i3ilf2-4 bsvKmv collapsible-header-icon"
+      >
+        <img
+          alt="Select Time"
+          class="styledComponents__IconImage-i3ilf2-5 CoppR"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-label css-1reifv3-MuiTypography-root"
+      >
+        Time
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 collapsible-header-placeholder text-align-right css-1reifv3-MuiTypography-root"
+      >
+        Select Time
+      </p>
+    </div>
+  </div>
+</div>
+`;

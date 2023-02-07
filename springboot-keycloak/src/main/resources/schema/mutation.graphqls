@@ -1,0 +1,31 @@
+type Mutation {
+    generateOTP(input : GenerateOTPInput) :, GenerateOTPOutput
+    validateOTP(input:  ValidateOTPInput) : ValidateOTPOutput
+}
+
+input GenerateOTPInput{
+    phoneNumber : String!
+}
+
+type GenerateOTPOutput
+{
+    success: Boolean,
+    error: OtpError
+}
+
+type OtpError {
+    code: String
+    message : String
+    resendWaitPeriodMillis: Int
+}
+
+input ValidateOTPInput{
+    phoneNumber : String!
+    otp : String!
+}
+
+type ValidateOTPOutput
+{
+    success: Boolean,
+    error: OtpError
+}

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CarModel /> it should match snapshot 1`] = `
+<div>
+  <div
+    class="flex p-5 mt-3 items-center justify-between rounded border border-solid "
+    data-testid="CarModel-1"
+    style="gap: 10px; background: rgb(255, 255, 255); border-color: rgba(0, 0, 0, 0.08);"
+  >
+    <p
+      class="font-normal font-[500] text-base leading-6"
+    >
+      Corolla
+    </p>
+    <div>
+      <img
+        alt="arrow-forward-icon.svg"
+        class="min-h-3.5 min-w-3 left-1.25 top-4.5 rounded-none"
+        src="arrow-forward-icon.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

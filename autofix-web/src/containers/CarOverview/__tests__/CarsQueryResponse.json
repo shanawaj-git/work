@@ -1,0 +1,46 @@
+{
+  "data": {
+    "cars": {
+      "data": [
+        {
+          "attributes": {
+            "engine_type": {
+              "data": {
+                "id": "69",
+                "attributes": {
+                  "name": "1.6 VVT-i"
+                }
+              }
+            },
+            "model": {
+              "data": {
+                "id": "23",
+                "attributes": {
+                  "name": "Corolla",
+                  "makerId": {
+                    "data": {
+                      "id": "10",
+                      "attributes": {
+                        "name": "Toyota",
+                        "logo": "https://banner2.cleanpng.com/20171201/3ce/toyota-logo-picture-5a21ff4daacf07.7378398915121774856996.jpg"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "year": {
+              "data": {
+                "id": "49",
+                "attributes": {
+                  "value": 2022
+                }
+              }
+            },
+            "image": "https://www.drivearabia.com/carprices/media/catalog/5d0b8000581442020_Toyota_Corolla_front.jpg"
+          }
+        }
+      ]
+    }
+  }
+}

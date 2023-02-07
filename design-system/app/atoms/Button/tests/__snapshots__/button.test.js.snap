@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button.js index Should display button with primary color style 1`] = `
+<ForwardRef(StyledButton)
+  colorStyle="primary"
+  variant="contained"
+>
+  <div
+    style={
+      Object {
+        "visibility": "visible",
+      }
+    }
+  >
+    <div>
+      button
+    </div>
+  </div>
+</ForwardRef(StyledButton)>
+`;
+
+exports[`Button.js index Should display button with secondary color style 1`] = `
+<ForwardRef(StyledButton)
+  colorStyle="secondary"
+  variant="outlined"
+>
+  <div
+    style={
+      Object {
+        "visibility": "visible",
+      }
+    }
+  >
+    <div>
+      button
+    </div>
+  </div>
+</ForwardRef(StyledButton)>
+`;
+
+exports[`Button.js index Should display disabled button 1`] = `
+<ForwardRef(StyledButton)
+  colorStyle="secondary"
+  disabled={true}
+  variant="outlined"
+>
+  <div
+    style={
+      Object {
+        "visibility": "visible",
+      }
+    }
+  >
+    <div>
+      button
+    </div>
+  </div>
+</ForwardRef(StyledButton)>
+`;
+
+exports[`Button.js index Should display loading button 1`] = `
+<ForwardRef(StyledButton)
+  colorStyle="secondary"
+  variant="outlined"
+>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div>
+      button
+    </div>
+  </div>
+  <Spinner
+    variant="dark"
+  />
+</ForwardRef(StyledButton)>
+`;

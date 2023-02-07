@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MedicineCard.js index Should display Medicine Card in a container with pill image, title, sub title, description and bodyText  1`] = `
+<div>
+  <ForwardRef(StyledMedicineCard__MedicineCardWrapper)>
+    <div
+      className="medicine-card-header"
+    >
+      <img
+        alt="Hydroxyzine"
+        src={
+          Object {
+            "pillIcon": "IMAGE_MOCK",
+          }
+        }
+      />
+      <div
+        className="medicine-card-details-wrapper"
+      >
+        <div
+          className="medicine-card-header-details"
+        >
+          <Typography
+            className="card-header-title"
+            typographyType="subHead"
+          >
+            Hydroxyzine
+          </Typography>
+          <Typography
+            className="card-header-subTitle"
+            typographyType="subHead"
+          >
+            Dosage:
+          </Typography>
+          <Typography
+            className="card-header-description"
+            typographyType="subHead"
+          >
+            3 times a day, for 5 days
+          </Typography>
+        </div>
+      </div>
+    </div>
+    <div
+      className="medicine-card-body"
+    >
+      <p>
+        Doctors Notes: &lt;br&gt; Take 3 times a day, after food.
+      </p>
+    </div>
+  </ForwardRef(StyledMedicineCard__MedicineCardWrapper)>
+</div>
+`;

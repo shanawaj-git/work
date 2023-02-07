@@ -1,0 +1,5 @@
+site_name: "Escribe Docker Compose"
+nav:
+  - Setup: ./README.md
+plugins:
+  - techdocs-core

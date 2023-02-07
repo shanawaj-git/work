@@ -1,0 +1,542 @@
+{
+  "asyncapi": "2.0.0",
+  "info": {
+    "title": "Prescription Service",
+    "version": "0.3.0"
+  },
+  "servers": {
+    "kafka": {
+      "url": "kafka:9092",
+      "protocol": "kafka"
+    }
+  },
+  "channels": {
+    "prescription": {
+      "subscribe": {
+        "bindings": {
+          "kafka": {}
+        },
+        "message": {
+          "name": "com.albatha.nexthealth.prescription.dto.PrescriptionEventDTO",
+          "title": "PrescriptionEventDTO",
+          "payload": {
+            "$ref": "#/components/schemas/PrescriptionEventDTO"
+          }
+        }
+      }
+    },
+    "prescriptions": {
+      "publish": {
+        "bindings": {
+          "kafka": {}
+        },
+        "message": {
+          "name": "com.albatha.nexthealth.prescription.dto.PrescriptionEventDTO",
+          "title": "PrescriptionEventDTO",
+          "payload": {
+            "$ref": "#/components/schemas/PrescriptionEventDTO"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "InsuranceProviderDTO": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "eClaimLinkId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "eclaimLinkId": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "code": "string",
+          "eClaimLinkId": "string",
+          "name": "string",
+          "eclaimLinkId": "string"
+        }
+      },
+      "DosageDTO": {
+        "type": "object",
+        "properties": {
+          "frequency": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "period": {
+            "type": "string"
+          },
+          "route": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "string"
+          },
+          "doctorNotes": {
+            "type": "string"
+          },
+          "timeUnit": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "frequency": "string",
+          "unit": "string",
+          "period": "string",
+          "route": "string",
+          "quantity": "string",
+          "doctorNotes": "string",
+          "timeUnit": "string"
+        }
+      },
+      "PrescriptionDTO": {
+        "type": "object",
+        "properties": {
+          "prescriptionNumber": {
+            "type": "string"
+          },
+          "recordNumber": {
+            "type": "string"
+          },
+          "visitDate": {
+            "type": "string"
+          },
+          "diagnosis": {
+            "type": "string"
+          },
+          "drugs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DrugDTO"
+            }
+          },
+          "pin": {
+            "type": "string"
+          },
+          "patient": {
+            "$ref": "#/components/schemas/PatientDTO"
+          },
+          "doctor": {
+            "$ref": "#/components/schemas/DoctorDTO"
+          },
+          "sendingFacility": {
+            "$ref": "#/components/schemas/FacilityDTO"
+          }
+        },
+        "example": {
+          "prescriptionNumber": "string",
+          "recordNumber": "string",
+          "visitDate": "string",
+          "diagnosis": "string",
+          "drugs": [
+            {
+              "name": "string",
+              "code": "string",
+              "dosage": {
+                "frequency": "string",
+                "unit": "string",
+                "period": "string",
+                "route": "string",
+                "quantity": "string",
+                "doctorNotes": "string",
+                "timeUnit": "string"
+              }
+            }
+          ],
+          "pin": "string",
+          "patient": {
+            "patId": "string",
+            "emiratesId": "string",
+            "mohId": "string",
+            "name": {
+              "first": "string",
+              "middle": "string",
+              "last": "string"
+            },
+            "email": "string",
+            "mobileNumber": "string",
+            "dob": "string",
+            "address": [
+              {
+                "addressLine1": "string",
+                "addressLine2": "string",
+                "area": "string",
+                "city": "string",
+                "state": "string",
+                "postalCode": "string",
+                "type": "string",
+                "country": "string"
+              }
+            ],
+            "insurance": {
+              "insId": "string",
+              "policyNumber": "string",
+              "network": "string",
+              "expiryDate": "string",
+              "provider": {
+                "code": "string",
+                "eClaimLinkId": "string",
+                "name": "string",
+                "eclaimLinkId": "string"
+              }
+            }
+          },
+          "doctor": {
+            "docId": "string",
+            "name": {
+              "first": "string",
+              "middle": "string",
+              "last": "string"
+            },
+            "email": "string",
+            "mobileNumber": "string"
+          },
+          "sendingFacility": {
+            "facId": "string",
+            "name": "string",
+            "address": "string"
+          }
+        }
+      },
+      "AddressDTO": {
+        "type": "object",
+        "properties": {
+          "addressLine1": {
+            "type": "string"
+          },
+          "addressLine2": {
+            "type": "string"
+          },
+          "area": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
+          "postalCode": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "addressLine1": "string",
+          "addressLine2": "string",
+          "area": "string",
+          "city": "string",
+          "state": "string",
+          "postalCode": "string",
+          "type": "string",
+          "country": "string"
+        }
+      },
+      "FacilityDTO": {
+        "type": "object",
+        "properties": {
+          "facId": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "facId": "string",
+          "name": "string",
+          "address": "string"
+        }
+      },
+      "DoctorDTO": {
+        "type": "object",
+        "properties": {
+          "docId": {
+            "type": "string"
+          },
+          "name": {
+            "$ref": "#/components/schemas/NameDTO"
+          },
+          "email": {
+            "type": "string"
+          },
+          "mobileNumber": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "docId": "string",
+          "name": {
+            "first": "string",
+            "middle": "string",
+            "last": "string"
+          },
+          "email": "string",
+          "mobileNumber": "string"
+        }
+      },
+      "InsuranceDTO": {
+        "type": "object",
+        "properties": {
+          "insId": {
+            "type": "string"
+          },
+          "policyNumber": {
+            "type": "string"
+          },
+          "network": {
+            "type": "string"
+          },
+          "expiryDate": {
+            "type": "string"
+          },
+          "provider": {
+            "$ref": "#/components/schemas/InsuranceProviderDTO"
+          }
+        },
+        "example": {
+          "insId": "string",
+          "policyNumber": "string",
+          "network": "string",
+          "expiryDate": "string",
+          "provider": {
+            "code": "string",
+            "eClaimLinkId": "string",
+            "name": "string",
+            "eclaimLinkId": "string"
+          }
+        }
+      },
+      "PrescriptionEventDTO": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string"
+          },
+          "eventType": {
+            "type": "string"
+          },
+          "data": {
+            "$ref": "#/components/schemas/PrescriptionDTO"
+          }
+        },
+        "example": {
+          "topic": "string",
+          "eventType": "string",
+          "data": {
+            "prescriptionNumber": "string",
+            "recordNumber": "string",
+            "visitDate": "string",
+            "diagnosis": "string",
+            "drugs": [
+              {
+                "name": "string",
+                "code": "string",
+                "dosage": {
+                  "frequency": "string",
+                  "unit": "string",
+                  "period": "string",
+                  "route": "string",
+                  "quantity": "string",
+                  "doctorNotes": "string",
+                  "timeUnit": "string"
+                }
+              }
+            ],
+            "pin": "string",
+            "patient": {
+              "patId": "string",
+              "emiratesId": "string",
+              "mohId": "string",
+              "name": {
+                "first": "string",
+                "middle": "string",
+                "last": "string"
+              },
+              "email": "string",
+              "mobileNumber": "string",
+              "dob": "string",
+              "address": [
+                {
+                  "addressLine1": "string",
+                  "addressLine2": "string",
+                  "area": "string",
+                  "city": "string",
+                  "state": "string",
+                  "postalCode": "string",
+                  "type": "string",
+                  "country": "string"
+                }
+              ],
+              "insurance": {
+                "insId": "string",
+                "policyNumber": "string",
+                "network": "string",
+                "expiryDate": "string",
+                "provider": {
+                  "code": "string",
+                  "eClaimLinkId": "string",
+                  "name": "string",
+                  "eclaimLinkId": "string"
+                }
+              }
+            },
+            "doctor": {
+              "docId": "string",
+              "name": {
+                "first": "string",
+                "middle": "string",
+                "last": "string"
+              },
+              "email": "string",
+              "mobileNumber": "string"
+            },
+            "sendingFacility": {
+              "facId": "string",
+              "name": "string",
+              "address": "string"
+            }
+          }
+        }
+      },
+      "DrugDTO": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "dosage": {
+            "$ref": "#/components/schemas/DosageDTO"
+          }
+        },
+        "example": {
+          "name": "string",
+          "code": "string",
+          "dosage": {
+            "frequency": "string",
+            "unit": "string",
+            "period": "string",
+            "route": "string",
+            "quantity": "string",
+            "doctorNotes": "string",
+            "timeUnit": "string"
+          }
+        }
+      },
+      "NameDTO": {
+        "type": "object",
+        "properties": {
+          "first": {
+            "type": "string"
+          },
+          "middle": {
+            "type": "string"
+          },
+          "last": {
+            "type": "string"
+          }
+        },
+        "example": {
+          "first": "string",
+          "middle": "string",
+          "last": "string"
+        }
+      },
+      "PatientDTO": {
+        "type": "object",
+        "properties": {
+          "patId": {
+            "type": "string"
+          },
+          "emiratesId": {
+            "type": "string"
+          },
+          "mohId": {
+            "type": "string"
+          },
+          "name": {
+            "$ref": "#/components/schemas/NameDTO"
+          },
+          "email": {
+            "type": "string"
+          },
+          "mobileNumber": {
+            "type": "string"
+          },
+          "dob": {
+            "type": "string"
+          },
+          "address": {
+            "uniqueItems": true,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AddressDTO"
+            }
+          },
+          "insurance": {
+            "$ref": "#/components/schemas/InsuranceDTO"
+          }
+        },
+        "example": {
+          "patId": "string",
+          "emiratesId": "string",
+          "mohId": "string",
+          "name": {
+            "first": "string",
+            "middle": "string",
+            "last": "string"
+          },
+          "email": "string",
+          "mobileNumber": "string",
+          "dob": "string",
+          "address": [
+            {
+              "addressLine1": "string",
+              "addressLine2": "string",
+              "area": "string",
+              "city": "string",
+              "state": "string",
+              "postalCode": "string",
+              "type": "string",
+              "country": "string"
+            }
+          ],
+          "insurance": {
+            "insId": "string",
+            "policyNumber": "string",
+            "network": "string",
+            "expiryDate": "string",
+            "provider": {
+              "code": "string",
+              "eClaimLinkId": "string",
+              "name": "string",
+              "eclaimLinkId": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "splashScreenDurationInSec": "5",
+  "RESEND_OTP_DELAY_IN_SECONDS": "60",
+  "OTP_LENGTH": "6"
+}

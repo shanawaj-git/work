@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ReviewPrescription /> should render and match the snapshot 1`] = `
+<div
+  class="sc-bdVaJa gEcSzY"
+>
+  <img
+    alt="review-prescription-image"
+    class="sc-bwzfXH hldIzy"
+  />
+  <div
+    class="sc-htoDjs fNQiaU"
+  >
+    <div
+      class="sc-htpNat fQBisn"
+    >
+      <div
+        class="sc-bxivhb kRsUjG"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 css-1jfg05l-MuiTypography-root"
+        >
+          Happy with
+        </h2>
+        <h1
+          class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+        >
+          the Picture?
+        </h1>
+      </div>
+      <div
+        class="sc-ifAKCX igimdP"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-1reifv3-MuiTypography-root"
+        >
+          The picture needs to be clear and readable and must contain clear instructions for the prescribed meds to be consumed.
+        </p>
+      </div>
+      <div
+        class="sc-EHOje fCfsfb"
+      >
+        <button
+          class="sc-gzVnrw cWKNcN"
+          data-testid="retake-button"
+        >
+          <input
+            accept="image/*"
+            class="sc-fjdhpX djZNwv"
+            data-testid="retake-prescription-input"
+            type="file"
+          />
+          Retake
+        </button>
+        <button
+          class="sc-bZQynM iIooLg"
+          data-testid="upload-btn"
+        >
+          Continue
+        </button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;

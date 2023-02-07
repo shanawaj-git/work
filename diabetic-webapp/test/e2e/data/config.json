@@ -1,0 +1,6 @@
+{
+  "splashPageURL": "https://escribe-apim.azure-api.net",
+  "loginSelectionPageURL": "https://escribe-apim.azure-api.net/login-selection",
+  "authenticationPageURL": "https://escribe-apim.azure-api.net/phone-login",
+  "DiffPixelRatio": 0.03
+}

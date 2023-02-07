@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      database: pharmacies
+      uri: ${MONGO_URI:mongodb://mongo:27017/pharmacies?retryWrites=false}
+graphql:
+
+  servlet:
+    cors-enabled: true
+    cors:
+      allowed-origins: ${CORS_ALLOWED_HOSTS}
+      allowed-methods: GET, HEAD, POST, OPTIONS
+      allow-credentials: true
+      allowed-headers: "*"
+graphiql:
+  enabled: true

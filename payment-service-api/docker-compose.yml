@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+   nexthealth-application:
+     build:
+       context: .
+       dockerfile: Dockerfile 
+     ports:
+       - 8080:8080
+     restart: always
+     environment:
+        KAFKA_TOPIC : "${KAFKA_TOPIC}"
+        KAFKA_BOOTSTRAP_SERVER : "${KAFKA_BOOTSTRAP_SERVER}"
+        KAFKA_ADMIN_USER : "${KAFKA_ADMIN_USER}"
+        KAFKA_ADMIN_PASSWORD : "${KAFKA_ADMIN_PASSWORD}"
+        MONGO_DATABASE: "${MONGO_DATABASE}"
+        MONGO_URI: "${MONGO_URI}"
+#        MONGO_USERNAME: "${MONGO_USERNAME}"
+#        MONGO_PASSWORD: "${MONGO_PASSWORD}"
+networks:
+  default:
+    external:
+      name: dev

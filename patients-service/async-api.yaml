@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: patient-service-api
+  title: Escribe Patient service
+  description: Used for maintaining the patients data
+  tags:
+    - asyncapi
+    - kafka
+    - graphql
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: asyncapi
+  owner: nexthealth
+  lifecycle: experimental
+  definition:
+    $text: ./docs/asyncAPI.json

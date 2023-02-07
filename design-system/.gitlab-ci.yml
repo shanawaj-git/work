@@ -1,0 +1,78 @@
+image: node:16.13.1
+
+stages:
+  - configuration
+  - build
+  - test
+  - publish
+
+installation:
+  stage: configuration
+  script:
+    - yarn install
+  artifacts:
+    paths:
+      - node_modules
+  cache:
+    - key:
+        files:
+          - yarn.lock
+      paths:
+        - node_modules
+
+  only:
+    - main
+    - devel
+    - merge_requests
+
+build-code:
+  stage: build
+  script:
+    - yarn run build
+  only:
+    - main
+    - devel
+    - merge_requests
+
+build-storybook:
+  stage: build
+  script:
+    - yarn run build-storybook
+  only:
+    - main
+    - devel
+    - merge_requests
+
+jest-test:
+  stage: test
+  script:
+    - yarn run test
+  only:
+    - main
+    - devel
+    - merge_requests
+
+lint-test:
+  stage: test
+  script:
+    - yarn run lint
+  only:
+    - main
+    - devel
+    - merge_requests
+
+publish-package:
+  stage: publish
+  script:
+    - echo "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}">.npmrc
+    - yarn run transpile
+    - npm publish
+  only:
+    - main
+
+deploy-storybook:
+  stage: publish
+  script:
+    - yarn run chromatic
+  only:
+    - main

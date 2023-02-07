@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`organization settings Should return organization settings if organization exists 1`] = `
+Object {
+  "isDefaultOrganization": true,
+  "name": "Main",
+  "theme": Object {
+    "color": Object {
+      "c100": "#E25F6D",
+      "c200": "#FFFFFF",
+      "c300": "#E8E8E6",
+      "c400": "#9A9D9D",
+      "c500": "#495151",
+      "c600": "#d4d9d9",
+      "p100": "#F6FAFB",
+      "p200": "#FCF7F7",
+      "p300": "#E25F6D",
+      "p400": "#535858",
+      "p500": "#020A0A",
+    },
+    "overrides": Object {
+      "button": Object {
+        "borderRadius": "32px",
+      },
+    },
+  },
+}
+`;
+
+exports[`organization settings Should return undefined object if organization doesn't exist exists 1`] = `undefined`;

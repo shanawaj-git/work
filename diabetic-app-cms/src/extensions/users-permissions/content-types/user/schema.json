@@ -1,0 +1,142 @@
+{
+  "kind": "collectionType",
+  "collectionName": "up_users",
+  "info": {
+    "name": "user",
+    "description": "",
+    "singularName": "user",
+    "pluralName": "users",
+    "displayName": "Patient"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "regex": "^(971||\\+971)(\\d{9})?$",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 4,
+      "configurable": false,
+      "private": true,
+      "required": false,
+      "default": "******"
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmationToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "confirmed": {
+      "type": "boolean",
+      "default": true,
+      "configurable": false
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false,
+      "configurable": false
+    },
+    "role": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.role",
+      "inversedBy": "users",
+      "configurable": false,
+      "required": true
+    },
+    "sms_notifications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sms-notification.sms-notification",
+      "mappedBy": "patient"
+    },
+    "reminders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reminder.reminder",
+      "mappedBy": "patient"
+    },
+    "passwordExpiresAt": {
+      "type": "datetime",
+      "private": true
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "mobileNumber": {
+      "type": "string"
+    },
+    "emiratesId": {
+      "type": "string"
+    },
+    "reminderFrequency": {
+      "type": "integer",
+      "min": 30,
+      "max": 90,
+      "default": 90,
+      "required": true
+    },
+    "prescriptions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::prescription.prescription",
+      "mappedBy": "patient"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "patient"
+    },
+    "passwordGeneratedAt": {
+      "type": "datetime",
+      "private": true
+    },
+    "maxUnsuccessfulLoginCount": {
+      "type": "integer",
+      "private": true
+    },
+    "lastUnsuccessfulLoginTime": {
+      "type": "datetime",
+      "private": true
+    },
+    "payments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::payment.payment",
+      "mappedBy": "patient"
+    },
+    "patientPin": {
+      "type": "string"
+    }
+  }
+}

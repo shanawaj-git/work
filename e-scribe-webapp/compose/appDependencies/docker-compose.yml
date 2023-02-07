@@ -1,0 +1,11 @@
+
+services:
+  unleash-proxy:
+    extends:
+      file: ../unleashProxy/docker-compose.yml
+      service: unleash-proxy
+
+  strapi:
+    extends:
+      file: ../strapi/docker-compose.yml
+      service: strapi

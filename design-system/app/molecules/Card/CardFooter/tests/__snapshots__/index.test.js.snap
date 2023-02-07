@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`index should render card footer with button 1`] = `
+<div
+  className="card-footer undefined"
+>
+  <div
+    className="textWithIcon card-footer-title"
+  >
+    <span
+      className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+    >
+      titleText
+    </span>
+    <span
+      className="MuiTypography-root MuiTypography-caption textWithIcon-sideText css-1393mlh-MuiTypography-root"
+    >
+      titleSideText
+    </span>
+  </div>
+  <span
+    className="MuiTypography-root MuiTypography-caption card-footer-subtitle css-1393mlh-MuiTypography-root"
+  >
+    caption
+  </span>
+  <button
+    className="root StyledButton-sc-1apep4b-0 fcMYug MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+    disabled={false}
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <div
+      style={
+        Object {
+          "visibility": "visible",
+        }
+      }
+    >
+      <div>
+        buttonText
+      </div>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`index should render card footer with no button 1`] = `
+<div
+  className="card-footer test"
+>
+  <div
+    className="textWithIcon card-footer-title"
+  >
+    <span
+      className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+    >
+      titleText
+    </span>
+    <span
+      className="MuiTypography-root MuiTypography-caption textWithIcon-sideText css-1393mlh-MuiTypography-root"
+    >
+      titleSideText
+    </span>
+  </div>
+  <span
+    className="MuiTypography-root MuiTypography-caption card-footer-subtitle css-1393mlh-MuiTypography-root"
+  >
+    caption
+  </span>
+</div>
+`;
+
+exports[`index should render card footer with no details 1`] = `
+<div
+  className="card-footer undefined"
+>
+  <div
+    className="textWithIcon card-footer-title"
+  />
+  <span
+    className="MuiTypography-root MuiTypography-caption card-footer-subtitle css-1393mlh-MuiTypography-root"
+  />
+</div>
+`;

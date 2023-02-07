@@ -1,0 +1,60 @@
+div[data-rsbs-content=true] .MuiInput-input {
+  box-sizing: border-box;
+  height: 56px;
+  background: #FFFFFF;
+ border-color: #12A1C0;
+  border-radius: 8px;
+
+}
+
+div[data-rsbs-scroll=true] .MuiTypography-h5.text-list-item-left {
+  width: 125px;
+  height: 22px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #020A0A;
+}
+
+div[data-rsbs-scroll=true] .text-list-item-wrapper img {
+  content: url("data:image/svg+xml,<svg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.21 20.21'><defs><style>.cls-1%7Bfill:none;stroke:%23979F9F;stroke-miterlimit:10;%7D</style></defs><path class='cls-1' d='M18.53,1.94,16.12,4.36l4,4,2.41-2.42ZM14.61,5.87,3.53,16.94v4h4L18.61,9.87Z' transform='translate(-3.03 -1.23)'/></svg>");
+}
+
+
+div[data-rsbs-footer=true] .MuiButton-text {
+  padding-top: 20px;
+  border-color: transparent;
+  width: 90px;
+  height: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #E1371A;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+div[data-rsbs-footer=true] .MuiButton-contained {
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 160px;
+  height: 48px;
+  background: #00664F;
+  border-radius: 12px;
+  margin-right: 5%;
+
+}
+div[data-rsbs-footer=true] .MuiButton-contained:disabled {
+  color: darkgray;
+  border-color: lightgrey;
+  background: lightgrey;
+}

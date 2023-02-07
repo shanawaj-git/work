@@ -1,0 +1,21 @@
+type Address {
+    addressId: ID!
+    flatVillaNumber: String
+    buildingName: String
+    formattedText: String
+    area: String
+    city: String
+    country: String
+    userNotes: String
+    state: String
+    latitude: Float
+    longitude: Float
+    postalCode: String
+    type: String
+}
+
+type CreateAddressOutput {
+    success: Boolean!
+    data: Address
+    error: Error
+}

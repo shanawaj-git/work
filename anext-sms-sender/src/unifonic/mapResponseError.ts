@@ -1,0 +1,30 @@
+import { SMSErrorCode } from '../SMSErrorCode';
+
+export const ResponseCodeErrorMap = {
+  219: SMSErrorCode.SENDER_INVALID, //weired, but it does come from unifonic
+
+  401: SMSErrorCode.AUTH_FAILURE,
+  402: SMSErrorCode.MISSING_AUTH_PARAM,
+  404: SMSErrorCode.INCOMPATIBLE_API_VERSION,
+  406: SMSErrorCode.INVALID_PARAM_FORMAT,
+  409: SMSErrorCode.DUPLICATE_MESSAGE,
+  410: SMSErrorCode.RECEPIENT_FORMAT_INVALID,
+  412: SMSErrorCode.MESSAGE_BODY_TOO_LONG,
+  417: SMSErrorCode.MESSAGE_BODY_INVALID,
+  420: SMSErrorCode.PAGE_LIMIT_EXCEEDED,
+  421: SMSErrorCode.MESSAGE_BODY_MISSING,
+  422: SMSErrorCode.RECEPIENT_MISSING,
+  429: SMSErrorCode.TOO_MANY_REQUESTS,
+  440: SMSErrorCode.SENDER_FORMAT_INVALID,
+  449: SMSErrorCode.MESSAGE_BODY_EMPTY,
+  450: SMSErrorCode.RECEPIENT_TOO_MANY_ENTRIES,
+  456: SMSErrorCode.CORRELATION_ID_FORMAT_INVALID,
+  460: SMSErrorCode.INVALID_ENCODING,
+  480: SMSErrorCode.SENDER_APPSID_MISMATCH,
+  481: SMSErrorCode.RECEPIENT_INVALID,
+  482: SMSErrorCode.RECEPIENT_INVALID,
+  483: SMSErrorCode.RECEPIENT_INVALID,
+};
+
+export const mapResponseError = (responseCode: number) =>
+  ResponseCodeErrorMap[responseCode] || SMSErrorCode.GENERIC_ERROR;

@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SwjtchButton.js index Should display a checked switch button 1`] = `
+<div>
+  <ForwardRef(Styled(Component))
+    checked={true}
+    data-testid="toggle"
+    disabled={false}
+    onChange={[Function]}
+  />
+</div>
+`;
+
+exports[`SwjtchButton.js index Should display a disabled switch button 1`] = `
+<div>
+  <ForwardRef(Styled(Component))
+    checked={true}
+    data-testid="toggle"
+    disabled={true}
+    onChange={[Function]}
+  />
+</div>
+`;
+
+exports[`SwjtchButton.js index should call onChange function in case of onchange event happens 1`] = `
+<div>
+  <span
+    className="MuiSwitch-root MuiSwitch-sizeMedium sc-bdVaJa fimhKu css-julti5-MuiSwitch-root"
+  >
+    <span
+      className="MuiSwitch-switchBase MuiSwitch-colorPrimary MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase"
+      data-testid="toggle"
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={null}
+    >
+      <input
+        checked={false}
+        className="MuiSwitch-input PrivateSwitchBase-input css-1m9pwf3"
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+      />
+      <span
+        className="MuiSwitch-thumb css-jsexje-MuiSwitch-thumb"
+      />
+      <span
+        className="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </span>
+    <span
+      className="MuiSwitch-track css-1yjjitx-MuiSwitch-track"
+    />
+  </span>
+</div>
+`;

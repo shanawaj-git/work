@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SplashScreen /> should render and match the snapshot 1`] = `
+<div
+  class="sc-bdVaJa cVHCBW"
+>
+  <img
+    alt="Logo"
+    src="/cms/static/assets/splash-screen-logo.svg?locale=en"
+  />
+</div>
+`;

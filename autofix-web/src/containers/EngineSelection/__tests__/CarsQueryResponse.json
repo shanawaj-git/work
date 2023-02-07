@@ -1,0 +1,84 @@
+{
+  "data": {
+    "cars": {
+      "data": [
+        {
+          "attributes": {
+            "engine_type": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "1.6 VVT i"
+                }
+              }
+            },
+            "model": {
+              "data": {
+                "id": "23",
+                "attributes": {
+                  "name": "3-Series",
+                  "makerId": {
+                    "data": {
+                      "id": "10",
+                      "attributes": {
+                        "name": "BMW",
+                        "logo": "https://pngimg.com/uploads/bmw_logo/small/bmw_logo_PNG19709.png"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "year": {
+              "data": {
+                "id": "49",
+                "attributes": {
+                  "value": 1999
+                }
+              }
+            },
+            "image": "https://www.drivearabia.com/carprices/media/catalog/0810140304/bmw3series991.jpg"
+          }
+        },
+        {
+          "attributes": {
+            "engine_type": {
+              "data": {
+                "id": "2",
+                "attributes": {
+                  "name": "2.0 VVT i"
+                }
+              }
+            },
+            "model": {
+              "data": {
+                "id": "23",
+                "attributes": {
+                  "name": "3-Series",
+                  "makerId": {
+                    "data": {
+                      "id": "10",
+                      "attributes": {
+                        "name": "BMW",
+                        "logo": "https://pngimg.com/uploads/bmw_logo/small/bmw_logo_PNG19709.png"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "year": {
+              "data": {
+                "id": "49",
+                "attributes": {
+                  "value": 1999
+                }
+              }
+            },
+            "image": "https://www.drivearabia.com/carprices/media/catalog/0810140304/bmw3series991.jpg"
+          }
+        }
+      ]
+    }
+  }
+}

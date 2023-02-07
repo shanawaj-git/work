@@ -1,0 +1,714 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PrescriptionDetails /> should display prescription if it is fetched correctly 1`] = `
+<div
+  class="_loading_overlay_wrapper css-79elbk"
+  data-testid="wrapper"
+>
+  <div
+    class="_loading_overlay_overlay css-13vul25 _loading-overlay-transition-exit-active"
+    data-testid="overlay"
+  >
+    <div
+      class="_loading_overlay_content css-42igfv"
+    >
+      <div
+        class="_loading_overlay_spinner css-50etie"
+      >
+        <svg
+          viewBox="25 25 50 50"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            fill="none"
+            r="20"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      loading your prescription
+    </div>
+  </div>
+  <div
+    class="sc-gzVnrw bqtVKf"
+  >
+    <div
+      class="sc-bwzfXH enUtzo"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-133ztm5-MuiTypography-root"
+      >
+        <span>
+          PRESCRIPTION
+        </span>
+      </p>
+      <h2
+        class="MuiTypography-root MuiTypography-h2 sc-bZQynM fRaeiz css-1jfg05l-MuiTypography-root"
+      >
+        test 2
+      </h2>
+      <span
+        class="sc-EHOje ecqYTp"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-ry76j1-MuiTypography-root"
+          style="font-weight: 600;"
+        >
+          <span>
+            <span>
+              Doctor
+            </span>
+            :
+          </span>
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-ry76j1-MuiTypography-root"
+        >
+          <span>
+             
+            <span>
+              Dr.
+            </span>
+             joahn tesae
+          </span>
+        </p>
+      </span>
+      <span
+        class="sc-EHOje ecqYTp"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-ry76j1-MuiTypography-root"
+          style="font-weight: 600;"
+        >
+          <span>
+            <span>
+              Insurance
+            </span>
+            :
+          </span>
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-ry76j1-MuiTypography-root"
+        >
+          <span>
+             
+            test insurance company
+          </span>
+        </p>
+      </span>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters sc-htpNat hJPuzU css-1elwnq4-MuiPaper-root-MuiAccordion-root"
+      >
+        <div
+          aria-expanded="false"
+          class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters sc-bxivhb bkQzw css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-1737vb2-MuiTypography-root"
+            >
+              <span>
+                Full prescription details
+              </span>
+            </h6>
+          </div>
+          <div
+            class="MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper"
+          >
+            <img
+              src="IMAGE_MOCK"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root"
+          style="min-height: 0px;"
+        >
+          <div
+            class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+          >
+            <div
+              class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+            >
+              <div
+                class="MuiAccordion-region"
+                role="region"
+              >
+                <div
+                  class="MuiAccordionDetails-root sc-ifAKCX lpcdAz css-15v22id-MuiAccordionDetails-root"
+                >
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Pin
+                    </span>
+                    <span>
+                       
+                      123
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Doctor
+                    </span>
+                    <span>
+                       
+                      joahn tesae
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Pol. Ref
+                    </span>
+                    <span>
+                      <img
+                        src="IMAGE_MOCK"
+                      />
+                       
+                      456
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      MOH ID
+                    </span>
+                    <span>
+                       
+                      1234
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Visit date
+                    </span>
+                    <span>
+                       
+                      4/12/2022
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Prescription No.
+                    </span>
+                    <span>
+                       
+                      123
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Insurance Provider
+                    </span>
+                    <span>
+                       
+                      test insurance company
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-htoDjs bJoJte"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-h3 sc-iwsKbI bUfXsj css-1ewfuka-MuiTypography-root"
+      >
+        <span>
+          Your diagnosis
+        </span>
+      </h3>
+      <div
+        class="sc-dnqmqq pvfwa"
+      >
+        deadly disease
+      </div>
+    </div>
+    <div
+      class="sc-htoDjs bJoJte"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-h3 sc-iwsKbI bUfXsj css-1ewfuka-MuiTypography-root"
+      >
+        <span>
+          Your prescription
+        </span>
+      </h3>
+      <div>
+        <div
+          class="StyledMedicineCard__MedicineCardWrapper-uao9hg-0 fSlAJl"
+        >
+          <div
+            class="medicine-card-header"
+          >
+            <img
+              alt="panadol"
+              src="/cms/static/assets/pill-icon.svg?locale=en"
+            />
+            <div
+              class="medicine-card-details-wrapper"
+            >
+              <div
+                class="medicine-card-header-details"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 card-header-title css-1reifv3-MuiTypography-root"
+                >
+                  panadol
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 card-header-subTitle css-1reifv3-MuiTypography-root"
+                >
+                  Dosage:
+                </p>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 card-header-description css-1reifv3-MuiTypography-root"
+                >
+                  two times a day for one week days
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="medicine-card-body"
+          >
+            <p>
+              use regularly
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<PrescriptionDetails /> should hide entries where fields are missing 1`] = `
+<div
+  class="_loading_overlay_wrapper css-79elbk"
+  data-testid="wrapper"
+>
+  <div
+    class="_loading_overlay_overlay css-13vul25 _loading-overlay-transition-exit-active"
+    data-testid="overlay"
+  >
+    <div
+      class="_loading_overlay_content css-42igfv"
+    >
+      <div
+        class="_loading_overlay_spinner css-50etie"
+      >
+        <svg
+          viewBox="25 25 50 50"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            fill="none"
+            r="20"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      loading your prescription
+    </div>
+  </div>
+  <div
+    class="sc-gzVnrw bqtVKf"
+  >
+    <div
+      class="sc-bwzfXH enUtzo"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-133ztm5-MuiTypography-root"
+      >
+        <span>
+          PRESCRIPTION
+        </span>
+      </p>
+      <h2
+        class="MuiTypography-root MuiTypography-h2 sc-bZQynM fRaeiz css-1jfg05l-MuiTypography-root"
+      >
+        undefined undefined
+      </h2>
+      <span
+        class="sc-EHOje ecqYTp"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-ry76j1-MuiTypography-root"
+          style="font-weight: 600;"
+        >
+          <span>
+            <span>
+              Doctor
+            </span>
+            :
+          </span>
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-ry76j1-MuiTypography-root"
+        >
+          <span>
+             
+            <span>
+              Dr.
+            </span>
+             undefined undefined
+          </span>
+        </p>
+      </span>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters sc-htpNat hJPuzU css-1elwnq4-MuiPaper-root-MuiAccordion-root"
+      >
+        <div
+          aria-expanded="false"
+          class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters sc-bxivhb bkQzw css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root"
+          role="button"
+          tabindex="0"
+        >
+          <div
+            class="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-1737vb2-MuiTypography-root"
+            >
+              <span>
+                Full prescription details
+              </span>
+            </h6>
+          </div>
+          <div
+            class="MuiAccordionSummary-expandIconWrapper css-yw020d-MuiAccordionSummary-expandIconWrapper"
+          >
+            <img
+              src="IMAGE_MOCK"
+            />
+          </div>
+        </div>
+        <div
+          class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root"
+          style="min-height: 0px;"
+        >
+          <div
+            class="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+          >
+            <div
+              class="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+            >
+              <div
+                class="MuiAccordion-region"
+                role="region"
+              >
+                <div
+                  class="MuiAccordionDetails-root sc-ifAKCX lpcdAz css-15v22id-MuiAccordionDetails-root"
+                >
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Pin
+                    </span>
+                    <span>
+                       
+                      123
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Doctor
+                    </span>
+                    <span>
+                       
+                      undefined undefined
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Visit date
+                    </span>
+                    <span>
+                       
+                      4/12/2022
+                    </span>
+                  </div>
+                  <div
+                    class="sc-bdVaJa fgsXgE"
+                  >
+                    <span>
+                      Prescription No.
+                    </span>
+                    <span>
+                       
+                      123
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-htoDjs bJoJte"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-h3 sc-iwsKbI bUfXsj css-1ewfuka-MuiTypography-root"
+      >
+        <span>
+          Your diagnosis
+        </span>
+      </h3>
+      <div
+        class="sc-dnqmqq pvfwa"
+      >
+        deadly disease
+      </div>
+    </div>
+    <div
+      class="sc-htoDjs bJoJte"
+    >
+      <h3
+        class="MuiTypography-root MuiTypography-h3 sc-iwsKbI bUfXsj css-1ewfuka-MuiTypography-root"
+      >
+        <span>
+          Your prescription
+        </span>
+      </h3>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<PrescriptionDetails /> should show error message if connectivity error happens 1`] = `
+<div
+  class="_loading_overlay_wrapper css-79elbk"
+  data-testid="wrapper"
+>
+  <div
+    class="_loading_overlay_overlay css-13vul25 _loading-overlay-transition-exit-active"
+    data-testid="overlay"
+  >
+    <div
+      class="_loading_overlay_content css-42igfv"
+    >
+      <div
+        class="_loading_overlay_spinner css-50etie"
+      >
+        <svg
+          viewBox="25 25 50 50"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            fill="none"
+            r="20"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      loading your prescription
+    </div>
+  </div>
+  <div
+    class="sc-gZMcBi bsSQaa"
+  >
+     
+    <span>
+      Sorry, something went wrong
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<PrescriptionDetails /> should show error message if prescription is not found 1`] = `
+<div
+  class="_loading_overlay_wrapper css-79elbk"
+  data-testid="wrapper"
+>
+  <div
+    class="_loading_overlay_overlay css-13vul25 _loading-overlay-transition-exit-active"
+    data-testid="overlay"
+  >
+    <div
+      class="_loading_overlay_content css-42igfv"
+    >
+      <div
+        class="_loading_overlay_spinner css-50etie"
+      >
+        <svg
+          viewBox="25 25 50 50"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            fill="none"
+            r="20"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      loading your prescription
+    </div>
+  </div>
+  <div
+    class="sc-gZMcBi bsSQaa"
+  >
+     
+    <span>
+      Please try after some time
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<PrescriptionDetails /> should show generic error message if backend did not send error code 1`] = `
+<div
+  class="_loading_overlay_wrapper css-79elbk"
+  data-testid="wrapper"
+>
+  <div
+    class="_loading_overlay_overlay css-13vul25 _loading-overlay-transition-exit-active"
+    data-testid="overlay"
+  >
+    <div
+      class="_loading_overlay_content css-42igfv"
+    >
+      <div
+        class="_loading_overlay_spinner css-50etie"
+      >
+        <svg
+          viewBox="25 25 50 50"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            fill="none"
+            r="20"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      loading your prescription
+    </div>
+  </div>
+  <div
+    class="sc-gZMcBi bsSQaa"
+  >
+     
+    <span>
+      Sorry, something went wrong
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<PrescriptionDetails /> should show generic error message if unknown error code error code 1`] = `
+<div
+  class="_loading_overlay_wrapper css-79elbk"
+  data-testid="wrapper"
+>
+  <div
+    class="_loading_overlay_overlay css-13vul25 _loading-overlay-transition-exit-active"
+    data-testid="overlay"
+  >
+    <div
+      class="_loading_overlay_content css-42igfv"
+    >
+      <div
+        class="_loading_overlay_spinner css-50etie"
+      >
+        <svg
+          viewBox="25 25 50 50"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            fill="none"
+            r="20"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      loading your prescription
+    </div>
+  </div>
+  <div
+    class="sc-gZMcBi bsSQaa"
+  >
+     
+    <span>
+      Sorry, something went wrong
+    </span>
+  </div>
+</div>
+`;
+
+exports[`<PrescriptionDetails /> should show loader while data is being fetched 1`] = `
+<div
+  class="_loading_overlay_wrapper _loading_overlay_wrapper--active css-ft4slc"
+  data-testid="wrapper"
+>
+  <div
+    class="_loading_overlay_overlay css-dgtziu"
+    data-testid="overlay"
+  >
+    <div
+      class="_loading_overlay_content css-42igfv"
+    >
+      <div
+        class="_loading_overlay_spinner css-50etie"
+      >
+        <svg
+          viewBox="25 25 50 50"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            fill="none"
+            r="20"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      loading your prescription
+    </div>
+  </div>
+  
+  <div
+    class="sc-gZMcBi bsSQaa"
+  />
+</div>
+`;

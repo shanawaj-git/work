@@ -1,0 +1,130 @@
+db.getCollection("prescriptions").aggregate([
+  {
+    "$match": {
+      "prescriptionNumber": "PRE-386283"
+    }
+  },
+  {
+    "$lookup": {
+      "from": "drugs",
+      "localField": "prescribedDrugs.drug",
+      "foreignField": "_id",
+      "as": "prescribedDrugs"
+    }
+  },
+  {
+    "$project": {
+      "prescribedDrugs": 1,
+      "prescribedDrugsCount": {
+        "$size": [
+          "$prescribedDrugs"
+        ]
+      }
+    }
+  },
+  {
+    "$unwind": "$prescribedDrugs"
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "prescribedDrugId": "$prescribedDrugs._id",
+      "prescribedDrugQuantity": "$prescribedDrugs.packageQuantity",
+      "brandName": "$prescribedDrugs.brandName",
+      "genericName": "$prescribedDrugs.genericName",
+      "codes": "$prescribedDrugs.codes",
+      "pricing":  "$prescribedDrugs.price",
+      "prescribedDrugsCount": 1,
+      "prescribedDrugs": 1
+    }
+  },
+  {
+    "$lookup": {
+      "from": "drugAvailability",
+      "localField": "prescribedDrugId",
+      "foreignField": "drug",
+      "as": "drugAvailabilities"
+    }
+  },
+  {
+    "$unwind": "$drugAvailabilities"
+  },
+  {
+    "$match": {
+      "$expr": {
+        "$gte": [
+          "$drugAvailabilities.quantity",
+          "$prescribedDrugQuantity"
+        ]
+      }
+    }
+  },
+  {
+    "$project": {
+      "pharmacy": "$drugAvailabilities.pharmacy",
+      "pharmacyname": "$drugAvailabilities.pharmacy.name",
+      "prescribedDrugId": 1,
+      "prescribedDrugsCount": 1,
+      "prescribedDrugQuantity": 1,
+      "brandName": 1,
+      "genericName": 1,
+      "codes": 1,
+      "pricing": 1,
+      "prescribedDrugsCount": 1,
+      "prescribedDrugs": 1
+    }
+  },
+  {
+    "$group": {
+      "_id": "$pharmacy",
+      "availableDrugsCount": {
+        "$sum": 1
+      },
+      "pharmacy": {
+        "$first": "$pharmacy"
+      },
+      "prescribedDrugsCount": {
+        "$first": "$prescribedDrugsCount"
+      },
+      "drugs": {
+        "$push": "$prescribedDrugs"
+      }
+    }
+  },
+  {
+    "$match": {
+      "$expr": [
+        "$availableDrugsCount",
+        "$prescribedDrugsCount"
+      ]
+    }
+  },
+  {
+    "$lookup": {
+      "from": "pharmacies",
+      "localField": "_id",
+      "foreignField": "_id",
+      "as": "pharmacies"
+    }
+  },
+  { $replaceRoot: { newRoot: { $mergeObjects: [ { $arrayElemAt: [ "$pharmacies", 0 ] }, "$$ROOT" ] } } },
+  {
+    "$project": {
+      "_id": 1,
+      "name": 1,
+      "deliveryRadiusMeters": 1,
+      "deliverySLAMinutes": 1,
+      "brand": 1,
+      "location": 1,
+      "prescribedDrugId": 1,
+      "prescribedDrugsCount": 1,
+      "prescribedDrugQuantity": 1,
+      "brandName": 1,
+      "genericName": 1,
+      "codes": 1,
+      "pricing": 1,
+      "prescribedDrugsCount": 1,
+      "drugs": 1
+    }
+  },
+]);

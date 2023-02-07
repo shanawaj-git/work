@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: anext-sms-sender
+  title: Anext SMS Sender Library
+  description: NPM Module to send SMSs from any AlbathaNext application.
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - npm
+    - notifications
+spec:
+  type: npm-module
+  owner: albathanext
+  lifecycle: experimental

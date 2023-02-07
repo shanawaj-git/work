@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PhoneLogin /> should render and match the snapshot 1`] = `
+<div
+  class="sc-bdVaJa dWYKRv"
+>
+  <div>
+    <div
+      class="sc-bwzfXH dygumy"
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+      >
+        What’s your mobile number?
+      </h1>
+    </div>
+    <div
+      class="root MuiFormControl-root styledComponents__FormControl-lwe1h6-0 btsVJU sc-htpNat fanNAL css-1nrlq1o-MuiFormControl-root"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1fwwy-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-standard MuiFormLabel-root MuiFormLabel-colorPrimary css-1c2i806-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for="mui-1"
+          id="mui-1-label"
+        >
+          Mobile number
+        </label>
+        <div
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
+        >
+          <input
+            aria-invalid="false"
+            autocomplete=""
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+            id="mui-1"
+            name=""
+            placeholder="971xxxxxxxxx"
+            type="tel"
+            value=""
+          />
+        </div>
+      </div>
+      
+    </div>
+    <span
+      class="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+    >
+      By tapping next, you agree to the 
+    </span>
+    <span
+      class="MuiTypography-root MuiTypography-caption css-115ym0p-MuiTypography-root"
+      data-testid="termsAndConditionsLink"
+      style="text-decoration: underline;"
+    >
+      Terms & Conditions
+    </span>
+  </div>
+  <div
+    class="PrivateSwipeArea-root css-17j2vre"
+    style="height: 30px;"
+  />
+  <div
+    class="sc-bxivhb kzQJYE"
+  >
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="login-btn"
+      disabled=""
+      style="width: 100%;"
+      tabindex="-1"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        Next
+      </div>
+    </button>
+    
+  </div>
+</div>
+`;

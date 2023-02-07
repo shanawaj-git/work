@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageCardWithCta.js index Should display ImageCardWithCta item with icon, title, subTitle and button with icon 1`] = `
+<div>
+  <ForwardRef(StyledImageCardWithCta__ImageCardWithCtaWrapper)>
+    <img
+      alt="We Work offices"
+      className="image-card-icon"
+    />
+    <div
+      className="image-card-content"
+    >
+      <Typography
+        className="image-card-title"
+        typographyType="headLine"
+      >
+        We Work offices
+      </Typography>
+      <Typography
+        className="image-card-subTitle"
+        typographyType="caption"
+      >
+        The Offices 4, Albatha Next, 8th floor...
+      </Typography>
+    </div>
+    <button
+      className="image-card-button"
+      onClick={[MockFunction]}
+      type="button"
+    >
+      <img
+        alt="We Work offices"
+        src="IMAGE_MOCK"
+      />
+    </button>
+  </ForwardRef(StyledImageCardWithCta__ImageCardWithCtaWrapper)>
+</div>
+`;

@@ -1,0 +1,38 @@
+{
+  "name": "strapi-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "test": "jest --forceExit --runInBand --detectOpenHandles",
+    "test-ci": "jest --detectOpenHandles --forceExit --watchAll=false --ci --reporters=default --reporters=jest-junit"
+  },
+  "devDependencies": {
+    "jest": "28.1.0",
+    "jest-junit": "13.2.0",
+    "mock-fs": "5.1.2",
+    "sqlite3": "5.0.8",
+    "supertest": "6.2.3"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.1.0",
+    "@strapi/plugin-users-permissions": "4.1.0",
+    "@strapi/strapi": "4.1.0",
+    "pg": "8.6.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "3b324feb-99c7-489c-872a-200a06d17f71"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

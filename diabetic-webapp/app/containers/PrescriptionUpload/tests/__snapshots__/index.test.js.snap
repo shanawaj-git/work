@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PrescriptionUpload /> should render and match the snapshot 1`] = `
+<div
+  class="sc-bwzfXH efIfpC"
+>
+  <div
+    class="sc-bdVaJa kgLnZe"
+  >
+    <img
+      alt="upload-prescription-img"
+      src="IMAGE_MOCK"
+    />
+  </div>
+  <div
+    class="sc-ifAKCX hahzy"
+  >
+    <div
+      class="sc-htpNat jnDXAh"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h2 css-1jfg05l-MuiTypography-root"
+      >
+        Scan & Upload
+      </h2>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+      >
+        your prescription
+      </h1>
+    </div>
+    <div
+      class="sc-bxivhb gXuoul"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1reifv3-MuiTypography-root"
+      >
+        Grab your prescription, upload it and proceed to setting up your delivery.
+      </p>
+    </div>
+    <button
+      class="sc-EHOje bIniWJ"
+      data-testid="prescription-button"
+    >
+      <input
+        accept="image/*"
+        class="sc-bZQynM fqeBUw"
+        data-testid="prescription-input"
+        type="file"
+      />
+      Upload Picture
+    </button>
+  </div>
+</div>
+`;

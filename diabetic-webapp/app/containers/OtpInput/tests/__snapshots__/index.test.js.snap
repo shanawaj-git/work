@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OTPInput /> should render and match the snapshot 1`] = `
+<div
+  class="sc-bdVaJa fIdnJV"
+>
+  <img
+    class="sc-dnqmqq fyJpBI"
+    src="IMAGE_MOCK"
+  />
+  <div>
+    <div
+      class="sc-bxivhb hwfbJk"
+    >
+      <div
+        class="sc-htpNat bWZgdw"
+      >
+        <h2
+          class="MuiTypography-root MuiTypography-h2 css-1jfg05l-MuiTypography-root"
+        >
+          Enter the code
+        </h2>
+        <h1
+          class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+        >
+          we've sent you
+        </h1>
+      </div>
+      <p
+        class="MuiTypography-root MuiTypography-body1 sc-EHOje hkBJFu css-1reifv3-MuiTypography-root"
+      >
+        Enter the 6-digit code we just sent it to 0123456789
+      </p>
+    </div>
+    <div
+      class="root MuiFormControl-root styledComponents__FormControl-lwe1h6-0 jHalSF otp-input sc-ifAKCX XuDtN css-1nrlq1o-MuiFormControl-root"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1vly5ry-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-standard MuiFormLabel-root MuiFormLabel-colorPrimary css-1c2i806-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+        >
+          Verification code
+        </label>
+        <div
+          class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
+        >
+          <input
+            aria-invalid="false"
+            autocomplete=""
+            class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+            name=""
+            placeholder=""
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      
+    </div>
+    <div>
+      <p
+        class="MuiTypography-root MuiTypography-body2 inline css-ry76j1-MuiTypography-root"
+      >
+        Having trouble logging in? 
+      </p>
+      <span
+        class="MuiTypography-root MuiTypography-caption sc-jzJRlG ekpTjP css-1393mlh-MuiTypography-root"
+        data-testid="clickHere"
+      >
+        <a
+          href="tel:9524389675346"
+          id="contactSupport"
+        >
+          Click here 
+        </a>
+      </span>
+    </div>
+    <div
+      class="link-resendOtp"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 inline css-ry76j1-MuiTypography-root"
+      >
+        Didn't receive code ? 
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body2 inline css-ry76j1-MuiTypography-root"
+        data-testid="counter-value"
+      >
+        Resend in 60s
+      </p>
+      
+    </div>
+  </div>
+  <div
+    class="btn-container"
+  >
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root Mui-disabled  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="nextButton"
+      disabled=""
+      tabindex="-1"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        Continue
+      </div>
+    </button>
+    
+  </div>
+</div>
+`;

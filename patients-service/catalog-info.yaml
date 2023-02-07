@@ -1,0 +1,9 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: patient-service-api
+spec:
+  type: url
+  targets:
+    - ./async-api.yaml

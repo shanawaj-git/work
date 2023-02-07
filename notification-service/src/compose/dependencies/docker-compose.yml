@@ -1,0 +1,11 @@
+version: '2.4'
+
+services:
+  mongo:
+    extends:
+      file: ../mongo/docker-compose.yml
+      service: mongo
+
+volumes:
+  mongodb:
+    driver: local

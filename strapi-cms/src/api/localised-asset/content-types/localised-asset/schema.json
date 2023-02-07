@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "localised_assets",
+  "info": {
+    "singularName": "localised-asset",
+    "pluralName": "localised-assets",
+    "displayName": "Localised Asset",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "fileName": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "app": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::app.app",
+      "private": true,
+      "inversedBy": "localised_assets"
+    }
+  }
+}

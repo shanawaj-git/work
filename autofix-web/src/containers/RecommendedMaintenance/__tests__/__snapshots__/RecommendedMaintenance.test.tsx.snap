@@ -1,0 +1,351 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecommendedMaintenance /> it Match The SnapShot 1`] = `
+<div>
+  <div
+    class="min-h-screen flex flex-col h-screen"
+    data-testid="recommended.maintenance"
+  >
+    <div
+      class="flex flex-col h-screen"
+    >
+      <div
+        class="min-h-screen p-6 "
+        data-testid="PageHeader"
+        style="min-height: fit-content;"
+      >
+        <button
+          class="root StyledButton-sc-1apep4b-0 bXswYh mb-5 min-w-[40px] min-h-[40px] w-[40px] h-[40px] MuiButton-root text MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+          data-testid="recommended.maintenance-back-button"
+          style="border-color: #c4f8cc;"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            style="visibility: visible;"
+          >
+            <img
+              alt="BackArrow"
+              src="arrow-back-icon.svg"
+            />
+          </div>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <div
+          data-testid="article-component"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 text-xl whitespace-pre-line !mt-4 css-1uw3dvl-MuiTypography-root"
+            data-testid="article-component-title"
+          >
+            <span>
+               
+              Recommended maintenance for Toyota Avensis after 15 000 km
+            </span>
+          </p>
+          <p
+            class="MuiTypography-root MuiTypography-body1 text-sm mt-3 css-1reifv3-MuiTypography-root"
+            data-testid="article-component-description"
+          >
+            <span>
+               
+              Please unselect services that you don’t need.
+            </span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-1 overflow-hidden"
+      >
+        <div
+          class=" px-6 py-5 h-full overflow-auto w-full"
+        >
+          <div
+            class="bg-white p-4 border-[#00000014] border-2 rounded-md mb-2"
+            data-testid="item-1"
+          >
+            <div
+              class="flex "
+            >
+              <div>
+                <div
+                  class="w-5 h-5 rounded-full "
+                  data-testid="item-1-unchecked"
+                />
+              </div>
+              <div
+                class="w-full ml-4"
+              >
+                <div
+                  data-testid="article-component"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 font-semibold text-[15px] css-1reifv3-MuiTypography-root"
+                    data-testid="article-component-title"
+                  >
+                    <span>
+                       
+                      item 1
+                    </span>
+                  </p>
+                  <div
+                    class="font-semibold text-[15px]"
+                  >
+                    <div
+                      class="my-3"
+                    >
+                      <ul />
+                      <div
+                        class="!w-full !my-3 !border"
+                      />
+                      <div
+                        class="flex justify-between"
+                      >
+                        <p
+                          class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                        >
+                          approx price
+                        </p>
+                        <p
+                          class="MuiTypography-root MuiTypography-body1 font-semibold css-1reifv3-MuiTypography-root"
+                        >
+                          500 - 800 USD
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white p-4 border-[#00000014] border-2 rounded-md mb-2"
+            data-testid="item-2"
+          >
+            <div
+              class="flex "
+            >
+              <div>
+                <div
+                  class="w-5 h-5 rounded-full "
+                  data-testid="item-2-unchecked"
+                />
+              </div>
+              <div
+                class="w-full ml-4"
+              >
+                <div
+                  data-testid="article-component"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 font-semibold text-[15px] css-1reifv3-MuiTypography-root"
+                    data-testid="article-component-title"
+                  >
+                    <span>
+                       
+                      item 2
+                    </span>
+                  </p>
+                  <div
+                    class="font-semibold text-[15px]"
+                  >
+                    <div
+                      class="my-3"
+                    >
+                      <ul />
+                      <div
+                        class="!w-full !my-3 !border"
+                      />
+                      <div
+                        class="flex justify-between"
+                      >
+                        <p
+                          class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                        >
+                          approx price
+                        </p>
+                        <p
+                          class="MuiTypography-root MuiTypography-body1 font-semibold css-1reifv3-MuiTypography-root"
+                        >
+                          500 - 800 USD
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white p-4 border-[#00000014] border-2 rounded-md mb-2"
+            data-testid="item-3"
+          >
+            <div
+              class="flex "
+            >
+              <div>
+                <div
+                  class="w-5 h-5 rounded-full "
+                  data-testid="item-3-unchecked"
+                />
+              </div>
+              <div
+                class="w-full ml-4"
+              >
+                <div
+                  data-testid="article-component"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 font-semibold text-[15px] css-1reifv3-MuiTypography-root"
+                    data-testid="article-component-title"
+                  >
+                    <span>
+                       
+                      item 3
+                    </span>
+                  </p>
+                  <div
+                    class="font-semibold text-[15px]"
+                  >
+                    <div
+                      class="my-3"
+                    >
+                      <ul>
+                        <li>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                          >
+                             
+                            - 
+                            Brake linings
+                          </p>
+                        </li>
+                        <li>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                          >
+                             
+                            - 
+                            Drums and brake pads/discs
+                          </p>
+                        </li>
+                        <li>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                          >
+                             
+                            - 
+                            Ball joints and dust covers
+                          </p>
+                        </li>
+                        <li>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                          >
+                             
+                            - 
+                            Drive shaft boots
+                          </p>
+                        </li>
+                        <li>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                          >
+                             
+                            - 
+                            Engine coolant
+                          </p>
+                        </li>
+                        <li>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                          >
+                             
+                            - 
+                            Exhaust pipes and mountings
+                          </p>
+                        </li>
+                        <li>
+                          <p
+                            class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                          >
+                             
+                            - 
+                            Radiator and condenser
+                          </p>
+                        </li>
+                      </ul>
+                      <div
+                        class="!w-full !my-3 !border"
+                      />
+                      <div
+                        class="flex justify-between"
+                      >
+                        <p
+                          class="MuiTypography-root MuiTypography-body1 opacity-75 text-[14px] css-1reifv3-MuiTypography-root"
+                        >
+                          approx price
+                        </p>
+                        <p
+                          class="MuiTypography-root MuiTypography-body1 font-semibold css-1reifv3-MuiTypography-root"
+                        >
+                          500 - 800 USD
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-6 bg-white drop-shadow-xl"
+      >
+        <div
+          class="flex flex-col"
+        >
+          <div
+            class="flex justify-between"
+          >
+            <span
+              class=" text-base font-semibold"
+            >
+              Total to pay
+            </span>
+            <span
+              class=" text-base bg-black px-3 py-1 text-white font-semibold"
+              data-testid="total-amount"
+            >
+              0.00
+               
+              USD
+            </span>
+          </div>
+          <div
+            class="h-5"
+          />
+          <button
+            class="root StyledButton-sc-1apep4b-0 jVvup MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root  css-1fu7jd5-MuiButtonBase-root-MuiButton-root"
+            data-testid="recommended.maintenance-button-continue"
+            tabindex="0"
+            type="button"
+          >
+            <div
+              style="visibility: visible;"
+            >
+              Continue
+            </div>
+            <span
+              class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,17 @@
+{
+  "test1": "test1",
+  "signin.welcome.title": "Welcome to",
+  "signin.welcome.headline": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  "signin.option.mobilenumber": "Sign in using mobile number",
+  "signin.option.uaepass": "Sign in with UAE PASS",
+  "siginin.selection.or": "OR",
+  "otp.header.title": "Enter the code we've sent to you",
+  "otp.header.description": "Enter the 6-digit code we just sent it to +971-xyz-xyzxx-xx",
+  "otp.input.label": "verification code",
+  "otp.input.link.hint": "Didn't receive code ? ",
+  "otp.input.link.label": "Resend",
+  "otp.input.button.label": "Next",
+  "phoneLogin.invalidPhoneNumber": "Invalid phone number",
+  "phoneLogin.genericAPIError": "Sorry, something went wrong",
+  "otp.input.counter.label": "Resend in {counter}s"
+}

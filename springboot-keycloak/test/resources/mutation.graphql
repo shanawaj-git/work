@@ -1,0 +1,15 @@
+mutation
+{
+  generateOTP(input: {
+    phoneNumber: "1212121"
+  }
+  ) {
+  success
+  otpError {
+  code
+  message
+  resendWaitPeriodMillis
+}
+
+}
+}

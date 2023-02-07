@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "pharmacies",
+  "info": {
+    "singularName": "pharmacy",
+    "pluralName": "pharmacies",
+    "displayName": "Pharmacy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pharmacyName": {
+      "type": "string"
+    },
+    "supportContactNumber": {
+      "type": "string"
+    },
+    "deliveryHours": {
+      "type": "json"
+    },
+    "scheduleWindowDays": {
+      "default": 7,
+      "min": 0,
+      "type": "integer"
+    }
+  }
+}

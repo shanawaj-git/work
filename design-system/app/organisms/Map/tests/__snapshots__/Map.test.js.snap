@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map.js index Render google map with children 1`] = `
+<body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn3kw1bNdgmiXAczwr2DcKLAaW-M3nX14&libraries=places"
+  />
+  <script
+    src="https://sdk.woosmap.com/map/map.js?key=woos-48c80350-88aa-333e-835a-07f4b658a9a4&callback=initMap"
+  />
+  <div />
+  <div>
+    <div
+      style="height: 100%; width: 100%;"
+    >
+      <elem
+        mapinstance="[object Object]"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Map.js index Render google map with children 2`] = `
+<div>
+  <div
+    style="height: 100%; width: 100%;"
+  >
+    <elem
+      mapinstance="[object Object]"
+    />
+  </div>
+</div>
+`;
+
+exports[`Map.js index Should import succesfully 1`] = `
+<div
+  style={
+    Object {
+      "height": "100%",
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`Map.js index WoosMap Should be injected in to the DOM 1`] = `
+<body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn3kw1bNdgmiXAczwr2DcKLAaW-M3nX14&libraries=places"
+  />
+  <div>
+    Loading ...
+  </div>
+  <script
+    src="https://sdk.woosmap.com/map/map.js?key=woos-48c80350-88aa-333e-835a-07f4b658a9a4&callback=initMap"
+  />
+</body>
+`;
+
+exports[`Map.js index WoosMap Should be injected in to the DOM 2`] = `
+<body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn3kw1bNdgmiXAczwr2DcKLAaW-M3nX14&libraries=places"
+  />
+  <div>
+    Loading ...
+  </div>
+  <script
+    src="https://sdk.woosmap.com/map/map.js?key=woos-48c80350-88aa-333e-835a-07f4b658a9a4&callback=initMap"
+  />
+</body>
+`;

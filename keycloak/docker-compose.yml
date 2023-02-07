@@ -1,0 +1,47 @@
+version: '3.7'
+
+services:
+   keycloak:
+     build:
+       context: .
+       dockerfile: Dockerfile
+     ports:
+       - "8080:8080"
+     restart: always
+     depends_on:
+       - springbootkeycloak
+     environment:
+          KC_DB_URL: "${KEYCLOAK_DB_URL}"
+          KC_DB_USERNAME : "${KEYCLOAK_DB_USERNAME}"
+          KC_DB_PASSWORD : "${KEYCLOAK_DB_PASSWORD}"
+          KEYCLOAK_ADMIN : "admin"
+          KEYCLOAK_ADMIN_PASSWORD : "admin"
+          KC_DB_URL_PROPERTIES : "${KC_DB_URL_PROPERTIES}"
+   springbootkeycloak:
+     build:
+       context: ../springboot-keycloak/
+       dockerfile: Dockerfile
+     ports:
+       - "8081:8081"
+     restart: always
+     environment:
+          KEYCLOAK_GENERATE_OTP_URL: "${KEYCLOAK_GENERATE_OTP_URL}"
+          KEYCLOAK_VALIDATE_OTP_URL: "${KEYCLOAK_VALIDATE_OTP_URL}"
+          KAFKA_GENERATE_OTP_TOPIC : "${KAFKA_GENERATE_OTP_TOPIC}"
+          KAFKA_BOOTSTRAP_SERVER : "${KAFKA_BOOTSTRAP_SERVER}"
+          KAFKA_ADMIN_USER : "${KAFKA_ADMIN_USER}"
+          KAFKA_ADMIN_PASSWORD : "${KAFKA_ADMIN_PASSWORD}"
+          KEYCLOAK_SERVER_URL: "${KEYCLOAK_SERVER_URL}"
+          KEYCLOAK_REALM: "${KEYCLOAK_REALM}"
+          KEYCLOAK_RESOURCE: "${KEYCLOAK_RESOURCE}"
+          KAFKA_ON: "${KAFKA_ON}"
+          KEYCLOAK_CLIENT_SECRET: "${KEYCLOAK_CLIENT_SECRET}"
+          KEYCLOAK_CLIENT_ID: "${KEYCLOAK_CLIENT_ID}"
+          KEYCLOAK_GRANT_TYPE: "${KEYCLOAK_GRANT_TYPE}"
+          SPRING_PROFILES_ACTIVE: "${SPRING_PROFILES_ACTIVE}"
+networks: 
+  default: 
+    external: 
+      name: dev-net 
+    
+     

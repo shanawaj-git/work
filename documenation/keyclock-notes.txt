@@ -1,0 +1,22 @@
+https://www.novatec-gmbh.de/en/blog/keycloak-with-quarkus-better-together/   keycloack startup site 
+
+command ran .
+
+bin/kc.sh start-dev
+bin/kc.sh build --db postgres
+bin/kc.sh show-config  show db config 
+
+
+bin/kc.sh start --db-url-host 127.0.0.1:5432 --db-username postgres --db-password postgres
+--db-url-database=keycloak 
+
+bin/kc.sh start 
+--https-certificate-file=/keycloak-17.0.0 2/tls/localhost.pem
+ --https-certificate-key-file=/keycloak-17.0.0 2/tls/localhost-key.pem 
+ --https-protocols=TLSv1.3,TLSv1.2 
+ --db-url-host=127.0.0.1 
+ --db-url-database=keycloak 
+ --db-username=keycloak 
+ --db-password=keycloak 
+ --hostname=keycloak.local:8443 
+ --hostname-strict-backchannel=true

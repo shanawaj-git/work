@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_basic_addresses",
+  "info": {
+    "displayName": "Address",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "flatOrVillaNumber": {
+      "type": "string"
+    },
+    "buildingOrVilla": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "directions": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    }
+  }
+}

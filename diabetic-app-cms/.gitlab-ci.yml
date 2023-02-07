@@ -1,0 +1,44 @@
+image: node:16.13.1
+
+default:
+  before_script:
+    - echo '@albathanext:registry=https://gitlab.com/api/v4/packages/npm/'>>.npmrc
+    - echo '//gitlab.com/api/v4/packages/npm/:_authToken=${CI_JOB_TOKEN}'>>.npmrc
+    - echo '//gitlab.com/api/v4/projects/34301986/packages/npm/:_authToken=${CI_JOB_TOKEN}'>>.npmrc
+    - cat .npmrc
+stages:
+  - test
+  - build
+
+services:
+  - docker:dind
+
+variables:
+  tag: ":latest"
+
+run-tests:
+  stage: test
+  cache:
+    key: yarn.lock
+    paths:
+      - .yarn-cache/
+  script:
+    - yarn install --cache-folder .yarn-cache
+    - yarn test-ci
+    - echo "Test complete."
+  only:
+    - main
+    - merge_requests
+
+build-image:
+  image: docker:latest
+  stage: build
+  before_script:
+    - docker -v
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --build-arg GIT_TOKEN=${CI_JOB_TOKEN} --pull -t "$CI_REGISTRY_IMAGE$tag" .
+    - docker push "$CI_REGISTRY_IMAGE$tag"
+    - echo "Build complete."
+  only:
+    - main

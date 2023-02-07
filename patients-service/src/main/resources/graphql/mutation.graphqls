@@ -1,0 +1,4 @@
+type Mutation{
+    createPatient(input:PatientInput!):CreatePatientOutput!
+    addPatientAddress(emiratesId: String!, input: AddressInput!): CreateAddressOutput
+}

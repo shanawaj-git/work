@@ -1,0 +1,9 @@
+type Query {
+    getPublicData: [Data]
+    getPrivateData: [Data]
+}
+
+type Data {
+    id: ID,
+    name: String
+}

@@ -1,0 +1,40 @@
+spring:
+  profile:
+    active: ${SPRING_PROFILES_ACTIVE}
+  data:
+    mongodb:
+      database: ${MONGO_DATABASE:pharmacies}
+      uri: ${MONGO_URI:mongodb://localhost:27019/pharmacies?retryWrites=false&replSet=rs0}
+      username: ${MONGO_USERNAME}
+      password: ${MONGO_PASSWORD}
+  kafka:
+    enabled: true
+    template:
+      default-topic: pharmacies
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+    properties:
+      security:
+        protocol: SASL_SSL
+      sasl:
+        mechanism: PLAIN
+        jaas:
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username=${KAFKA_ADMIN_USER}  password=${KAFKA_ADMIN_PASSWORD};
+
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: pharmacies-service
+    admin:
+      properties:
+        bootstrap.servers: ${KAFKA_BOOTSTRAP_SERVER}
+graphql:
+  servlet:
+    cors-enabled: false
+graphiql:
+  enabled: false

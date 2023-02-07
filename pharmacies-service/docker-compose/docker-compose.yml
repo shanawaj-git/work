@@ -1,0 +1,47 @@
+version: '3.7'
+services:
+  zookeeper:
+    image: zookeeper:3.7.0
+    container_name: zookeeper
+    ports:
+      - 2181:2181
+    env_file:
+      - .env
+    volumes:
+      - ./zookeeper/data:/data
+      - ./zookeeper/datalog:/datalog
+    profiles: ["zookeeper"]
+  kafka:
+    image: confluentinc/cp-kafka:5.1.0
+    container_name: kafka
+    healthcheck:
+      test: ["CMD", "nc", "-vz", "localhost", "9093"]
+      interval: 15s
+      timeout: 5s
+      retries: 8
+    ports:
+      - "9093:9092"
+    env_file:
+      - .env
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./kafka.jaas.conf:/etc/kafka/kafka_server_jaas.conf
+      - ./data:/var/lib/kafka/data
+    links:
+      - zookeeper
+    profiles: ["kafka"]
+  pharmacies:
+    image: registry.gitlab.com/albathanext/nexthealth1/pharmacies-service:latest
+    ports:
+      - "8083:8080"
+    restart: always
+    environment:
+      - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5001
+    env_file:
+      - .env
+    profiles: [ "pharmacies" ]
+  mongo:
+    image: mongo-rs:latest
+    ports:
+      - "27019:27017"
+    profiles: [ "mongo" ]

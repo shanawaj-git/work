@@ -1,0 +1,34 @@
+mutation {
+    addPatientAddress(emiratesId:"f8c3de3d-1fea-4d7c-a8b0-29f63c4c3454",input: {
+        flatVillaNumber: "1"
+        buildingName: "1"
+        formattedText: "1"
+        area: "1"
+        city: "1"
+        country: "1"
+        userNotes: "1"
+        state: "1"
+        latitude: 123
+        longitude: 1911
+    }) {
+        success
+        data{
+            addressId
+            flatVillaNumber
+            buildingName
+            formattedText
+            area
+            city
+            country
+            userNotes
+            state
+            latitude
+            longitude
+        }
+        error{
+            code
+            message
+        }
+    }
+}
+

@@ -1,0 +1,6 @@
+query {
+    getPublicData {
+        id,
+        name
+    }
+}

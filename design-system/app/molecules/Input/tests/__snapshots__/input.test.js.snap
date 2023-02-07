@@ -1,0 +1,264 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input.js index Should display a disabled input field 1`] = `
+<FormControlWrapper
+  className=""
+  disabled={true}
+  error={false}
+  errorText=""
+  helperText=""
+>
+  <ForwardRef(Styled(Component))
+    InputLabelProps={
+      Object {
+        "classes": Object {},
+        "shrink": true,
+      }
+    }
+    InputProps={
+      Object {
+        "classes": Object {
+          "focused": undefined,
+          "input": undefined,
+        },
+        "endAdornment": null,
+        "startAdornment": null,
+      }
+    }
+    autoComplete=""
+    autoFocus={false}
+    disabled={true}
+    error={false}
+    inputProps={
+      Object {
+        "name": "testInput",
+      }
+    }
+    inputRef={null}
+    multiline={false}
+    name="testInput"
+    onBlur={[Function]}
+    onChange={[MockFunction]}
+    onFocus={[Function]}
+    placeholder=""
+    type="text"
+    variant="standard"
+  />
+</FormControlWrapper>
+`;
+
+exports[`Input.js index Should display an input field for upload files 1`] = `
+<div>
+  <div
+    class="root MuiFormControl-root styledComponents__FormControl-lwe1h6-0 jHalSF css-1nrlq1o-MuiFormControl-root"
+  >
+    <div
+      class="MuiFormControl-root MuiTextField-root css-1vly5ry-MuiFormControl-root-MuiTextField-root"
+    >
+      <div
+        class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-1480iag-MuiInputBase-root-MuiInput-root"
+      >
+        <input
+          aria-invalid="false"
+          autocomplete=""
+          class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd css-1x51dt5-MuiInputBase-input-MuiInput-input"
+          name="testInput"
+          placeholder=""
+          type="file"
+          value=""
+        />
+        <div
+          class="root MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-standard MuiInputAdornment-sizeMedium styledComponents__InputAdornment-sc-1swdb7r-0 gMjvtV css-1laqsz7-MuiInputAdornment-root"
+        >
+          <img
+            src="IMAGE_MOCK"
+          />
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Input.js index Should have a label if passed 1`] = `
+<FormControlWrapper
+  className=""
+  disabled={false}
+  error={false}
+  errorText=""
+  helperText=""
+>
+  <ForwardRef(Styled(Component))
+    InputLabelProps={
+      Object {
+        "classes": Object {},
+        "shrink": true,
+      }
+    }
+    InputProps={
+      Object {
+        "classes": Object {
+          "focused": undefined,
+          "input": undefined,
+        },
+        "endAdornment": null,
+        "startAdornment": null,
+      }
+    }
+    autoComplete=""
+    autoFocus={false}
+    disabled={false}
+    error={false}
+    inputProps={
+      Object {
+        "name": "testInput",
+      }
+    }
+    inputRef={null}
+    label={
+      <React.Fragment>
+        Label
+      </React.Fragment>
+    }
+    multiline={false}
+    name="testInput"
+    onBlur={[Function]}
+    onChange={[MockFunction]}
+    onFocus={[Function]}
+    placeholder=""
+    type="text"
+    variant="standard"
+  />
+</FormControlWrapper>
+`;
+
+exports[`Input.js index Should have onBlur and onFocus if passed 1`] = `
+<FormControlWrapper
+  className=""
+  disabled={false}
+  error={false}
+  errorText=""
+  helperText=""
+>
+  <ForwardRef(Styled(Component))
+    InputLabelProps={
+      Object {
+        "classes": Object {},
+        "shrink": true,
+      }
+    }
+    InputProps={
+      Object {
+        "classes": Object {
+          "focused": undefined,
+          "input": undefined,
+        },
+        "endAdornment": null,
+        "startAdornment": null,
+      }
+    }
+    autoComplete=""
+    autoFocus={false}
+    disabled={false}
+    error={false}
+    inputProps={
+      Object {
+        "name": "test",
+      }
+    }
+    inputRef={null}
+    multiline={false}
+    name="testInput"
+    onBlur={[MockFunction]}
+    onChange={[MockFunction]}
+    onFocus={[MockFunction]}
+    placeholder=""
+    type="text"
+    variant="standard"
+  />
+</FormControlWrapper>
+`;
+
+exports[`Input.js index Should import succesfully 1`] = `
+<div>
+  <div
+    class="root MuiFormControl-root styledComponents__FormControl-lwe1h6-0 jHalSF css-1nrlq1o-MuiFormControl-root"
+  >
+    <div
+      class="MuiFormControl-root MuiTextField-root css-1vly5ry-MuiFormControl-root-MuiTextField-root"
+    >
+      <div
+        class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
+      >
+        <input
+          aria-invalid="false"
+          autocomplete=""
+          class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+          name="testInput"
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Input.js index Should show an input with a prefix 1`] = `
+<FormControlWrapper
+  className=""
+  disabled={false}
+  error={false}
+  errorText=""
+  helperText=""
+>
+  <ForwardRef(Styled(Component))
+    InputLabelProps={
+      Object {
+        "classes": Object {},
+        "shrink": true,
+      }
+    }
+    InputProps={
+      Object {
+        "classes": Object {
+          "focused": undefined,
+          "input": undefined,
+        },
+        "endAdornment": null,
+        "startAdornment": <ForwardRef(styledComponents__InputAdornment)
+          classes={
+            Object {
+              "root": undefined,
+            }
+          }
+          position="start"
+        >
+          USD
+        </ForwardRef(styledComponents__InputAdornment)>,
+      }
+    }
+    autoComplete=""
+    autoFocus={false}
+    disabled={false}
+    error={false}
+    inputProps={
+      Object {
+        "name": "testInput",
+      }
+    }
+    inputRef={null}
+    multiline={false}
+    name="testInput"
+    onBlur={[Function]}
+    onChange={[MockFunction]}
+    onFocus={[Function]}
+    placeholder=""
+    type="text"
+    variant="standard"
+  />
+</FormControlWrapper>
+`;

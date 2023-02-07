@@ -1,0 +1,73 @@
+version: '2'
+services:
+  zookeeper:
+    image: zookeeper:3.7.0
+    container_name: zookeeper
+    ports:
+      - 2181:2181
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_PORT: 2181
+      ZOOKEEPER_SERVERS: server.1=zookeeper:2888:3888
+      ZOOKEEPER_SASL_ENABLED: "false"
+    volumes:
+      - ./zookeeper/data:/data
+      - ./zookeeper/datalog:/datalog
+  kafka:
+    image: confluentinc/cp-kafka:5.1.0
+    container_name: kafka
+    hostname: localhost
+    ports:
+      - "9093:9093"
+    environment:
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CLIENT:SASL_PLAINTEXT,EXTERNAL:SASL_PLAINTEXT
+      KAFKA_LISTENERS: CLIENT://:9092,EXTERNAL://:9093
+      KAFKA_ADVERTISED_LISTENERS: CLIENT://kafka:9092,EXTERNAL://localhost:9093
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      ZOOKEEPER_SASL_ENABLED: "false"
+      KAFKA_OPTS: "-Djava.security.auth.login.config=/etc/kafka/kafka_server_jaas.conf"
+      KAFKA_INTER_BROKER_LISTENER_NAME: CLIENT
+      KAFKA_SASL_ENABLED_MECHANISMS: PLAIN
+      KAFKA_SASL_MECHANISM_INTER_BROKER_PROTOCOL: PLAIN
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./kafka.jaas.conf:/etc/kafka/kafka_server_jaas.conf
+      - ./data:/var/lib/kafka/data
+    links:
+      - zookeeper
+
+  mock-server:
+    image: registry.gitlab.com/albathanext/nexthealth1/mock-server:latest
+    restart: always
+    ports:
+      - 5001:5001
+    depends_on:
+      - kafka
+      - zookeeper
+    environment:
+      KAFKA_BROKER_URL: kafka:9092
+      KAFKA_CLIENT_ID: "${KAFKA_CLIENT_ID}"
+      KAFKA_SASL_MECHANISM: plain
+      KAFKA_SASL_USERNAME: "${KAFKA_SASL_USERNAME}"
+      KAFKA_SASL_PASSWORD: "${KAFKA_SASL_PASSWORD}"
+  kafka-ui:
+    container_name: kafka-ui
+    image: provectuslabs/kafka-ui:0.3.3
+    hostname: localhost
+    ports:
+      - ${KAFKA_UI_PORT}:8080
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+      KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
+      KAFKA_CLUSTERS_0_PROPERTIES_SECURITY_PROTOCOL: SASL_PLAINTEXT
+      KAFKA_CLUSTERS_0_PROPERTIES_SASL_MECHANISM: PLAIN
+      KAFKA_CLUSTERS_0_PROPERTIES_SASL_JAAS_CONFIG: 'org.apache.kafka.common.security.plain.PlainLoginModule required username="${KAFKA_SASL_USERNAME}" password="${KAFKA_SASL_PASSWORD}";'
+      AUTH_TYPE: "LOGIN_FORM"
+      SPRING_SECURITY_USER_NAME: "${KAFKA_UI_USERNAME}"
+      SPRING_SECURITY_USER_PASSWORD: "${KAFKA_UI_PASSWORD}"
+networks: 
+  default: 
+    external: 
+      name: dev-net 

@@ -1,0 +1,38 @@
+image: docker:latest
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+  SPRING_PROFILES_ACTIVE: gitlab-ci
+  MAVEN_CLI_OPTS: "--batch-mode"
+
+stages:
+  - build-mvn
+  - build-docker
+maven-build:
+  image: maven:latest
+  stage: build-mvn
+
+  script:
+      - "mvn package -B"
+  only:
+      - main
+      - merge_requests
+  artifacts:
+    paths:
+      - target/*.jar
+build-image:
+  image: docker:latest
+  stage: build-docker
+  before_script:
+    - docker -v
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --build-arg GIT_TOKEN=${CI_JOB_TOKEN} --pull -t "$CI_REGISTRY_IMAGE$tag" .
+    - docker push "$CI_REGISTRY_IMAGE$tag"
+    - echo "Build complete."
+  only:
+    - main
+    - merge_requests
+

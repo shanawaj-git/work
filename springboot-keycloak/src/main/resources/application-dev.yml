@@ -1,0 +1,8 @@
+graphql:
+  servlet:
+    cors-enabled: true
+    cors:
+      allowed-origins: http://localhost:3000
+      allowed-methods: GET, HEAD, POST, OPTIONS
+      allow-credentials: true
+      allowed-headers: "*"

@@ -1,0 +1,148 @@
+[
+  {
+    "prescriptionNumber": "1",
+    "recordNumber": "12",
+    "visitDate": "2022-03-01T07:26:49.665Z",
+    "diagnosis": "heart attack",
+    "drugs": [
+      {
+        "name": "Adol (Hydrocodone-Acetaminoph)",
+        "dosage": {
+          "frequency": "12",
+          "unit": "10 ml",
+          "period": "7",
+          "route": "mouth|eye|injection|..",
+          "quantity": "2",
+          "doctorNotes": "take this after food",
+          "timeUnit": "hour|day|week|month"
+        }
+      },
+      {
+        "name": "Adol (Hydrocodone-Acetaminoph)",
+        "dosage": {
+          "frequency": "12",
+          "unit": "100 mg",
+          "period": "7",
+          "route": "mouth|eye|injection|..",
+          "quantity": "2",
+          "doctorNotes": "take this after food",
+          "timeUnit": "hour|day|week|month"
+        }
+      }
+    ],
+    "pin": "x67vbn0nMx",
+    "patient": {
+      "id": "1",
+      "EID": "123",
+      "MOH-ID": "435091",
+      "name": {
+        "first": "",
+        "middle": "",
+        "last": ""
+      },
+      "email": "test@test.com",
+      "mobile": "9xxxxxxxx",
+      "dob": "2022-03-01T07:26:49.665Z",
+      "address": [
+        {
+          "addressLine1": "12-sector",
+          "addressLine2": "gardens",
+          "area": "arjan",
+          "city": "dubai",
+          "state": "",
+          "postalCode": "",
+          "type": "HOME|WORK|OTHER",
+          "country": ""
+        }
+      ],
+      "insurance": {
+        "id": 436,
+        "policyNumber": 12390,
+        "provider": "next care llc"
+      }
+    },
+    "doctor": {
+      "id": "1",
+      "name": {
+        "first": "Mohamed",
+        "middle": "Ali",
+        "last": "Said"
+      },
+      "email": "test@test.com",
+      "mobile": "9xxxxxxxx"
+    }
+  },
+  {
+    "prescriptionNumber": "1",
+    "recordNumber": "12",
+    "visitDate": "2022-03-01T07:26:49.665Z",
+    "diagnosis": "heart attack",
+    "drugs": [
+      {
+        "name": "Adol (Hydrocodone-Acetaminoph)",
+        "dosage": {
+          "frequency": "12",
+          "unit": "10 ml",
+          "period": "7",
+          "route": "mouth|eye|injection|..",
+          "quantity": "2",
+          "doctorNotes": "take this after food",
+          "timeUnit": "hour|day|week|month"
+        }
+      },
+      {
+        "name": "Adol (Hydrocodone-Acetaminoph)",
+        "dosage": {
+          "frequency": "12",
+          "unit": "100 mg",
+          "period": "7",
+          "route": "mouth|eye|injection|..",
+          "quantity": "2",
+          "doctorNotes": "take this after food",
+          "timeUnit": "hour|day|week|month"
+        }
+      }
+    ],
+    "pin": "x67vbn0nMx",
+    "patient": {
+      "id": "1",
+      "EID": "456",
+      "MOH-ID": "435091",
+      "name": {
+        "first": "",
+        "middle": "",
+        "last": ""
+      },
+      "email": "test@test.com",
+      "mobile": "9xxxxxxxx",
+      "dob": "2022-03-01T07:26:49.665Z",
+      "address": [
+        {
+          "addressLine1": "12-sector",
+          "addressLine2": "gardens",
+          "area": "arjan",
+          "city": "dubai",
+          "state": "",
+          "postalCode": "",
+          "type": "HOME|WORK|OTHER",
+          "country": ""
+        }
+      ],
+      "insurance": {
+        "id": 436,
+        "policyNumber": 12390,
+        "provider": "next care llc"
+      }
+    },
+    "doctor": {
+      "id": "1",
+      "name": {
+        "first": "Mohamed",
+        "middle": "Ali",
+        "last": "Said"
+      },
+      "email": "test@test.com",
+      "mobile": "9xxxxxxxx"
+    }
+  }
+]

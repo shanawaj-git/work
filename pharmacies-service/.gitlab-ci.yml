@@ -1,0 +1,54 @@
+image: adoptopenjdk/openjdk11
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+  SPRING_PROFILES_ACTIVE: gitlab-ci
+
+before_script:
+  - echo "Start CI/CD"
+
+stages:
+  - build
+  - test
+  - build-docker
+gradle-build:
+  image: gradle:latest
+  stage: build
+  script:
+    - ./gradlew assemble
+  only:
+    - main
+    - merge_requests
+
+test:
+  stage: test
+  script:
+    - ./gradlew check
+  artifacts:
+    when: always
+    paths:
+      - build/reports/tests/test/**/*.html
+    expire_in: 1 week
+
+  only:
+    - main
+    - merge_requests
+
+build-image:
+  image: docker:latest
+  stage: build-docker
+  before_script:
+    - docker -v
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --build-arg GIT_TOKEN=${CI_JOB_TOKEN} --pull -t "$CI_REGISTRY_IMAGE$tag" .
+    - docker push "$CI_REGISTRY_IMAGE$tag"
+    - echo "Build complete."
+  only:
+    - main
+
+after_script:
+  - echo "CI/CD Completed"
+

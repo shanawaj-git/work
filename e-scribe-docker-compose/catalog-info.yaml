@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: e-scribe-docker-compose
+  title: e-scribe-docker-compose
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - docker
+    - kafka
+    - java
+    - nestjs
+spec:
+  type: utility
+  owner: albathanext
+  lifecycle: experimental

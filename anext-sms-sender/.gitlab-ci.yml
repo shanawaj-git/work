@@ -1,0 +1,74 @@
+
+.node:
+  image: node:16.13.1
+
+.code-check:
+  extends: .node
+  stage: code-check
+  dependencies:
+    - npm-install
+  only:
+    refs:
+      - branches
+      - pushes
+    changes:
+      - package.json
+      - package-lock.json
+      - src/**/*.ts
+
+### Stages ###
+
+stages:
+  - setup
+  - code-check
+  - release
+
+### Setup stage ###
+
+npm-install:
+  extends: .node
+  stage: setup
+  script:
+    - npm ci --prefer-offline --unsafe-perm
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - node_modules/
+  artifacts:
+    expire_in: 2 days
+    paths:
+      - node_modules/
+
+### Code checks stage ###
+
+lint-code:
+  extends: .code-check
+  script: ./node_modules/.bin/eslint -c ./.eslintrc --quiet --color './src/**/*.ts'
+
+dry-compile-code:
+  extends: .code-check
+  script:
+    - ./node_modules/.bin/tsc -p ./tsconfig.json --noEmit
+
+test-code:
+  extends: .code-check
+  script: ./node_modules/.bin/jest -c ./jest.config.js
+
+### Publish stage ###
+
+publish-package:
+  extends: .code-check
+  stage: release
+  script:
+    - echo "//${CI_SERVER_HOST}/api/v4/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=${CI_JOB_TOKEN}">.npmrc
+    - >
+      [ -d dist ] && rm -r dist
+    - npm run compile:publish
+    - npm publish
+  only:
+    variables:
+      - $CI_COMMIT_BRANCH == "main" && $CI_COMMIT_MESSAGE =~ /^v/
+    refs:
+      - pushes

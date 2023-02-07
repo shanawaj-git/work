@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PaymentOptions /> should render and match the snapshot 1`] = `
+<div
+  class="sc-bdVaJa eQpvyC"
+>
+  <img
+    class="sc-htpNat icrQpi"
+    src="IMAGE_MOCK"
+  />
+  <div
+    class="sc-bxivhb dpdSOk"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-ifAKCX cHadpr css-1reifv3-MuiTypography-root"
+    >
+      Select your
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-EHOje bAcCwx css-1reifv3-MuiTypography-root"
+    >
+      payment method
+    </p>
+  </div>
+  <div
+    class="sc-bZQynM dUmxn"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-gzVnrw ccLiOJ css-1reifv3-MuiTypography-root"
+    >
+      Total to pay
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-htoDjs hzhiNv css-1reifv3-MuiTypography-root"
+    >
+      AED 123.33
+    </p>
+  </div>
+  <div
+    class="sc-dnqmqq kbYuMr"
+  >
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="option-online-payment"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        <div
+          class="sc-iwsKbI fNnfsR"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 sc-gZMcBi giNnHm css-1reifv3-MuiTypography-root"
+          >
+            Pay online
+          </p>
+          <span
+            aria-hidden="true"
+            class="material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-kp9ftd-MuiIcon-root"
+          >
+            <img
+              alt="[object Object]"
+              class="option-icon"
+              src="IMAGE_MOCK"
+            />
+          </span>
+        </div>
+      </div>
+    </button>
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="option-cash-on-delivery"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        <div
+          class="sc-iwsKbI fNnfsR"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 sc-gZMcBi giNnHm css-1reifv3-MuiTypography-root"
+          >
+            Cash on delivery
+          </p>
+          <span
+            aria-hidden="true"
+            class="material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-kp9ftd-MuiIcon-root"
+          >
+            <img
+              alt="[object Object]"
+              class="option-icon"
+              src="IMAGE_MOCK"
+            />
+          </span>
+        </div>
+      </div>
+    </button>
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="option-card-on-delivery"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        <div
+          class="sc-iwsKbI fNnfsR"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 sc-gZMcBi giNnHm css-1reifv3-MuiTypography-root"
+          >
+            Card on delivery
+          </p>
+          <span
+            aria-hidden="true"
+            class="material-icons notranslate MuiIcon-root MuiIcon-fontSizeMedium css-kp9ftd-MuiIcon-root"
+          >
+            <img
+              alt="[object Object]"
+              class="option-icon"
+              src="IMAGE_MOCK"
+            />
+          </span>
+        </div>
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<PaymentOptions /> should render the loader while api calls are in progress 1`] = `
+<div
+  class="sc-bdVaJa eQpvyC"
+>
+  <img
+    class="sc-htpNat icrQpi"
+    src="IMAGE_MOCK"
+  />
+  <div
+    class="sc-bwzfXH eOoZbk"
+  >
+    <div
+      class="MuiBox-root css-15t75f3"
+    >
+      <span
+        aria-valuenow="100"
+        class="MuiCircularProgress-root MuiCircularProgress-determinate MuiCircularProgress-colorPrimary css-1e5kc5y-MuiCircularProgress-root"
+        role="progressbar"
+        style="width: 90px; height: 90px; transform: rotate(-90deg);"
+      >
+        <svg
+          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleDeterminate css-oxts8u-MuiCircularProgress-circle"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="21"
+            stroke-width="2"
+            style="stroke-dasharray: 131.947; stroke-dashoffset: 0.000px;"
+          />
+        </svg>
+      </span>
+      <svg
+        style="position: absolute;"
+      >
+        <defs>
+          <lineargradient
+            id="my_gradient"
+          >
+            <stop
+              offset="0%"
+              stop-color="#00664f"
+            />
+            <stop
+              offset="100%"
+              stop-color="#c5c5c5"
+            />
+          </lineargradient>
+        </defs>
+      </svg>
+      <span
+        class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1utiupp-MuiCircularProgress-root"
+        role="progressbar"
+        style="width: 90px; height: 90px;"
+      >
+        <svg
+          class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+          viewBox="22 22 44 44"
+        >
+          <circle
+            class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate MuiCircularProgress-circleDisableShrink css-79nvmn-MuiCircularProgress-circle"
+            cx="44"
+            cy="44"
+            fill="none"
+            r="21"
+            stroke-width="2"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;

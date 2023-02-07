@@ -1,0 +1,12 @@
+input AddressInput {
+    flatVillaNumber: String
+    buildingName: String
+    formattedText: String
+    area: String
+    city: String
+    country: String
+    userNotes: String
+    state: String
+    latitude: Float!
+    longitude: Float!
+}

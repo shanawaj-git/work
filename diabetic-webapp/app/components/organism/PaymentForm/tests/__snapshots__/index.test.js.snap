@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PaymentForm /> should render the payment form and match the snapshot 1`] = `
+<form
+  class="sc-bdVaJa hskcns"
+  id="payment-form"
+>
+  <div />
+  <div
+    class="sc-bwzfXH dwOEUG"
+  >
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="continueButton"
+      id="submit"
+      tabindex="0"
+      type="submit"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        Continue
+      </div>
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</form>
+`;

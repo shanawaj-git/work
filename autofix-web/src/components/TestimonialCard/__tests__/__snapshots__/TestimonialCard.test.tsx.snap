@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TestimonialCard/> it should render component 1`] = `
+<div>
+  <div
+    class="testimonial-card"
+    data-testid="card-1"
+  >
+    <div
+      class="testimonial-card-text"
+      data-testid="testimonial-card-content-card-1"
+    >
+      This is a testimonial from a customer
+    </div>
+    <div
+      class="testimonial-card-footer"
+    >
+      <div
+        class="testimonial-card-stars"
+        data-testid="testimonial-card-stars-card-1"
+      >
+        <img
+          alt="start-0"
+          class="testimonial-card-star"
+          src="star.svg"
+        />
+        <img
+          alt="start-1"
+          class="testimonial-card-star"
+          src="star.svg"
+        />
+        <img
+          alt="start-2"
+          class="testimonial-card-star"
+          src="star.svg"
+        />
+      </div>
+      <p
+        class="testimonial-card-customer"
+        data-testid="testimonial-card-customer-card-1"
+      >
+        Customer
+      </p>
+    </div>
+  </div>
+</div>
+`;

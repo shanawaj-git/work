@@ -1,0 +1,6 @@
+query {
+    getPrivateData {
+        id,
+        name
+    }
+}

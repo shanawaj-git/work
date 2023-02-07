@@ -1,0 +1,309 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input.js index Should display a disabled card 1`] = `
+<React.Fragment>
+  <ForwardRef(Styled(Component))
+    onChange={[Function]}
+  >
+    <ForwardRef(Styled(Component))>
+      <ForwardRef(Styled(Component))
+        bodyDetails={
+          Array [
+            Object {
+              "icon": "IMAGE_MOCK",
+              "sideText": "AED 150.00",
+              "text": "Hyrdoxyzine hydrochloride",
+            },
+            Object {
+              "icon": "IMAGE_MOCK",
+              "sideText": "AED 150.00",
+              "text": "Glimepiride-rosiglitazone",
+            },
+            Object {
+              "icon": "IMAGE_MOCK",
+              "sideText": "AED 150.00",
+              "text": "Novolin 70/30",
+            },
+          ]
+        }
+        bodySummary={
+          Array [
+            Object {
+              "sideText": "AED 550.00",
+              "text": "Cost of Medicines",
+            },
+            Object {
+              "sideText": "AED 500.00",
+              "text": "Est. Insurance Coverage*",
+            },
+          ]
+        }
+        description="Open until 22:00"
+        footerDetails={
+          Object {
+            "buttonText": "Select pharmacy",
+            "caption": "*Final amounts subject to insurance coverage",
+            "titleSideText": "AED 50.00",
+            "titleText": "Your est. co-payment*",
+          }
+        }
+        footerIcon="IMAGE_MOCK"
+        footerText="All meds covered"
+        headerImage="IMAGE_MOCK"
+        subDescription="20 min"
+        subDescriptionIcon="IMAGE_MOCK"
+        subTitle="Al Sufouh"
+        title="Al Manara Pharmacy"
+      />
+    </ForwardRef(Styled(Component))>
+    <ForwardRef(Styled(Component))>
+      <CardBody
+        details={
+          Array [
+            Object {
+              "icon": "IMAGE_MOCK",
+              "sideText": "AED 150.00",
+              "text": "Hyrdoxyzine hydrochloride",
+            },
+            Object {
+              "icon": "IMAGE_MOCK",
+              "sideText": "AED 150.00",
+              "text": "Glimepiride-rosiglitazone",
+            },
+            Object {
+              "icon": "IMAGE_MOCK",
+              "sideText": "AED 150.00",
+              "text": "Novolin 70/30",
+            },
+          ]
+        }
+      />
+    </ForwardRef(Styled(Component))>
+  </ForwardRef(Styled(Component))>
+  <ForwardRef(Styled(Component)) />
+  <ForwardRef(styledComponents__Container) />
+  <ForwardRef(Styled(Component))
+    details={
+      Object {
+        "buttonText": "Select pharmacy",
+        "caption": "*Final amounts subject to insurance coverage",
+        "titleSideText": "AED 50.00",
+        "titleText": "Your est. co-payment*",
+      }
+    }
+  />
+</React.Fragment>
+`;
+
+exports[`Input.js index Should import succesfully 1`] = `
+Array [
+  <div
+    className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-1yr3319-MuiPaper-root-MuiAccordion-root"
+  >
+    <div
+      aria-expanded={false}
+      className="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-2k2ln8-MuiButtonBase-root-MuiAccordionSummary-root"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      role="button"
+      tabIndex={0}
+    >
+      <div
+        className="MuiAccordionSummary-content MuiAccordionSummary-contentGutters css-o4b71y-MuiAccordionSummary-content"
+      >
+        <div
+          className="sc-bdVaJa jJSDIg"
+        >
+          <div
+            className="card-header-wrapper"
+          >
+            <div>
+              <div
+                className="card-header-image"
+              >
+                <img
+                  alt="Al Manara Pharmacy"
+                  src="IMAGE_MOCK"
+                />
+              </div>
+              <div
+                className="card-header-body"
+              >
+                <h5
+                  className="MuiTypography-root MuiTypography-h5 card-header-title css-11estw0-MuiTypography-root"
+                >
+                  Al Manara Pharmacy
+                </h5>
+                <div
+                  className="textWithIcon card-header-subTitle"
+                >
+                  <span
+                    className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+                  >
+                    Al Sufouh
+                  </span>
+                </div>
+                <div
+                  className="textWithIcon card-header-description"
+                >
+                  <span
+                    className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+                  >
+                    Open until 22:00
+                  </span>
+                </div>
+                <div
+                  className="textWithIcon card-header-subDescription"
+                >
+                  <img
+                    alt="20 min"
+                    src="IMAGE_MOCK"
+                  />
+                  <span
+                    className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+                  >
+                    20 min
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="textWithIcon card-header-footer"
+            >
+              <img
+                alt="All meds covered"
+                src="IMAGE_MOCK"
+              />
+              <span
+                className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+              >
+                All meds covered
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-bz4dnt-MuiCollapse-root"
+      style={
+        Object {
+          "minHeight": "0px",
+        }
+      }
+    >
+      <div
+        className="MuiCollapse-wrapper MuiCollapse-vertical css-smkl36-MuiCollapse-wrapper"
+      >
+        <div
+          className="MuiCollapse-wrapperInner MuiCollapse-vertical css-9l5vo-MuiCollapse-wrapperInner"
+        >
+          <div
+            className="MuiAccordion-region"
+            role="region"
+          >
+            <div
+              className="MuiAccordionDetails-root sc-bwzfXH hPCock css-15v22id-MuiAccordionDetails-root"
+            >
+              <div
+                className="textWithIcon undefined"
+              >
+                <img
+                  alt="Hyrdoxyzine hydrochloride"
+                  src="IMAGE_MOCK"
+                />
+                <span
+                  className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+                >
+                  Hyrdoxyzine hydrochloride
+                </span>
+                <span
+                  className="MuiTypography-root MuiTypography-caption textWithIcon-sideText css-1393mlh-MuiTypography-root"
+                >
+                  AED 150.00
+                </span>
+              </div>
+              <div
+                className="textWithIcon undefined"
+              >
+                <img
+                  alt="Glimepiride-rosiglitazone"
+                  src="IMAGE_MOCK"
+                />
+                <span
+                  className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+                >
+                  Glimepiride-rosiglitazone
+                </span>
+                <span
+                  className="MuiTypography-root MuiTypography-caption textWithIcon-sideText css-1393mlh-MuiTypography-root"
+                >
+                  AED 150.00
+                </span>
+              </div>
+              <div
+                className="textWithIcon undefined"
+              >
+                <img
+                  alt="Novolin 70/30"
+                  src="IMAGE_MOCK"
+                />
+                <span
+                  className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+                >
+                  Novolin 70/30
+                </span>
+                <span
+                  className="MuiTypography-root MuiTypography-caption textWithIcon-sideText css-1393mlh-MuiTypography-root"
+                >
+                  AED 150.00
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <hr
+    className="MuiDivider-root MuiDivider-fullWidth css-fwdjlz-MuiDivider-root"
+  />,
+  <div
+    className="styledComponents__Container-d2us26-1 cpOZRs"
+  />,
+  <div
+    className="card-footer sc-htpNat rbDpa"
+  >
+    <div
+      className="textWithIcon card-footer-title"
+    >
+      <span
+        className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+      >
+        Your est. co-payment*
+      </span>
+      <span
+        className="MuiTypography-root MuiTypography-caption textWithIcon-sideText css-1393mlh-MuiTypography-root"
+      >
+        AED 50.00
+      </span>
+    </div>
+    <span
+      className="MuiTypography-root MuiTypography-caption card-footer-subtitle css-1393mlh-MuiTypography-root"
+    >
+      *Final amounts subject to insurance coverage
+    </span>
+  </div>,
+]
+`;

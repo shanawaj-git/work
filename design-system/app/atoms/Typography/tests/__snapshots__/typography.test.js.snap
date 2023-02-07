@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography.js index Should import callout typo 1`] = `
+<h6
+  className="MuiTypography-root MuiTypography-h6 css-1t9yafy-MuiTypography-root"
+>
+  test typo
+</h6>
+`;
+
+exports[`Typography.js index Should import caption typo 1`] = `
+<span
+  className="MuiTypography-root MuiTypography-caption css-1393mlh-MuiTypography-root"
+>
+  test typo
+</span>
+`;
+
+exports[`Typography.js index Should import foot note typo 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body2 css-ry76j1-MuiTypography-root"
+>
+  test typo
+</p>
+`;
+
+exports[`Typography.js index Should import head line typo 1`] = `
+<h5
+  className="MuiTypography-root MuiTypography-h5 css-11estw0-MuiTypography-root"
+>
+  test typo
+</h5>
+`;
+
+exports[`Typography.js index Should import large title typo 1`] = `
+<h1
+  className="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+>
+  test typo
+</h1>
+`;
+
+exports[`Typography.js index Should import subtitile typo 1`] = `
+<p
+  className="MuiTypography-root MuiTypography-body1 css-1reifv3-MuiTypography-root"
+>
+  test typo
+</p>
+`;
+
+exports[`Typography.js index Should import title 1 typo 1`] = `
+<h2
+  className="MuiTypography-root MuiTypography-h2 css-1jfg05l-MuiTypography-root"
+>
+  test typo
+</h2>
+`;
+
+exports[`Typography.js index Should import title 2 typo 1`] = `
+<h3
+  className="MuiTypography-root MuiTypography-h3 css-1ewfuka-MuiTypography-root"
+>
+  test typo
+</h3>
+`;
+
+exports[`Typography.js index Should import title 3 typo 1`] = `
+<h4
+  className="MuiTypography-root MuiTypography-h4 css-1b8g8n0-MuiTypography-root"
+>
+  test typo
+</h4>
+`;

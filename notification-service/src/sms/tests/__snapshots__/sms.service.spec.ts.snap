@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sms.service should update message in DB in case it exists 1`] = `undefined`;
+
+exports[`sms.service should validate sms recipient 1`] = `[Error: Missing SMS body]`;
+
+exports[`sms.service should validate sms templateCode 1`] = `[Error: Missing SMS recipient]`;

@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<WrappedDeliveryIntroduction /> should open modal when hyperlink(why must i be present in person?) is clicked 1`] = `
+<div>
+  <div
+    class="sc-ifAKCX dPPXDZ"
+  >
+    <div
+      class="sc-bZQynM cQtRSK"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h2 sc-jzJRlG dVWWoz css-1jfg05l-MuiTypography-root"
+      >
+        Be present at
+      </h2>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 sc-cSHVUG kPaRAP css-qu1isr-MuiTypography-root"
+      >
+        the time of delivery 
+      </h1>
+    </div>
+    <div
+      class="sc-EHOje byttaB"
+    >
+      <span
+        class="MuiTypography-root MuiTypography-body1 sc-fjdhpX jPjbBh css-1reifv3-MuiTypography-root"
+      >
+        <p>
+          You are required to 
+          <strong>
+            present in person 
+          </strong>
+          at the time of delivery.Please select a date and the time accordingly.
+        </p>
+      </span>
+    </div>
+    <div
+      class="sc-jTzLTM eGUQRX"
+    />
+    <div
+      class="sc-dnqmqq bLaDla"
+    >
+      <div
+        class="sc-iwsKbI fZUtNN"
+      >
+        <img
+          alt="header_img"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <div
+        class="sc-gZMcBi kopsXO"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-gqjmRU eRtcfe css-1reifv3-MuiTypography-root"
+        >
+          Step 1
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-VigVT ccGNxA css-1reifv3-MuiTypography-root"
+        >
+          Select a date,time and place for delivery,so you can receive your meds in person.
+        </p>
+      </div>
+    </div>
+    <div
+      class="sc-dnqmqq bLaDla"
+    >
+      <div
+        class="sc-iwsKbI fZUtNN"
+      >
+        <img
+          alt="header_img"
+          src="IMAGE_MOCK"
+        />
+      </div>
+      <div
+        class="sc-gZMcBi kopsXO"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-gqjmRU eRtcfe css-1reifv3-MuiTypography-root"
+        >
+          Step 2
+        </p>
+        <p
+          class="MuiTypography-root MuiTypography-body1 sc-VigVT ccGNxA css-1reifv3-MuiTypography-root"
+        >
+          Setup your refill reminder so your health doesnt miss out 
+        </p>
+      </div>
+    </div>
+    <div
+      class="sc-gzVnrw gUmHAA"
+    >
+      <button
+        class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+        data-testid="iUnderstand-btn"
+        tabindex="0"
+        type="button"
+      >
+        <div
+          style="visibility: visible;"
+        >
+          I Understand,Proceed
+        </div>
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <p
+      class="MuiTypography-root MuiTypography-body1 sc-htoDjs dnbmtK css-1reifv3-MuiTypography-root"
+    >
+      <button
+        data-testid="modal-link"
+        id="contactSupport"
+        type="button"
+      >
+        Why must i be present in person?
+      </button>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<WrappedDeliveryIntroduction /> should render and match the snapshot 1`] = `
+<div
+  class="sc-ifAKCX dPPXDZ"
+>
+  <div
+    class="sc-bZQynM cQtRSK"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h2 sc-jzJRlG dVWWoz css-1jfg05l-MuiTypography-root"
+    >
+      Be present at
+    </h2>
+    <h1
+      class="MuiTypography-root MuiTypography-h1 sc-cSHVUG kPaRAP css-qu1isr-MuiTypography-root"
+    >
+      the time of delivery 
+    </h1>
+  </div>
+  <div
+    class="sc-EHOje byttaB"
+  >
+    <span
+      class="MuiTypography-root MuiTypography-body1 sc-fjdhpX jPjbBh css-1reifv3-MuiTypography-root"
+    >
+      <p>
+        You are required to 
+        <strong>
+          present in person 
+        </strong>
+        at the time of delivery.Please select a date and the time accordingly.
+      </p>
+    </span>
+  </div>
+  <div
+    class="sc-jTzLTM eGUQRX"
+  />
+  <div
+    class="sc-dnqmqq bLaDla"
+  >
+    <div
+      class="sc-iwsKbI fZUtNN"
+    >
+      <img
+        alt="header_img"
+        src="IMAGE_MOCK"
+      />
+    </div>
+    <div
+      class="sc-gZMcBi kopsXO"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 sc-gqjmRU eRtcfe css-1reifv3-MuiTypography-root"
+      >
+        Step 1
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 sc-VigVT ccGNxA css-1reifv3-MuiTypography-root"
+      >
+        Select a date,time and place for delivery,so you can receive your meds in person.
+      </p>
+    </div>
+  </div>
+  <div
+    class="sc-dnqmqq bLaDla"
+  >
+    <div
+      class="sc-iwsKbI fZUtNN"
+    >
+      <img
+        alt="header_img"
+        src="IMAGE_MOCK"
+      />
+    </div>
+    <div
+      class="sc-gZMcBi kopsXO"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 sc-gqjmRU eRtcfe css-1reifv3-MuiTypography-root"
+      >
+        Step 2
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 sc-VigVT ccGNxA css-1reifv3-MuiTypography-root"
+      >
+        Setup your refill reminder so your health doesnt miss out 
+      </p>
+    </div>
+  </div>
+  <div
+    class="sc-gzVnrw gUmHAA"
+  >
+    <button
+      class="root StyledButton-sc-1apep4b-0 hPQGaD MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+      data-testid="iUnderstand-btn"
+      tabindex="0"
+      type="button"
+    >
+      <div
+        style="visibility: visible;"
+      >
+        I Understand,Proceed
+      </div>
+    </button>
+  </div>
+  <p
+    class="MuiTypography-root MuiTypography-body1 sc-htoDjs dnbmtK css-1reifv3-MuiTypography-root"
+  >
+    <button
+      data-testid="modal-link"
+      id="contactSupport"
+      type="button"
+    >
+      Why must i be present in person?
+    </button>
+  </p>
+</div>
+`;

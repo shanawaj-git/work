@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomSheet.js index Should import succesfully 1`] = `<div />`;
+
+exports[`BottomSheet.js index Should move the bottom sheet up when focusing on the input 1`] = `ShallowWrapper {}`;
+
+exports[`BottomSheet.js index Should render Loading State provided Loading is true 1`] = `ShallowWrapper {}`;

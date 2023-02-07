@@ -1,0 +1,27 @@
+image:
+  name: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  tag: ':latest'
+  CUSTOM_AUTHENTICATOR_PROJECT_ID: 34891892
+
+stages:
+  - build-docker
+
+docker_build:
+  stage: build-docker
+  before_script:
+    - apk add --update curl && rm -rf /var/cache/apk/*
+    - docker -v
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - 'curl --fail --location --header "JOB-TOKEN: $CI_JOB_TOKEN" "https://gitlab.com/api/v4/projects/$CUSTOM_AUTHENTICATOR_PROJECT_ID/jobs/artifacts/main/raw/target/keycloak_custom_authenticator.jar?job=build-job" --output "$CI_PROJECT_DIR/providers/keycloak_custom_authenticator.jar" '
+    - docker build --pull -t "$CI_REGISTRY_IMAGE$tag" .
+    - docker push "$CI_REGISTRY_IMAGE$tag"
+    - echo "Build complete."
+  only:
+    - main
+

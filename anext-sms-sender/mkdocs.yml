@@ -1,0 +1,8 @@
+site_name: "anext-sms-sender"
+
+nav:
+  - Overview: ./README.md
+  - Dev Setup: ./setup.md
+
+plugins:
+  - techdocs-core

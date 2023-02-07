@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17">
+  <defs>
+    <image width="9" height="11" id="img1" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDkgMTEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zLjc1ODM0IDIuNjc1ODlWMTAuNTgzNkg0LjkxMDg5VjIuNjc1ODlMNy42MjE5OSA1LjM5NTE4TDguNDMgNC41ODMwN0w0LjczMDQzIDAuODgzNDk2QzQuNjIzNzkgMC43NzY4NTYgNC40NzYxNCAwLjcxNTMzMiA0LjMyNDM4IDAuNzE1MzMyQzQuMTcyNjEgMC43MTUzMzIgNC4wMjQ5NiAwLjc3Njg1NiAzLjkxODMyIDAuODgzNDk2TDAuMjE4NzUgNC41ODMwN0wxLjAzNDk2IDUuMzk1MThMMy43NTgzNCAyLjY3NTg5WiIgZmlsbD0iIzU4NTk1QiIvPgo8L3N2Zz4K"/>
+  </defs>
+  <path id="Layer" d="M15.72 8.9v5.17c0 .59-.48 1.07-1.07 1.07H2.35c-.59 0-1.07-.48-1.07-1.07V8.9H.13v5.17c0 1.22.99 2.21 2.21 2.21h12.3c1.22 0 2.21-1 2.21-2.21V8.9z" fill="#58595b"/>
+  <use id="Vector-1" href="#img1" transform="translate(4)"/>
+</svg>

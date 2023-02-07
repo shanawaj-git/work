@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageHeader /> it should match snapshot 1`] = `
+<div>
+  <div
+    class="min-h-screen p-6 "
+    data-testid="PageHeader"
+    style="min-height: fit-content;"
+  />
+</div>
+`;

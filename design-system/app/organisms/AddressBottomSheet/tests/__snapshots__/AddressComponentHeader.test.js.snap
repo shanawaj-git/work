@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map.js index Should import succesfully 1`] = `
+<div>
+  <div
+    class="flex text-left"
+  >
+    <div
+      class="flex flex-col"
+    >
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-11estw0-MuiTypography-root"
+      >
+        Selexiq Educational Services, Al Abraj Street, Business Bay Dubai, United Arab Emirates
+      </h5>
+      <h6
+        class="MuiTypography-root MuiTypography-h6 css-1t9yafy-MuiTypography-root"
+      >
+        Dubai
+        , 
+        United Arab Emirates
+      </h6>
+    </div>
+  </div>
+</div>
+`;

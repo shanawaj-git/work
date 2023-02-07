@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PaymentStatus /> should render and match the snapshot 1`] = `
+<div
+  class="sc-bwzfXH kveAkL"
+>
+  <div
+    class="sc-bdVaJa kgLnZe"
+  >
+    <img
+      alt="payment-confirmation-img"
+      height="50px"
+      src="IMAGE_MOCK"
+    />
+  </div>
+  <div
+    class="sc-htpNat sjcSs"
+  >
+    <div
+      class="sc-bxivhb libNgG"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h2 css-1jfg05l-MuiTypography-root"
+      >
+        Payment
+      </h2>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+        data-testid="payment-status"
+      >
+        Successful!
+      </h1>
+    </div>
+    <div
+      class="sc-ifAKCX dZJWZd"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1reifv3-MuiTypography-root"
+        data-testid="payment-description"
+      >
+        Thank you, Your payment has gone through and your order is placed. Please look out for your delivery guy!
+      </p>
+    </div>
+    <div
+      class="sc-gzVnrw cPpxrU"
+    >
+      <div
+        class="sc-EHOje ixMgrT"
+      >
+        <img
+          class="sc-htoDjs ihGivD"
+          src="IMAGE_MOCK"
+        />
+        <div
+          class="sc-bZQynM gNVWFT"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h2 sc-iwsKbI keWXpt css-1sra7t5-MuiTypography-root"
+          >
+            Payed To
+          </h2>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 sc-gZMcBi iiJFql css-10wpov9-MuiTypography-root"
+          >
+            MPC Pharmacy
+          </h6>
+        </div>
+      </div>
+      <div
+        class="sc-EHOje ixMgrT"
+      >
+        <img
+          class="sc-dnqmqq hDbMmf"
+          data-testid="payment-method-logo-undefined"
+          src="IMAGE_MOCK"
+        />
+        <div
+          class="sc-bZQynM gNVWFT"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h2 sc-iwsKbI keWXpt css-1sra7t5-MuiTypography-root"
+          >
+            Payment Method
+          </h2>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 sc-gZMcBi iiJFql css-10wpov9-MuiTypography-root"
+          >
+            A/c xxxx4923
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<PaymentStatus /> should render and match the snapshot for pay by Card On Delivery 1`] = `
+<div
+  class="sc-bwzfXH kveAkL"
+>
+  <div
+    class="sc-bdVaJa kgLnZe"
+  >
+    <img
+      alt="payment-confirmation-img"
+      height="50px"
+      src="IMAGE_MOCK"
+    />
+  </div>
+  <div
+    class="sc-htpNat sjcSs"
+  >
+    <div
+      class="sc-bxivhb libNgG"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h2 css-1jfg05l-MuiTypography-root"
+      >
+        Payment
+      </h2>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+        data-testid="payment-status"
+      >
+        Card On Delivery
+      </h1>
+    </div>
+    <div
+      class="sc-ifAKCX dZJWZd"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1reifv3-MuiTypography-root"
+        data-testid="payment-description"
+      >
+        Thank you, Your order is placed and you have opted to pay by Card On Delivery. Please look out for your delivery guy!
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<PaymentStatus /> should render and match the snapshot for pay by Cash On Delivery 1`] = `
+<div
+  class="sc-bwzfXH kveAkL"
+>
+  <div
+    class="sc-bdVaJa kgLnZe"
+  >
+    <img
+      alt="payment-confirmation-img"
+      height="50px"
+      src="IMAGE_MOCK"
+    />
+  </div>
+  <div
+    class="sc-htpNat sjcSs"
+  >
+    <div
+      class="sc-bxivhb libNgG"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h2 css-1jfg05l-MuiTypography-root"
+      >
+        Payment
+      </h2>
+      <h1
+        class="MuiTypography-root MuiTypography-h1 css-qu1isr-MuiTypography-root"
+        data-testid="payment-status"
+      >
+        Cash On Delivery
+      </h1>
+    </div>
+    <div
+      class="sc-ifAKCX dZJWZd"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1reifv3-MuiTypography-root"
+        data-testid="payment-description"
+      >
+        Thank you, Your order is placed and you have opted to pay by Cash On Delivery. Please look out for your delivery guy!
+      </p>
+    </div>
+  </div>
+</div>
+`;

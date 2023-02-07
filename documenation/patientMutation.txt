@@ -1,0 +1,29 @@
+mutation{
+ createPatient(input:{
+  patId:"1212121"
+}) {
+  success
+}
+}
+
+
+mutation{
+ createPatient(input:{
+  patId:"1212121"
+  emiratesId: "EMIRATESID"
+  firstName: "First Name"
+  insuranceSet: [{
+    
+		policyNumber: "POLICY NUMBER"
+    provider: {
+    name: "ProviderName"
+	  code: "Provider Code"
+    eClaimLinkId: "Provide eclaims "
+    }
+    
+  }]
+  
+}) {
+  success
+}
+}

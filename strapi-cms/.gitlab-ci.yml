@@ -1,0 +1,59 @@
+image: node:16.13.1
+
+stages:
+  - setup
+  - test
+  - build
+
+services:
+  - docker:dind
+
+variables:
+  tag: ':latest'
+
+install-dependencies:
+  stage: setup
+  script:
+    - yarn
+  cache:
+    paths:
+      - node_modules/
+  artifacts:
+    expire_in: 1 days
+    when: on_success
+    paths:
+      - node_modules/
+  only:
+    - main
+    - merge_requests
+
+run-tests:
+  stage: test
+  dependencies:
+    - install-dependencies
+  script:
+    - yarn test-ci
+    - echo "Test complete."
+  artifacts:
+    expire_in: 2 days
+    when: always
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/cobertura-coverage.xml
+  only:
+    - main
+    - merge_requests
+
+build-image:
+  image: docker:latest
+  stage: build
+  before_script:
+    - docker -v
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE$tag" .
+    - docker push "$CI_REGISTRY_IMAGE$tag"
+    - echo "Build complete."
+  only:
+    - main

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroSection.js index Should display header image on top of main title and subtitle  1`] = `
+<div>
+  <ForwardRef(StyledHeroSection__HeroSectionWrapper)>
+    <img
+      alt="Order placed!"
+      className="title-img"
+      src="IMAGE_MOCK"
+    />
+    <div
+      className="title-container"
+    >
+      <Typography
+        typographyType="largeTitle"
+      >
+        Order placed!
+      </Typography>
+    </div>
+    <Typography
+      className="headline"
+      typographyType="subHead"
+    />
+  </ForwardRef(StyledHeroSection__HeroSectionWrapper)>
+</div>
+`;
+
+exports[`HeroSection.js index Should display the titleLogo when passed 1`] = `
+<div>
+  <ForwardRef(StyledHeroSection__HeroSectionWrapper)>
+    <img
+      alt="Order placed!"
+      className="title-img"
+      src="IMAGE_MOCK"
+    />
+    <div
+      className="title-container"
+    >
+      <Typography
+        typographyType="largeTitle"
+      >
+        Order placed!
+      </Typography>
+      <img
+        alt="temp"
+        className="title-logo"
+        src="IMAGE_MOCK"
+      />
+    </div>
+    <Typography
+      className="headline"
+      typographyType="subHead"
+    />
+  </ForwardRef(StyledHeroSection__HeroSectionWrapper)>
+</div>
+`;
+
+exports[`HeroSection.js index Should not display the titleLogo when not passed 1`] = `
+<div>
+  <ForwardRef(StyledHeroSection__HeroSectionWrapper)>
+    <img
+      alt="Order placed!"
+      className="title-img"
+      src="IMAGE_MOCK"
+    />
+    <div
+      className="title-container"
+    >
+      <Typography
+        typographyType="largeTitle"
+      >
+        Order placed!
+      </Typography>
+    </div>
+    <Typography
+      className="headline"
+      typographyType="subHead"
+    />
+  </ForwardRef(StyledHeroSection__HeroSectionWrapper)>
+</div>
+`;

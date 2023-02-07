@@ -1,0 +1,45 @@
+spring:
+  spring:
+    profile:
+      active: ${SPRING_PROFILES_ACTIVE}
+  data:
+    mongodb:
+      database: payments
+      uri: mongodb://localhost:27017/payments?retryWrites=false
+#      username: ${MONGO_USERNAME}
+#      password: ${MONGO_PASSWORD}
+      auto-index-creation: true
+      uuid-representation: standard
+  kafka:
+    enabled: true
+    template:
+      default-topic: ${KAFKA_DEFAULT_TOPIC}
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+    properties:
+      security:
+        protocol: SASL_PLAINTEXT
+      sasl:
+        mechanism: PLAIN
+        jaas:
+          config: org.apache.kafka.common.security.plain.PlainLoginModule required username=${KAFKA_ADMIN_USER}  password=${KAFKA_ADMIN_PASSWORD};
+
+    producer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    consumer:
+      bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVER}
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: ${KAFKA_CONSUMER_GROUP_ID}
+      properties:
+        spring.json.value.default.type: com.albatha.paymentservice.domain.Event
+        spring.json.trusted.packages: com.albatha.paymentservice.*
+        spring.json.use.type.headers: false
+
+    admin:
+      properties:
+        bootstrap.servers: ${KAFKA_BOOTSTRAP_SERVER}
+
+

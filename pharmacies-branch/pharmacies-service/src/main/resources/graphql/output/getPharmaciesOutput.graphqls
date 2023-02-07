@@ -1,0 +1,10 @@
+type GetPharmaciesOutput
+{
+    success: Boolean!
+    data: Pharmacy
+    error: Error
+}
+
+type Pharmacy {
+    name: String
+}

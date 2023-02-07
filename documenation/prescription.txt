@@ -1,0 +1,69 @@
+{
+	"prescriptionNumber": "dbd6d9ee-943a-4909-a2ba-555b286dd5fd",
+	"recordNumber": "454",
+	"visitDate": "2022-03-01T07:26:49.665Z",
+	"diagnosis": "Back Pain",
+	"drugs": [{
+		"name": "Cyclobenzaprine (Flexeril)",
+		"code": "DR74412101",
+		"dosage": {
+			"frequency": "3",
+			"unit": "ml",
+			"period": "7",
+			"route": "mouth",
+			"quantity": "10",
+			"doctorNotes": "take this after food",
+			"timeUnit": "day"
+		}
+	}],
+	"pin": "x67vbn0nMx",
+	"patient": {
+		"id": "PATID3",
+		"emiratesId": "200-1972-2000002-3",
+		"mohId": "435091",
+		"name": {
+			"first": "Delta",
+			"middle": "Epsilon",
+			"last": "Zeta"
+		},
+		"email": "test@test.com",
+		"mobileNumber": "9xxxxxxxx",
+		"dob": "1972-03-01T00:00:00.000Z",
+		"address": [{
+			"addressLine1": "Second Line 1",
+			"addressLine2": "Second Line 2",
+			"area": "The Second Area",
+			"city": "Dubai",
+			"state": "Dubai",
+			"postalCode": "570004",
+			"type": "HOME",
+			"country": "UAE"
+		}],
+		"insurance": [{
+			"insId": "AXP4378",
+			"policyNumber": "12390",
+			"network": "Star Plus",
+			"expiryDate": "2023-04-01T07:26:49.665Z",
+			"provider": {
+				"code": "ISPCODE0101",
+				"eClaimLinkId": "INS010",
+				"name": "AXA INSURANCE"
+			}
+		x1
+	},
+	"doctor": {
+		"docId": "DOC2001",
+		"name": {
+			"first": "Sigma",
+			"middle": "Tau",
+			"last": "Said"
+		},
+		"email": "test@test.com",
+		"mobileNumber": "9xxxxxxxx"
+	},
+	"sendingFacility": {
+		"facId": "SF-ID-1",
+		"name": "The Second Hospital",
+		"address": "Down Town, Dubai"
+	}
+}

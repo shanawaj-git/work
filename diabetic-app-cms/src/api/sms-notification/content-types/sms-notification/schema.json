@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sms_notifications",
+  "info": {
+    "singularName": "sms-notification",
+    "pluralName": "sms-notifications",
+    "displayName": "SMS Notification"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mobileNumber": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string"
+    },
+    "messageText": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Sent",
+        "Failed"
+      ]
+    },
+    "patient": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "sms_notifications"
+    }
+  }
+}

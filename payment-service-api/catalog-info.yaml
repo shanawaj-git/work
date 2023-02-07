@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "payment-service-api"
+  description: "This is payment service api for handling payments "
+  annotations:
+    github.com/project-slug: albathanext/anext-payment-service/payment-service-api
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: url
+  lifecycle: experimental
+  owner: "albathanext"
+  targets:
+    - ./async-api.yaml
+    - ./open-api.yml

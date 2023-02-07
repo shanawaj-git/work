@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mapOtpDataToSmsInput should map otp data to sms input 1`] = `
+Object {
+  "params": Object {
+    "otp": "233344",
+  },
+  "recipient": "+971526234727",
+  "referenceNumberInTopic": "+971526234727",
+  "templateCode": "opt_generated",
+  "topic": "authentication",
+}
+`;

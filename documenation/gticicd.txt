@@ -1,0 +1,119 @@
+stages:
+ - build
+ - test
+
+variables:
+ MAVEN_CLI_OPTS: "--batch-mode"
+
+
+cache:
+ paths:
+  - .m2/repository/
+  - target/
+
+build:
+ stage: build
+ image: maven:latest
+ script:
+  - mvn $MAVEN_CLI_OPTS clean compile
+ only:
+    - main
+    - devel
+    - merge_requests
+
+test:
+ stage: test
+ image: maven:latest
+ script:
+  - mvn $MAVEN_CLI_OPTS test
+ only:
+    - main
+    - devel
+    - merge_requests
+    
+    
+    
+    
+    
+    
+    
+    
+    
+image: docker:latest
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+  SPRING_PROFILES_ACTIVE: gitlab-ci
+  MAVEN_CLI_OPTS: "--batch-mode"
+
+stages:
+  - build
+  - test
+  - package
+  - deploy
+
+maven-build:
+  image: maven:latest
+  stage: build
+  script: "mvn package -B"
+  artifacts:
+    paths:
+      - target/*.jar
+  only:
+    - main
+    - devel
+    - merge_requests
+    
+maven-test:
+ stage: test
+ image: maven:latest
+ script:
+  - mvn $MAVEN_CLI_OPTS test
+ only:
+    - main
+    - devel
+    - merge_requests
+    
+    
+    
+    
+    
+    
+    
+image: docker:latest
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay
+  SPRING_PROFILES_ACTIVE: gitlab-ci
+  MAVEN_CLI_OPTS: "--batch-mode"
+
+stages:
+  - build
+  - test
+  - package
+  - deploy
+
+maven-build:
+  image: maven:latest
+  stage: build
+  script: 
+    - mvn $MAVEN_CLI_OPTS clean compile
+  artifacts:
+    paths:
+      - target/*.jar
+ 
+    
+maven-test:
+ stage: test
+ image: maven:latest
+ script:
+  - mvn $MAVEN_CLI_OPTS test
+ 
+
+ 
+
+

@@ -1,0 +1,97 @@
+ {
+"name":"NMC Pharmacy"
+"location" : {
+        "type" : "Point",
+        "coordinates" : [
+            76.293485,
+            10.032871
+        ]
+    }
+}
+
+
+https://stackoverflow.com/questions/36653595/aggregation-query-with-lookup-in-spring
+https://mramsath.medium.com/mongodb-aggreation-queries-with-spring-data-mongodb-10c8c0542106
+
+
+db.pharmacies.find()
+db.pharmacies.createIndex( { location: "2dsphere" } )
+
+db.pharmacies.insertOne({
+    "name": "Premier Inn",
+    "deliveryRadiusMeters": 400000000.0,
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            5.124654151447807, 55.377640617843255
+        ]
+    }
+})
+
+/**
+ * Problem :
+ * If the user location is with in the pharmacy location or not.
+ * Step 1 : Find out the distance between 2 coordinates: user and Pharmacy.
+ * Step 2 : then we utiziled the calulated distance from step 1 to filter the documents via checking if calulated
+ * distance is greator or equals to pharmacy radius.
+ *
+ *
+ * Results : We got the filtered pharmacies
+ */
+
+
+
+  db.pharmacies.aggregate([{
+      $geoNear : {
+        "near": {
+            "type": 'Point',
+            "coordinates": [
+                25.121508553763523,
+                55.37664286020158
+            ]
+        },
+        "spherical": true,
+        "distanceField": "distanceCalculated",
+
+    }},
+      {
+          $match: {$expr: {$lte: ["$distanceCalculated", "$deliveryRadiusMeters"]}}
+      }
+  ]
+)
+
+
+
+
+
+
+
+db.pharmacies.aggregate({
+    $geoNear : {
+        "near": {
+            "type": 'Point',
+            "coordinates": [
+                25.121508553763523,
+                55.37664286020158
+            ]
+        },
+
+        "spherical": true,
+        "distanceField": "distanceCalculated",
+
+        $match : { $expr:{$eq:["dist.calculated" , "deliveryRadiusMeters"]}}
+
+    }})
+
+// {
+//   $project : {
+//       location : 1,
+//       name : 1,
+//       deliveryRadiusMeters : 1,
+//       dist: 1,
+//       "abc" : {
+//           $subtract : ["$dist.calculated", "$deliveryRadiusMeters"]
+//       }
+//   }
+// },
+

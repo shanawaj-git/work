@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: prescription-service-api
+  title: Escribe Prescription service
+  description: Used for maintaining the patients prescriptions
+  tags:
+    - asyncapi
+    - kafka
+    - graphql
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: asyncapi
+  owner: nexthealth
+  lifecycle: experimental
+  definition:
+    $text: ./docs/asyncAPI.json

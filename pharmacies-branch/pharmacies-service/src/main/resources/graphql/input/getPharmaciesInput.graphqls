@@ -1,0 +1,9 @@
+input GetPharmaciesInput {
+    location: LocationInput!
+    prescriptionNumber: String!
+}
+
+input LocationInput {
+    latitude: Float!
+    longitude:  Float!
+}

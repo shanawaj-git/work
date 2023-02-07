@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox.js index Should display Checkbox with primary color style 1`] = `
+<ForwardRef(Styled(Component))
+  color="primary"
+  label="test"
+  labelplacement="end"
+  value="check"
+/>
+`;
+
+exports[`Checkbox.js index Should display disabled button 1`] = `
+<ForwardRef(Styled(Component))
+  color="primary"
+  disabled={true}
+  label="test"
+  labelplacement="end"
+  value="check"
+/>
+`;

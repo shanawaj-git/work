@@ -1,0 +1,15 @@
+
+spring:
+  jpa:
+    show-sql: true
+
+graphql:
+  servlet:
+    cors-enabled: true
+    cors:
+      allowed-origins: ${CORS_ALLOWED_HOSTS}
+      allowed-methods: GET, HEAD, POST, OPTIONS
+      allow-credentials: true
+      allowed-headers: "*"
+graphiql:
+  enabled: true

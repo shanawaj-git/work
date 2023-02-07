@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createMuiTheme creates theme successfully 1`] = `
+Object {
+  "theme": Object {
+    "color": "red",
+  },
+}
+`;

@@ -1,0 +1,9 @@
+{
+  "correctPhoneNumber": "971565792124",
+  "incorrectPhoneNumber11digits": "97145678910",
+  "incorrectPhoneNumber13digits": "9714567891011",
+  "noCountryCodePhoneNumber9digitsCorrect": "565792124",
+  "noCountryCodePhoneNumber9digitsIncorrect": "123456789",
+  "incorrectPhoneNumberText": "I repeat, this is a test",
+  "incorrectPhoneNumberNonDigits": "-"
+}
